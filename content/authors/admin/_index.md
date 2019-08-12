@@ -63,6 +63,6 @@ email: ""
 # - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Josh is a computational biologist pursuing his PhD. at Harvard Medical School. There, he is co-advised by Professor Kevin Haigis and Professor Peter Park as he studies cancer genetics and evolution. Specifically, he is working to understand the tissue-specific impacts of *KRAS* mutations on the behavior of cancers.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+In his free time, Josh enjoys learning about programming and computer science - his current project is creating an iOS app in Swift. Off the computer, his hobbies include running and caring for his plants.
