@@ -12,10 +12,10 @@ day_night = true
 font = "default"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = ""
+description = "A personal website for a graduate student at Harvard Medical School."
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = ""
+sharing_image = "icon-512.png"
 
 # Twitter username (without @). Used when a vistor shares your site on Twitter.
 twitter = "joshdoesa"
