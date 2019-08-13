@@ -36,6 +36,6 @@ date_format = "Jan 2006"
   certificate_url = ""
   date_start = "2019-03-23"
   date_end = ""
-  description = "`ggasym` has been accepted to CRAN. It was further promoted by RStudio in their [March edition of Top 40 New CRAN Packages](https://rviews.rstudio.com/2019/04/26/march-2019-top-40-new-cran-packages/)."  
+  description = "My R package,'ggasym', has been accepted to CRAN. It was further promoted by RStudio in their [March edition of Top 40 New CRAN Packages](https://rviews.rstudio.com/2019/04/26/march-2019-top-40-new-cran-packages/)."  
 
 +++
