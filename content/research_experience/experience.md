@@ -26,6 +26,7 @@ date_format = "Jan 2006"
   date_start = "2012-06-01"
   date_end = "2012-09-01"
   description = """
+**Research Summary**  
 Under the guidance of Dr. Kasper Wang, I researched the role of liver progenitor cells in these two rare, yet deadly, early onset diseases.
   """
 
@@ -37,7 +38,11 @@ Under the guidance of Dr. Kasper Wang, I researched the role of liver progenitor
   date_start = "2014-06-01"
   date_end = "2014-09-01"
   description = """
-I studied the underlying causes of developmental disruptions within the hypothalamus that are characteristic of Prader-Willi syndrome under Dr. Sebastien Bouret ([Maillard *et al.*, 2016](/publication/loss-of-magel2-impairs-the-development-of-hypothalamic-anorexigenic-circuits/)).
+**Research Summary**  
+I studied the underlying causes of developmental disruptions within the hypothalamus that are characteristic of Prader-Willi syndrome under Dr. Sebastien Bouret.
+
+**Publication**  
+[Maillard *et al.*, 2016](/publication/loss-of-magel2-impairs-the-development-of-hypothalamic-anorexigenic-circuits/)
 """
 
 [[experience]]
@@ -48,7 +53,12 @@ I studied the underlying causes of developmental disruptions within the hypothal
   date_start = "2014-08-01"
   date_end = "2017-08-01"
   description = """
-In the laboratory of Professor Melissa Lodoen, I investigated the patterns and mechanisms of dissemination by which *Toxoplasma gondii*, an obligate, intracellular parasite, infects a human host. ([Cook *et al.*, 2018](/publication/Toxoplasma-gondii-disrupts-beta1-integrin-signaling-and-focal-adhesion-formation-during-monocyte-hypermotility/)).
+
+**Research Summary**  
+In the laboratory of Professor Melissa Lodoen, I investigated the patterns and mechanisms of dissemination by which *Toxoplasma gondii*, an obligate, intracellular parasite, infects a human host.
+
+**Publication**  
+[Cook *et al.*, 2018](/publication/Toxoplasma-gondii-disrupts-beta1-integrin-signaling-and-focal-adhesion-formation-during-monocyte-hypermotility/)
 """
 
 [[experience]]
@@ -59,11 +69,14 @@ In the laboratory of Professor Melissa Lodoen, I investigated the patterns and m
   date_start = "2018-06-01"
   date_end = ""
   description = """
-**Investigating the mutational relationships in colorectal cancer**
+**Investigating the mutational relationships in colorectal cancer**  
 With Dr. Giorgio Melloni in the Park Lab, I am working to understand why some mutations co-occur at a frequency above that expected by chance alone using a pathway-level approach.
 
-**Tissue specificity of *KRAS* mutations**
+**Tissue specificity of *KRAS* mutations**  
 In collaboration with the Gygi (Dept. of Cell Bio., HMS) and Lauffenburger (MIT) Labs, we are searching for the reasons underpinning the results of *KRAS* mutations in different tissues. The question we are asking is, “Why are some *KRAS* mutations only oncogenic in a subset of tissues?” with the desire to better understand the mechanisms by which *KRAS* mutations induce oncogenesis.
+
+**Publication**  
+[Poulin *et al.*, 2019](/publication/tissue-specific-oncogenic-activity-of-krasa146t/)
 """
 
 

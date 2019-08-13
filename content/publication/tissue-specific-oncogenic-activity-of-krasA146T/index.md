@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Tissue-specific oncogenic activity of KRAS A146T"
-authors: ["Emily J. Poulin", "Asim K. Bera", "Jia Lu", "Yi-Jang Lin", "Samantha Dale Strasser", "Joao A. Paulo", "Tannie Q. Huang", "Carolina Morales", "Wei Yan", "Joshua Cook", "Jonathan A. Nowak", "Douglas K. Brubaker", "Brian A. Joughin", "Christian W. Johnson", "Rebecca A. DeStefanis", "Phaedra C. Ghazi", "Sudershan Gondi", "Thomas E. Wales", "Roxana E. Iacob", "Lana Bogdanova", "Jessica J. Gierut", "Yina Li", "John R. Engen", "Pedro A. Perez-Mancera", "Benjamin S. Braun", "Steven P. Gygi", "Douglas A. Lauffenburger", "Kenneth D. Westover", and "Kevin M. Haigis"]
+authors: ["Emily J. Poulin", "Asim K. Bera", "Jia Lu", "Yi-Jang Lin", "Samantha Dale Strasser", "Joao A. Paulo", "Tannie Q. Huang", "Carolina Morales", "Wei Yan", "Joshua Cook", "Jonathan A. Nowak", "Douglas K. Brubaker", "Brian A. Joughin", "Christian W. Johnson", "Rebecca A. DeStefanis", "Phaedra C. Ghazi", "Sudershan Gondi", "Thomas E. Wales", "Roxana E. Iacob", "Lana Bogdanova", "Jessica J. Gierut", "Yina Li", "John R. Engen", "Pedro A. Perez-Mancera", "Benjamin S. Braun", "Steven P. Gygi", "Douglas A. Lauffenburger", "Kenneth D. Westover", "Kevin M. Haigis"]
 date: 2019-04-05
 doi: "10.1158/2159-8290.CD-18-1220"
 
