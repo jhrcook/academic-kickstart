@@ -58,7 +58,7 @@ height = "300px"
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
   
   cta_label = "More information"
-  cta_url = "#"
+  cta_url = "research_experience/"
   cta_icon_pack = ""
   cta_icon = ""
   
