@@ -2,9 +2,9 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Plant Tracker iOS App"
-summary: "An app to help my mom keep track or and care for her plants."
-authors: ["Josh Cook"]
-tags: ["iOS", "Swift", "application", "app", "open source"]
+summary: "An app to help my mom keep track of and care for her plants."
+authors: ["admin"]
+tags: ["iOS", "Swift", "application", "app", "open source", "programming"]
 categories: []
 date: 2019-08-12T11:55:41-04:00
 

@@ -2,8 +2,8 @@
 # Accomplishments widget.
 widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
-weight = 50  # Order that this section will appear.
+active = true  # Activate this widget? true/false
+weight = 100  # Order that this section will appear.
 
 title = "Accomplish&shy;ments"
 subtitle = ""
@@ -19,33 +19,23 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
-  organization = "Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Neural Networks and Deep Learning"
+  organization = "NSF"
+  organization_url = "https://www.nsf.gov"
+  title = "Honorable Mention NSF GRFP"
   url = ""
-  certificate_url = "https://www.coursera.org"
-  date_start = "2018-10-01"
+  certificate_url = ""
+  date_start = "2019-04-08"
   date_end = ""
-  description = ""
+  description = "I have been awarded an Honorable Mention in the 2019 National Science Foundation (NSF) Graduate Research Fellowship Program competition"
 
 [[item]]
-  organization = "edX"
-  organization_url = "https://www.edx.org"
-  title = "Blockchain Fundamentals"
-  url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
-  certificate_url = "https://www.edx.org"
-  date_start = "2018-03-01"
+  organization = "CRAN"
+  organization_url = "https://cran.r-project.org"
+  title = "ggasym"
+  url = "https://cran.r-project.org/web/packages/ggasym/index.html"
+  certificate_url = ""
+  date_start = "2019-03-23"
   date_end = ""
-  description = "Formulated informed blockchain models, hypotheses, and use cases."
-  
-[[item]]
-  organization = "DataCamp"
-  organization_url = "https://www.datacamp.com"
-  title = "Object-Oriented Programming in R: S3 and R6 Course"
-  url = ""
-  certificate_url = "https://www.datacamp.com"
-  date_start = "2017-07-01"
-  date_end = "2017-12-21"
-  description = ""
+  description = "`ggasym` has been accepted to CRAN. It was further promoted by RStudio in their [March edition of Top 40 New CRAN Packages](https://rviews.rstudio.com/2019/04/26/march-2019-top-40-new-cran-packages/)."  
 
 +++
