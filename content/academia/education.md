@@ -43,6 +43,6 @@ date_format = "Jan 2006"
   location = "Irvine, California"
   date_start = "2013-09-01"
   date_end = "2017-06-19"
-  description = ""
+  description = "While I never participated in chemistry research, I gained a healthy understanding of physical, organic, and inorganic chemistry."
 
 +++
