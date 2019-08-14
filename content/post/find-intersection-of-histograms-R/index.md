@@ -32,7 +32,7 @@ Here, I demonstrate how to find the point where two histograms overlap. While th
 
 ### Prepare simulated data
 
-I create two data sets, `gamma_dist` and `norm_dist`, which are made up of a different number of values sampled randomly from a gamma distribution and normal distribution, respectively. I specicially made the data sets different sizes to make the point that this method is still applicable.
+I created two data sets, `gamma_dist` and `norm_dist`, which are made up of a different number of values sampled randomly from a gamma distribution and normal distribution, respectively. I specicially made the data sets different sizes to make the point that this method is still applicable.
 
 ```r
 library(tibble)
@@ -62,7 +62,7 @@ df
 #> 10  1.67 gamma_dist
 #> # … with 599,990 more rows
 ```
-I used 'ggplot2' to plot the densities of the two data sets. The gamma distribution is in red and the normal distribution is in blue. I broke the creation of the plot into two steps: the essential step to create the density curves, and the styling step to make it look nice. Of course, these could be combined into a single long ggplot statement.
+I used 'ggplot2' to plot the densities of the two data sets. The gamma distribution is in red and the normal distribution is in blue. I broke the creation of the plot into two steps: the essential step to create the density curves, and the styling step to make the plot look nice. Of course, these could be combined into a single long ggplot statement.
 
 ```r
 library(ggplot2)
@@ -86,7 +86,7 @@ p <- p +
 
 ### Finding the point of intersection
 
-To find the point of intersection, I first binned the data sets using `density`. It's important to use the same `from` and `to` values for each data set. The `density` function creates 512 bins, thus providing the same starting and ending parameters makes `density` use the same bins for each data set.
+To find the point of intersection, I first binned the data sets using `density`. It is essential to use the same `from` and `to` values for each data set. The `density` function creates 512 bins, thus, providing the same starting and ending parameters makes `density` use the same bins for each data set.
 
 ```r
 from <- 0
@@ -94,7 +94,7 @@ to <- 40
 gamma_density <- density(gamma_dist, from = from, to = to)
 norm_density <- density(norm_dist, from = from, to = to)
 ```
-The final step is to find where the density of the gamma distribution is less than the normal distribution. Therefore, I apply this logic to create the boolean vector `idx`. I also apply two other filters to make contain the result between 5 to 20 because, from the plot above, I can see that the intersection falls within this range.
+The final step was to find where the density of the gamma distribution was less than the normal distribution. Therefore, I applied this logic to create the boolean vector `idx`. I also included two other filters to contain the result between 5 to 20 because, from the plot above, I can see that the intersection falls within this range.
 
 ```r
 idx <- (gamma_density$y < norm_density$y) &
@@ -104,7 +104,7 @@ poi <- min(gamma_density$x[idx])
 poi
 #> 10.64579
 ```
-That's it, the point of intersection has been approximated to a high precision. A vertical line is plotted below at `poi`.
+That's it, the point of intersection has been approximated to a high precision. A vertical line was added to the plot below at `poi`.
 
 ```r
 p <- p + 
