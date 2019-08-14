@@ -25,7 +25,14 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: ["ios-plant-tracker"]
+
+links:
+ - name: Source
+   url: https://github.com/jhrcook/PhotoZoomAnimator
+   icon_pack: fab
+   icon: github
+
 ---
 
 This was an experimental iOS app explaining how to make a custom interactive transition (to use in my [PlantTracker app](https://github.com/jhrcook/PlantTracker)). The goal was to replicate the transition used in the native phone app. I did my best to document the process here.
@@ -33,7 +40,7 @@ This was an experimental iOS app explaining how to make a custom interactive tra
 
 ### Final Result
 
-{{< figure src="zoom_animation_interactive_HD.gif" title="" lightbox="false" >}}
+{{< figure src="zoom_animation_interactive_short.gif" title="" lightbox="false" >}}
 
 
 ### Resources
@@ -753,4 +760,3 @@ The `userDidPanWith(gestureRecognizer:)` method was fairly simple, just respondi
 ### Finished!
 
 {{< figure src="zoom_animation_interactive_HD.gif" title="" lightbox="false" >}}
-{{< figure src="zoom_animation_interactive_short.gif" title="" lightbox="false" >}}
