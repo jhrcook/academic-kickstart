@@ -19,13 +19,7 @@ subtitle = ""
   icon_pack = "fab"
   name = "R"
   description = "Proficient"
-  
-[[feature]]
-  icon = "apple"
-  icon_pack = "fab"
-  name = "Swift"
-  description = "Beginner"  
-  
+
 [[feature]]
   icon = "python"
   icon_pack = "fab"
@@ -37,5 +31,23 @@ subtitle = ""
   icon_pack = "fab"
   name = "Linux"
   description = "Sufficient"
+  
+[[feature]]
+  icon = "apple"
+  icon_pack = "fab"
+  name = "iOS"
+  description = "Beginner"
+  
+[[feature]]
+  icon = "dove"
+  icon_pack = "fas"
+  name = "Swift"
+  description = "Beginner"
+  
+[[feature]]
+  icon = "chart-line"
+  icon_pack = "fas"
+  name = "Statistics"
+  description = "Moderate"
 
 +++
