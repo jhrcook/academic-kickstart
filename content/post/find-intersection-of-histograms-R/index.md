@@ -9,7 +9,7 @@ tags: ["R", "programming", "statistics"]
 categories: []
 date: 2019-08-14T13:02:21-04:00
 lastmod: 2019-08-14T13:02:21-04:00
-featured: true
+featured: false
 draft: false
 
 # Featured image

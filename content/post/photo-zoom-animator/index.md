@@ -9,7 +9,7 @@ tags: ["programming", "iOS", "Swift", "animations", "application"]
 categories: []
 date: 2019-08-13T19:45:16-04:00
 lastmod: 2019-08-13T19:45:16-04:00
-featured: true
+featured: false
 draft: false
 
 # Featured image

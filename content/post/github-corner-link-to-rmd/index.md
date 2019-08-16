@@ -9,7 +9,7 @@ tags: ["programming", "rmarkdown"]
 categories: []
 date: 2019-08-16T11:48:40-04:00
 lastmod: 2019-08-16T11:48:40-04:00
-featured: false
+featured: true
 draft: false
 
 # Featured image
@@ -17,7 +17,7 @@ draft: false
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: ""
-  focal_point: ""
+  focal_point: "Center"
   preview_only: false
 
 # Projects (optional).

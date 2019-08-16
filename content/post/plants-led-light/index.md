@@ -9,7 +9,7 @@ tags: ["hobby", "plants", "cacti", "succulents", "electronics", "Arduino"]
 categories: []
 date: 2019-08-14T10:42:06-04:00
 lastmod: 2019-08-14T10:42:06-04:00
-featured: true
+featured: false
 draft: false
 
 # Featured image
