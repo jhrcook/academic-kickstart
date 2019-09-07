@@ -50,7 +50,7 @@ hero_media = ""
 #   label = ""
 +++
 
-**I'm looking forward to tonight's UseR group meetup. Hope to see you there!**
+**I'm looking forward to the next UseR group meetup. Hope to see you there!**
 
-when: 6 to 8 PM  
+when: Tuesday, Sept. 10 from 6 to 8 PM  
 where: 343 Congress St, Boston, MA
