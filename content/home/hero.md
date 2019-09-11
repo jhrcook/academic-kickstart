@@ -2,10 +2,10 @@
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-title = "Use Cases of R at Ahold Delhaize & Using Reticulate in your Workflow"
+title = "September 2019 Meeting"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media = ""
@@ -34,23 +34,21 @@ hero_media = ""
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
-  url = "https://www.meetup.com/Boston-useR/events/263582164/"
+  url = "https://www.meetup.com/CocoaHeads-Boston/events/hhpzxpyzmbqb/"
   label = "Meetup page"
   icon_pack = "fab"
   icon = "meetup"
   
 [cta_alt]
-  url = "https://www.meetup.com/Boston-useR"
-  label = "UseR Group"
-  icon_pack = "fab"
-  icon = "r-project"
+  url = "https://www.meetup.com/CocoaHeads-Boston"
+  label = "CocoaHeads Boston Group"
 
 # Note. An optional note to show underneath the links.
 # [cta_note]
 #   label = ""
 +++
 
-**I'm looking forward to the next UseR group meetup. Hope to see you there!**
+**I'm looking forward to the next CocoaHeads Boston group meetup. Hope to see you there!**
 
-when: Tuesday, Sept. 10 from 6 to 8 PM  
-where: 343 Congress St, Boston, MA
+when: Tuesday, Sept. 12 from 7 to 9 PM  
+where: Room 325 of Tang Center Building E51, 70 Memorial Dr., Cambridge, MA
