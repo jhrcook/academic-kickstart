@@ -2,10 +2,10 @@
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-title = "From Zero To App"
+title = "SwiftCoders Boston @ Rightpoint"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media = ""
@@ -34,21 +34,21 @@ hero_media = ""
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
-  url = "https://www.meetup.com/Learn-Swift-Boston/events/264569482/"
+  url = "https://www.meetup.com/SwiftCodersBoston/events/rsbfqqyzmbjc/"
   label = "Meetup page"
   icon_pack = "fab"
   icon = "meetup"
   
 [cta_alt]
-  url = "https://www.meetup.com/Learn-Swift-Boston/"
-  label = "Learn Swift Boston Group"
+  url = "https://www.meetup.com/SwiftCodersBoston"
+  label = "SwiftCoders Boston Group"
 
 # Note. An optional note to show underneath the links.
 # [cta_note]
 #   label = ""
 +++
 
-**I'm looking forward to the next Learn Swift Boston group meetup. Hope to see you there!**
+**I'm looking forward to the next SwiftCoders Boston group meetup. Hope to see you there!**
 
-when: Tuesday, Sept. 19 from 6:30 to 8:30 PM  
-where: Cantina at 100 Summer St, Boston, MA
+when: Thursday, Sept. 26 from 6:30 to 9:00 PM  
+where: Rightpoint at 50 Milk St, Boston, MA
