@@ -47,6 +47,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/jhrcook
+- icon: dev
+  icon_pack: fab
+  link: https://dev.to/jhrcook
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/joshua-hr-cook/
