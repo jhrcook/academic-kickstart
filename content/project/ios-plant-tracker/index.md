@@ -5,7 +5,7 @@ title: "Plant Tracker iOS App"
 summary: "An app to help my mom keep track of and care for her plants."
 authors: ["admin"]
 tags: ["iOS", "Swift", "application", "app", "open source", "programming"]
-categories: []
+categories: ["Programming"]
 date: 2019-08-12T11:55:41-04:00
 
 # Optional external URL for project (replaces project detail page).

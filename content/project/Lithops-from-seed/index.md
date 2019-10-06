@@ -5,7 +5,7 @@ title: "Growing Lithops from seed"
 summary: "Documenting my journey from seed to *Lithops*"
 authors: ["admin"]
 tags: ["hobby", "succulents", "Lithops", "growing", "plants"]
-categories: []
+categories: ["Plants"]
 date: 2019-08-16T10:31:38-04:00
 
 # Optional external URL for project (replaces project detail page).

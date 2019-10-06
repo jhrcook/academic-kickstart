@@ -5,7 +5,7 @@ title: "ggasym (\"gg-awesome\")"
 summary: "'ggasym' (pronounced \"gg-awesome\") plots a symmetric matrix with three different fill aesthetics."
 authors: ["admin"]
 tags: ["R", "programming", "CRAN", "package"]
-categories: []
+categories: ["Programming"]
 date: 2019-08-12T20:32:28-04:00
 
 # Optional external URL for project (replaces project detail page).
