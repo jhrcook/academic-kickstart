@@ -2,7 +2,7 @@
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
 title = "SwiftCoders Boston @ Rightpoint"
@@ -34,21 +34,21 @@ hero_media = ""
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
-  url = "https://www.meetup.com/SwiftCodersBoston/events/rsbfqqyzmbjc/"
+  url = "https://www.meetup.com/CocoaHeads-Boston/events/hhpzxpyznbnb/"
   label = "Meetup page"
   icon_pack = "fab"
   icon = "meetup"
   
 [cta_alt]
-  url = "https://www.meetup.com/SwiftCodersBoston"
-  label = "SwiftCoders Boston Group"
+  url = "https://www.meetup.com/CocoaHeads-Boston/"
+  label = "CocoaHeads Boston"
 
 # Note. An optional note to show underneath the links.
 # [cta_note]
 #   label = ""
 +++
 
-**I'm looking forward to the next SwiftCoders Boston group meetup. Hope to see you there!**
+**I'm looking forward to the next CocoaHeads Boston group meetup. Hope to see you there!**
 
-when: Thursday, Sept. 26 from 6:30 to 9:00 PM  
-where: Rightpoint at 50 Milk St, Boston, MA
+when: Thursday, Sept. 26 from 7:00 to 9:00 PM  
+where: Room 325 of Tang Center (E-51) at MIT, Cambridge, MA 02142
