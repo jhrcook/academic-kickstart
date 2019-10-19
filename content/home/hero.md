@@ -2,7 +2,7 @@
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
 title = "SwiftCoders Boston @ Rightpoint"
@@ -34,21 +34,21 @@ hero_media = ""
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
-  url = "https://www.meetup.com/Learn-Swift-Boston/events/265302098/"
+  url = "https://www.meetup.com/SwiftCodersBoston/events/rsbfqqyznbgc/"
   label = "Meetup page"
   icon_pack = "fab"
   icon = "meetup"
   
 [cta_alt]
-  url = "https://www.meetup.com/Learn-Swift-Boston"
-  label = "Learn Swift Boston"
+  url = "https://www.meetup.com/SwiftCodersBoston/"
+  label = "Swift Coders Boston"
 
 # Note. An optional note to show underneath the links.
 # [cta_note]
 #   label = ""
 +++
 
-**I'm looking forward to the next Learn Swift Boston group meetup. The presentation is titled, "N Ways To Style A Button." Hope to see you there!**
+**I'm looking forward to the next Swift Coders Boston group meetup. This week, we'll be having a series of diverse lightning talks. Hope to see you there!**
 
 when: Thursday, Oct. 17 from 6:30 to 8:30 PM  
-where: Chewey, 343 Congress St., Boston, MA
+where: Rightpoint, 50 Milk St., Boston, MA
