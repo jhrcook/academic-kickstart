@@ -218,3 +218,11 @@ Things have been quite hectic with travel and my day job, lately, so I have not 
 The plants are still with my friend as I prepare to move apartments. The photo shows that the babies are still etiolated, but alive. 
 
 {{< figure src="images/2019-08-10/IMG_9402.jpeg" title="" lightbox="true" width="100%" >}}
+
+**October 19, 2019**
+
+Some of my little seedlings are still alive, but not many. They are beginning to color in and I am decreasing water to around once a month or so.
+
+
+{{< figure src="images/2019-10-19/lithops-seeds-1.JPG" title="" lightbox="true" width="50%" >}}
+{{< figure src="images/2019-10-19/lithops-seeds-2.JPG" title="" lightbox="true" width="50%" >}}
