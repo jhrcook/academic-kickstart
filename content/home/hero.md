@@ -48,7 +48,7 @@ hero_media = ""
 #   label = ""
 +++
 
-**I'm looking forward to the next Swift Coders Boston group meetup. This week, we'll be having a series of diverse lightning talks. Hope to see you there!**
+**I'm looking forward to the next Swift Coders Boston group meetup. This week, we'll be having a diverse series of lightning talks. Hope to see you there!**
 
-when: Thursday, Oct. 17 from 6:30 to 8:30 PM  
+when: Thursday, Oct. 24 from 6:00 to 8:00 PM  
 where: Rightpoint, 50 Milk St., Boston, MA
