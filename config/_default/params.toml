@@ -3,13 +3,13 @@
 
 # Color theme.
 #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `rose`, `strawberry`, `mr_robot`.
-color_theme = "default"
+theme = "minimal"
 # Enable users to switch between day and night mode?
 day_night = true
 
 # Font style.
 #   Choose from `default`, `classic`, `rose`, or `mr_robot`.
-font = "default"
+# font = "default"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
 description = "A personal website for a graduate student at Harvard Medical School."
@@ -60,7 +60,8 @@ time_format = "3:04 PM"
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "joshhrcook@gmail.com"
 phone = ""
-address = "Boston, Massachusetts, 02215, USA"
+# address = "Boston, Massachusetts, 02215, USA"
+address = {city = "Boston", region = "MA", postcode = "02215", country = "United States of America", country_code = "US"}
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = ""
@@ -78,26 +79,6 @@ contact_links = [
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
   ]
 
-# Display a map.
-# To show your address on a map in the contact widget, you need to enter your latitude, longitude and choose
-# a map provider below.
-# To use Google Maps, set `map = 1` and enter your API key that can be obtained here:
-#   https://developers.google.com/maps/documentation/javascript/get-api-key
-# To use OpenStreetMap tiles, set `map = 2`.
-# To use OpenStreetMap on a high traffic site, set `map = 3` and enter your API key that can be obtained here:
-#   https://www.mapbox.com/studio/account/tokens
-# To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-#
-# Map provider:
-#   0: No map
-#   1: Google Maps
-#   2: OpenStreetMap (Mapnik)
-#   3: OpenStreetMap (Mapbox)
-map = 0
-map_api_key = ""
-latitude = "37.4275"
-longitude = "-122.1697"
-zoom = 15
 
 ############################
 ## Plugins                ##
@@ -116,8 +97,8 @@ plugins_js  = []
 # Get user avatars from Gravatar.com? (true/false)
 gravatar = false
 
-# Align the main menu to the right of the page? (true/false)
-menu_align_right = false
+# Main menu alignment (l = left, c = center, r = right) and logo options.
+main_menu = {align = "l", show_logo = true}
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
@@ -126,8 +107,14 @@ reading_time = true
 section_pager = false
 docs_section_pager = true  # Display pager in Docs layout (e.g. tutorials)?
 
+# Address format (choose from the [address_formats] list below or add you own to the list).
+address_format = "en-us"
+
 # Enable in-built social sharing buttons? (true/false)
 sharing = true
+
+# Link authors to their profile page? (true/false)
+link_authors = true
 
 # Configuration of publication pages.
 [publications]
@@ -158,7 +145,7 @@ sharing = true
   engine = 0
 
   # Which page types are commentable?
-  commentable = {page = true, post = true, docs = true, project = true, publication = true, talk = true}
+  commentable = {page = true, post = true, docs = true}
 
   # Configuration of Disqus.
   [comments.disqus]
@@ -180,3 +167,37 @@ sharing = true
     api_key = ""
     index_name = ""
     show_logo = false
+
+[map]
+  # To show your address on a map in the Contact widget, enter your latitude and longitude (above)
+  # and choose a map provider below.
+  #
+  # To use Google Maps, set `engine` to 1 and enter your API key that can be obtained here:
+  #   https://developers.google.com/maps/documentation/javascript/get-api-key
+  # To use OpenStreetMap tiles, set `engine` to 2.
+  # To use OpenStreetMap on a high traffic site, set `engine` to 3 and enter your API key that can be obtained here:
+  #   https://www.mapbox.com/studio/account/tokens
+  #
+  # Map provider:
+  #   0: No map
+  #   1: Google Maps
+  #   2: OpenStreetMap (Mapnik)
+  #   3: OpenStreetMap (Mapbox)
+  engine = 2
+  api_key = ""
+  coordinates = {latitude = "37.4275", longitude = "-122.1697"}
+  zoom = 15
+ 
+# Available address formats.
+[address_formats]
+  en-us = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', '']}
+  en-gb = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ', ', '']}
+  zh = {order = ['postcode', 'region', 'city', 'street'], delimiters = [' ', ' ', ' ', '']}
+  
+
+############################
+## Marketing
+############################
+[marketing]
+  google_analytics = "UA-145596899-1"
+  google_tag_manager = ""
