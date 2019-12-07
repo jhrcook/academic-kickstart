@@ -39,7 +39,7 @@ subtitle = ""
   description = "Sufficient"
 
 [[feature]]
-  icon = "chart-line"
+  icon = "chart-bar"
   icon_pack = "fas"
   name = "Statistics"
   description = "Moderate"
