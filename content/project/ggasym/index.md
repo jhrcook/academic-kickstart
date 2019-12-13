@@ -38,7 +38,10 @@ links:
    url: "https://rviews.rstudio.com/2019/04/26/march-2019-top-40-new-cran-packages/"
    icon_pack: fas
    icon: thumbs-up
-
+ - name: R-Weekly
+   url: "https://rweekly.org/2019-11.html#NewPackages"
+   icon_pack: fas
+   icon: thumbs-up
 
 url_code: ""
 url_pdf: ""
