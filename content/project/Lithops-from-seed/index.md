@@ -197,7 +197,9 @@ Finally, I have found a few mature *Lithops* and other cacti to keep my babies c
 
 **June 15, 2019**
 
-Just a minor update on the *Lithops*. The *julli* (top) are still splitting, showing a bit more progress every day. A bunch of the *karasmontana* (bottom) are also splitting and revealing new brown leaves.
+Just a minor update on the *Lithops*. 
+The *julli* (top) are still splitting, showing a bit more progress every day. 
+A bunch of the *karasmontana* (bottom) are also splitting and revealing new brown leaves.
 
 {{< figure src="images/2019-06-15/IMG_8544.jpg" title="" lightbox="true" width="400" >}}
 {{< figure src="images/2019-06-15/IMG_8541 2.jpg" title="" lightbox="true" width="400" >}}
@@ -207,7 +209,11 @@ Just a minor update on the *Lithops*. The *julli* (top) are still splitting, sho
 
 **July 15, 2019**
 
-Things have been quite hectic with travel and my day job, lately, so I have not been keeping this updated. The *Lithops* stayed with a friend of mine while I was visting home. He sent me the photo below of them revealing their first set of true leaves. As you can see, they are quite etiolated  because their spot on the windowsill has not prevodied enough light. When things settle down in the Fall, I will be able to tend to them more.
+Things have been quite hectic with travel and my day job, lately, so I have not been keeping this updated. 
+The *Lithops* stayed with a friend of mine while I was visting home. 
+He sent me the photo below of them revealing their first set of true leaves. 
+As you can see, they are quite etiolated  because their spot on the windowsill has not prevodied enough light. 
+When things settle down in the Fall, I will be able to tend to them more.
 
 {{< figure src="images/2019-07-15/IMG_9329.jpeg" title="" lightbox="true" width="100%" >}}
 
@@ -215,14 +221,34 @@ Things have been quite hectic with travel and my day job, lately, so I have not 
 
 **August 10, 2019**
 
-The plants are still with my friend as I prepare to move apartments. The photo shows that the babies are still etiolated, but alive. 
+The plants are still with my friend as I prepare to move apartments. 
+The photo shows that the babies are still etiolated, but alive. 
 
 {{< figure src="images/2019-08-10/IMG_9402.jpeg" title="" lightbox="true" width="100%" >}}
 
 **October 19, 2019**
 
-Some of my little seedlings are still alive, but not many. They are beginning to color in and I am decreasing water to around once a month or so.
+Some of my little seedlings are still alive, but not many. 
+They are beginning to color in and I am decreasing water to around once a month or so.
 
 
 {{< figure src="images/2019-10-19/lithops-seeds-1.JPG" title="" lightbox="true" width="50%" >}}
 {{< figure src="images/2019-10-19/lithops-seeds-2.JPG" title="" lightbox="true" width="50%" >}}
+
+---
+
+## (Almost) 1-Year Update
+
+**(Pictures comming soon!)**
+
+It has been awhile since I last updated this project.
+I have not changed much of my care regimen other than watering a bit less frequently.
+Most of my seedlings have died, but I'm hoping to get at least one from each species I sowed.
+I have moved the remaining *Lithops* to three small contianers and they are primarily potted in pumice.
+I plan to leave them there for another year or so as they fill out - I am likely to lose a few more before then.
+
+Along with having a lot of fun caring for these little friends, I have learned a lot from this first attempt.
+I will be planting more soon, and will be creating another project that tracks their progress.
+(When I start that, it will be linked below.)
+Thus, this project will not be updated frequently as these plants mature.
+Still, I hope it serves as a useful reference for myself and others.
