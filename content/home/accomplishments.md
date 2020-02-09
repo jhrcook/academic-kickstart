@@ -19,6 +19,16 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 
+[[item]]
+  title = "100 Days of Python"
+  url = "https://github.com/jhrcook/100DaysOfPython"
+  organization = "GitHub"
+  organization_url = "https://github.com/jhrcook/100DaysOfPython"
+  certificate_url = ""
+  date_start = "2019-10-21"
+  date_end = "2020-01-30"
+  description = "To become comfortable with Python, I completed an hour (usually more) of deliberate practice. I primarily followed data science-centered tutorials, namely [*Python for Data Analysis*](http://shop.oreilly.com/product/0636920050896.do) and [*Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/). I also followed the tutorials for the common plotting libraries, Matplotlib, Seaborn, and Plotly. I recorded my progress at the linked GitHub repository. I did not finish the *Hands on ML* book in the 100 days, but I continued working through it afterwords."
+
 
 [[item]]
   title = "Completed Hacktoberfest 2019"
@@ -38,7 +48,7 @@ date_format = "Jan 2006"
   certificate_url = ""
   date_start = "2019-06-05"
   date_end = "2019-09-27"
-  description = "I challenged myself to do at least an hour of Swift every day for 100 days. I recorded y progress at the linked GitHub repository. Towards the end of the challenge, I started developing two iOS apps, a [Plant Tracker](project/ios-plant-tracker/) and a [Germinaton Tracker](https://github.com/jhrcook/Germination-Tracker)."
+  description = "I challenged myself to do at least an hour of Swift every day for 100 days. I recorded my progress at the linked GitHub repository. Towards the end of the challenge, I started developing two iOS apps, a [Plant Tracker](project/ios-plant-tracker/) and a [Germinaton Tracker](https://github.com/jhrcook/Germination-Tracker)."
 
 [[item]]
   organization = "NSF"
