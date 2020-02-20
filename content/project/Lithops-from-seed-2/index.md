@@ -69,7 +69,7 @@ I have provided some background information on *Lithops* and their care in a blo
 
 ---
 
-#### 2020-02-16
+#### 2020-02-16 - Seeds have been sown
 
 I sowed the seeds.
 I used the following soil mixture:
@@ -92,3 +92,11 @@ I then left the pots in tubs with water and a lid.
 They will remain there until there is sufficient germination.
 
 {{< gallery album="images/2020-02-16" >}}
+
+#### 2020-02-20 - First germination
+
+The *Lithops verruculosa* are the first to germinate!
+I will keep them in the water for another few days, and then reduce the amount of water in the container to maintain humidity but reduce overall water supply.
+From there, for the next few weeks I will water them from the bottom daily.
+
+{{< gallery album="images/2020-02-20" >}}
