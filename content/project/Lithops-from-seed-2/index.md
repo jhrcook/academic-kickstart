@@ -78,15 +78,15 @@ I used the following soil mixture:
 - 1 part [Espoma Organic Cactus Mix](https://www.amazon.com/Espoma-CA8-4-8QT-Cactus-Pot/dp/B07JYRV59V/ref=sr_1_3?keywords=espoma+cactus&qid=1581897976&s=lawn-garden&sr=1-3)
 - 1 part [Hoffman Western Desert Sand](https://www.amazon.com/Hoffman-14302-Western-Desert-Quarts/dp/B000RNH2U6)
 
-I think it would be preferrable to use decomposed granite or pool filter sand, but I could not find a non-industrial size bag of either.
+I think it would be preferable to use decomposed granite or pool filter sand, but I could not find a non-industrial size bag of either.
 
-I did not sterlize the soil with a microwave or oven because I doubt my roommate would appreciate that.
-However, if possible, this is generally a recommended way of sterlizing the soil before sowing.
+I did not sterilize the soil with a microwave or oven because I doubt my roommate would appreciate that.
+However, if possible, this is generally a recommended way of sterilizing the soil before sowing.
 
 I sowed all of the seeds that came in the packets.
 
 I first packed the soil into 2x2 4-inch tall plastic pots and then watered the soil thoroughly.
-This ompacted the soil, so I added more to the top to fill in the difference.
+This compacted the soil, so I added more to the top to fill in the difference.
 The seeds were dispersed over the top; I use a small piece of paper folded in the middle to funnel the seeds mixed with some sand across the surface.
 I then left the pots in tubs with water and a lid.
 They will remain there until there is sufficient germination.
