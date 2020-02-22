@@ -32,7 +32,6 @@ links:
   icon: instagram
 
 
-
 url_code: ""
 url_pdf: ""
 url_slides: ""
@@ -100,3 +99,10 @@ I will keep them in the water for another few days, and then reduce the amount o
 From there, for the next few weeks I will water them from the bottom daily.
 
 {{< gallery album="images/2020-02-20" >}}
+
+#### 2020-02-22 - More germinations
+
+The *Lithops dorotheae* (C124; left) and *Lithops lesliei ssp. lesliei var. rubrobrunnea* (C17; right) have germinated, too.
+Like the *L. verruculosa*, they will remain in the water for the next few days.
+
+{{< gallery album="images/2020-02-22" >}}
