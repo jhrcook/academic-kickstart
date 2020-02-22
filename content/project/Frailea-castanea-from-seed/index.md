@@ -65,8 +65,6 @@ This project is the documentation of this process.
 
 #### 2020-02-16 - Sowing
 
-I planted these seeds alongside the *Lithops* I recently sowed (that project can be found [here]({{<ref "project/Lithops-from-seed-2">}})).
-
 I used the following soil mixture:
 
 - 2 parts [Espoma Organic Perlite](https://www.amazon.com/Espoma-PR8-8-Quart-Organic-Perlite/dp/B002Y0AK6S/ref=sr_1_1?keywords=espoma+perlite&qid=1581897997&s=lawn-garden&sr=1-1)
