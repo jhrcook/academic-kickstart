@@ -12,3 +12,5 @@ header:
   caption: ""
   image: ""
 ---
+
+I contribute to [R-Bloggers](https://www.r-bloggers.com) and [RWeekly](https://rweekly.org).

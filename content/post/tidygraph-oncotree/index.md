@@ -5,8 +5,8 @@ title: "OncoTree Tidygraph"
 subtitle: ""
 summary: ""
 authors: []
-tags: [programming, r, graphs, cancer]
-categories: []
+tags: [programming, R, graphs, cancer]
+categories: [Programming]
 date: 2020-03-16T09:01:22-04:00
 lastmod: 2020-03-16T09:01:22-04:00
 featured: false
