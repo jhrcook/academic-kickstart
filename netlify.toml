@@ -1,5 +1,5 @@
 [build]
-  timeout=20000
+  timeout=50000
   command = "hugo --gc --minify -b $URL"
   publish = "public"
 
