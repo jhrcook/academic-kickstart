@@ -65,9 +65,7 @@ This project is the documentation of this process.
 
 #### 2020-02-16 - Sowing
 
-I planted these seeds alongside the *Lithops* I recently sowed (that project can be found [here]({{<ref "project/Lithops-from-seed-2">}})).
-
-I used the following soil mixture:
+I planted the seeds using the following soil mixture:
 
 - 2 parts [Espoma Organic Perlite](https://www.amazon.com/Espoma-PR8-8-Quart-Organic-Perlite/dp/B002Y0AK6S/ref=sr_1_1?keywords=espoma+perlite&qid=1581897997&s=lawn-garden&sr=1-1)
 - 1 part [Espoma Organic Cactus Mix](https://www.amazon.com/Espoma-CA8-4-8QT-Cactus-Pot/dp/B07JYRV59V/ref=sr_1_3?keywords=espoma+cactus&qid=1581897976&s=lawn-garden&sr=1-3)
@@ -94,3 +92,9 @@ My only fear is that the seedling is above the top layer of soil and may not be 
 I may add a bit more sand around it to help.
 
 {{< gallery album="images/2020-02-22" >}}
+
+#### 2020-03-22 - Still growing
+
+The one germination looks like that's all I'll get. He's still alive and growing. I tried moving him to more light, but it was too strong and he began to redden. I moved him back to the middle level and most of the original green returned.
+
+{{< gallery album="images/2020-03-22" >}}

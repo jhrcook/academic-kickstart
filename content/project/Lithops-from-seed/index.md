@@ -38,6 +38,16 @@ url_video: ""
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 slides: ""
+
+links:
+- name: Follow
+  url: https://twitter.com/JoshDoesa
+  icon_pack: fab
+  icon: twitter
+- name: Follow
+  url: https://www.instagram.com/bostonprick/
+  icon_pack: fab
+  icon: instagram
 ---
 
 Here, I am documenting my attempt to grow *Lithops* from seed. So far, I have built LED lights and sowed some seeds. Plenty have germinated and, recently, undergone their first split to reveal their first set of true leaves.
@@ -239,8 +249,6 @@ They are beginning to color in and I am decreasing water to around once a month 
 
 ## (Almost) 1-Year Update
 
-**(Pictures comming soon!)**
-
 It has been awhile since I last updated this project.
 I have not changed much of my care regimen other than watering a bit less frequently.
 Most of my seedlings have died, but I'm hoping to get at least one from each species I sowed.
@@ -252,3 +260,9 @@ I will be planting more soon, and will be creating another project that tracks t
 (When I start that, it will be linked below.)
 Thus, this project will not be updated frequently as these plants mature.
 Still, I hope it serves as a useful reference for myself and others.
+
+{{< gallery album="images/2020-03-22" >}}
+
+---
+
+You can follow me on Instgram [\@BostonPrick](https://www.instagram.com/bostonprick/) where I post photos of my cacti and succulents.
