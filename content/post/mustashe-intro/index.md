@@ -56,8 +56,7 @@ install.packages("mustashe")
 devtools::install_github("jhrcook/mustashe")
 ```
 
-*A later post will explain how ‘mustashe’ works under-the-hood and will
-be linked here.*
+Check out the next post the see [how 'mustashe' works under-the-hood]({{<ref "post/mustashe-explained">}}).
 
 ## Basic example
 
@@ -345,4 +344,4 @@ clear_stash()
 Any issues and feedback on ‘mustashe’ can be submitted
 [here](https://github.com/jhrcook/mustashe/issues). I can be reached
 through the contact form on my [website](https://joshuacook.netlify.com)
-or on Twitter [@JoshDoesa](https://twitter.com/JoshDoesa)
+or on Twitter [@JoshDoesa](https://twitter.com/JoshDoesa).
