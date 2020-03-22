@@ -265,4 +265,4 @@ Still, I hope it serves as a useful reference for myself and others.
 
 ---
 
-You can follow me on Instgram [\@BostonPrick](https://www.instagram.com/bostonprick/) where I post photos of my cacti and succulents.
+You can follow me on Instgram [@BostonPrick](https://www.instagram.com/bostonprick/) where I post photos of my cacti and succulents.
