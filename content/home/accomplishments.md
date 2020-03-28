@@ -20,6 +20,17 @@ date_format = "Jan 2006"
 
 
 [[item]]
+  organization = "CRAN"
+  organization_url = "https://cran.r-project.org"
+  title = "mustashe"
+  url = "https://CRAN.R-project.org/package=mustashe"
+  certificate_url = ""
+  date_start = "2020-03-28"
+  date_end = ""
+  description = "My R package, 'mustashe', has been accepted to CRAN. It is 'A simple system for saving and loading objects in R. Long running computations can be stashed after the first run and then reloaded the next time. Dependencies can be added to ensure that a computation is re-run if any of its dependencies or inputs have changed.'" 
+
+
+[[item]]
   title = "100 Days of Python"
   url = "https://github.com/jhrcook/100DaysOfPython"
   organization = "GitHub"
@@ -51,6 +62,16 @@ date_format = "Jan 2006"
   description = "I challenged myself to do at least an hour of Swift every day for 100 days. I recorded my progress at the linked GitHub repository. Towards the end of the challenge, I started developing two iOS apps, a [Plant Tracker](project/ios-plant-tracker/) and a [Germinaton Tracker](https://github.com/jhrcook/Germination-Tracker)."
 
 [[item]]
+  organization = "Cancer Discovery"
+  organization_url = "https://cancerdiscovery.aacrjournals.org/content/9/6/738.long"
+  title = "Tissue-specific oncogenic activity of KRAS A146T"
+  url = "https://pubmed.ncbi.nlm.nih.gov/30952657/?from_single_result=30952657"
+  certificate_url = ""
+  date_start = "2019-06-01"
+  date_end = ""
+  description = "The Haigis Lab published on a biochemical, signaling, and computational description of the KRAS A146T allele."
+
+[[item]]
   organization = "NSF"
   organization_url = "https://www.nsf.gov"
   title = "Honorable Mention NSF GRFP"
@@ -64,10 +85,20 @@ date_format = "Jan 2006"
   organization = "CRAN"
   organization_url = "https://cran.r-project.org"
   title = "ggasym"
-  url = "https://cran.r-project.org/web/packages/ggasym/index.html"
+  url = "https://CRAN.R-project.org/package=ggasym"
   certificate_url = ""
   date_start = "2019-03-23"
   date_end = ""
-  description = "My R package,'ggasym', has been accepted to CRAN. It was further promoted by RStudio in their [March edition of Top 40 New CRAN Packages](https://rviews.rstudio.com/2019/04/26/march-2019-top-40-new-cran-packages/) and [R Weekly (March 18, 2019)](https://rweekly.org/2019-11.html#NewPackages)."  
+  description = "My R package, 'ggasym', has been accepted to CRAN. It was further promoted by RStudio in their [March edition of Top 40 New CRAN Packages](https://rviews.rstudio.com/2019/04/26/march-2019-top-40-new-cran-packages/) and [R Weekly (March 18, 2019)](https://rweekly.org/2019-11.html#NewPackages)."  
+  
+[[item]]
+  organization = "Journal of Biological Chemistry"
+  organization_url = "http://www.jbc.org/content/293/9/3374.long"
+  title = "*Toxoplasma gondii* disrupts β1 integrin signaling and focal adhesion formation during monocyte hypermotility"
+  url = "https://pubmed.ncbi.nlm.nih.gov/29295815/"
+  certificate_url = ""
+  date_start = "2018-01-02"
+  date_end = ""
+  description = "My undergraduate reseach in the Lodoen Lab at UC Irvine on the interactions between the single-celled parasite, *T. gondii*, and human monocytes was accepted by JBC."
 
 +++
