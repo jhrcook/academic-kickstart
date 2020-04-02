@@ -7,6 +7,7 @@ authors: ["admin"]
 tags: ["iOS", "Swift", "application", "app", "open source", "programming"]
 categories: ["Programming"]
 date: 2019-08-12T11:55:41-04:00
+draft: true
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

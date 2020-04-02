@@ -7,6 +7,7 @@ authors: ["admin"]
 tags: ["hobby", "succulents", "Frailea", "growing", "plants"]
 categories: ["Plants"]
 date: 2020-02-22T16:25:56-05:00
+draft: true
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
