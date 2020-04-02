@@ -41,15 +41,15 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/JoshDoesA
 - icon: github
   icon_pack: fab
   link: https://github.com/jhrcook
-- icon: dev
+- icon: twitter
   icon_pack: fab
-  link: https://dev.to/jhrcook
+  link: https://twitter.com/JoshDoesA
+# - icon: dev
+#   icon_pack: fab
+#   link: https://dev.to/jhrcook
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/joshua-hr-cook/
