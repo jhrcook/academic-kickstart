@@ -7,7 +7,6 @@ authors: ["admin"]
 tags: ["hobby", "succulents", "Lithops", "growing", "plants"]
 categories: ["Plants"]
 date: 2019-08-16T10:31:38-04:00
-draft: true
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -84,7 +83,7 @@ I placed the pot into a clean yogurt tub with water to keep the soil moist until
 
 The first few seeds have germinated! I have not had to touch the seeds at all since sowing them except for checking that there is plenty of water in the reservoir. This has remained at a good height, so these have been really low maintenance thus far — I’m preparing for that the change, soon.
 
-{{< gallery album="images/2019-03-13" lightbox="true">}}
+{{< figure src="images/2019-03-13/germination_day1_0.jpg" title="" lightbox="true" >}}
 
 
 ### A few more sprouts
@@ -95,7 +94,9 @@ More seeds sprouted today and some are starting to take shape. I have removed th
 
 A few of the plants fell over because they were not covered by a thin layer of sand. I tried to cover everything, the problem is that while I was laying the top layer of sand, I could not seed where I had already covered. Next time, I will put the pot in water, let the water soak to the top, and then add sand. That way, I will be able to see the difference in color between the wet and dry sand to ensure good coverage.
 
-{{< gallery album="images/2019-03-14" lightbox="true">}}
+{{< figure src="images/2019-03-14/germination_day2_0.JPG" title="" lightbox="true" >}}
+
+{{< figure src="images/2019-03-14/germination_day2_2 copy.JPG" title="" lightbox="true" >}}
 
 
 ### They’re still alive
