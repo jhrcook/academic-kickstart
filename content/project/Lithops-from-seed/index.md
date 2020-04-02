@@ -7,6 +7,7 @@ authors: ["admin"]
 tags: ["hobby", "succulents", "Lithops", "growing", "plants"]
 categories: ["Plants"]
 date: 2019-08-16T10:31:38-04:00
+draf: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -225,7 +226,7 @@ He sent me the photo below of them revealing their first set of true leaves.
 As you can see, they are quite etiolated  because their spot on the windowsill has not prevodied enough light. 
 When things settle down in the Fall, I will be able to tend to them more.
 
-{{< figure src="images/2019-07-15/IMG_9329.jpeg" title="" lightbox="true" width="100%" >}}
+{{< figure src="images/2019-07-15/IMG_9329.jpg" title="" lightbox="true" width="100%" >}}
 
 ### Still alive, but very etiolated
 
@@ -234,7 +235,7 @@ When things settle down in the Fall, I will be able to tend to them more.
 The plants are still with my friend as I prepare to move apartments. 
 The photo shows that the babies are still etiolated, but alive. 
 
-{{< figure src="images/2019-08-10/IMG_9402.jpeg" title="" lightbox="true" width="100%" >}}
+{{< figure src="images/2019-08-10/IMG_9402.jpg" title="" lightbox="true" width="100%" >}}
 
 **October 19, 2019**
 
