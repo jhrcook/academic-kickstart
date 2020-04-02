@@ -7,7 +7,7 @@ authors: ["admin"]
 tags: ["hobby", "succulents", "Lithops", "growing", "plants"]
 categories: ["Plants"]
 date: 2019-08-16T10:31:38-04:00
-draft: true
+draft: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -97,7 +97,7 @@ A few of the plants fell over because they were not covered by a thin layer of s
 
 {{< figure src="images/2019-03-14/germination_day2_0.JPG" title="" lightbox="true" >}}
 
-{{< figure src="images/2019-03-14/germination_day2_2 copy.JPG" title="" lightbox="true" >}}
+{{< figure src="images/2019-03-14/germination_day2_2-copy.JPG" title="" lightbox="true" >}}
 
 
 ### They’re still alive
