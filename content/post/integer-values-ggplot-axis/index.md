@@ -80,7 +80,7 @@ iris %>%
   theme_bw()
 ```
 
-![](prettybreaks-axes.svg)
+{{< figure src="prettybreaks-axes.png" >}}
 
 Looking through the next few answers gave a hint as to what I needed to do.
 I needed to pass a function, to the `breaks` argument that takes a vector of values to make the axes for and a number indicating the number of ticks.
@@ -115,11 +115,11 @@ iris %>%
   scale_y_continuous(breaks = integer_breaks()) +
   theme_bw()
 ```
-![](integer-axes.svg)
+{{< figure src="integer-axes.png" >}}
 
 As a quick comparison, I used ['cowplot'](https://cran.r-project.org/web/packages/cowplot/index.html) to show the same plot with and without the integer axes.
 
-![](cowplot_plot.svg)
+{{< figure src="cowplot_plot.png" >}}
 
 ---
 

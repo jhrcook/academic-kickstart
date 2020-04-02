@@ -82,7 +82,7 @@ p <- p +
        title = "Two density curves")
 ```
 
-![](plot1.png)
+{{< figure src="plot1.png" >}}
 
 ### Finding the point of intersection
 
@@ -113,4 +113,4 @@ p <- p +
            x = poi - 1, y = 0.1, size = 4, angle = 90)
 ```
 
-![](plot2.png)
+{{< figure src="plot2.png" >}}

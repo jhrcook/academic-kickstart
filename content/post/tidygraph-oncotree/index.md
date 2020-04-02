@@ -42,7 +42,7 @@ further divided into seven cancers, including head and neck squamous
 cell carcinoma (HNSC). HNSC itself has six subtypes, too. This hierarchy
 can be represented in a directed acyclic graph (DAG), as shown below.
 
-![](./assets/oncotree_online_example.png)
+{{< figure src="assets/oncotree_online_example.png" >}}
 
 The [OncoTree](http://oncotree.mskcc.org/#/home) is a DAG of cancer
 subtypes maintained by one of the leading cancer research institutes,
@@ -107,7 +107,7 @@ The OncoTree has a fairly simple API (shown below). We are interested in
 acquiring the full tree so we will use the “/api/tumorTypes/tree”
 endpoint.
 
-![](./assets/oncotree-api.png)
+{{< figure src="assets/oncotree-api.png" >}}
 
 We can use the package
 [‘httr’](https://cran.r-project.org/web/packages/httr/index.html) to
@@ -653,7 +653,7 @@ oncotree_gr %N>%
     theme_graph()
 ```
 
-![](./assets/unnamed-chunk-30-1.png)<!-- -->
+{{< figure src="assets/unnamed-chunk-30-1.png" >}}
 
 Each of the subgraphs can also be separated by tissue of origin.
 
@@ -671,7 +671,7 @@ oncotree_gr %N>%
     theme_graph()
 ```
 
-![](./assets/unnamed-chunk-31-1.png)<!-- -->
+{{< figure src="assets/unnamed-chunk-31-1.png" >}}
 
 And below is an example of the subdivisions of lung cancer.
 
@@ -692,4 +692,4 @@ oncotree_gr %N>%
     theme_graph()
 ```
 
-![](./assets/unnamed-chunk-32-1.png)<!-- -->
+{{< figure src="assets/unnamed-chunk-32-1.png" >}}

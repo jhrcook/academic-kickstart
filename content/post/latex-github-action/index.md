@@ -105,10 +105,10 @@ This job is a little more complicated so here are the steps it is taking:
 If everything works as expected, then the Artifact should be available under the "Actions" tab of the repository and clicking on the most recent build.
 It should look something like the following screenshot.
 
-![](images/final-result-screenshot.png)
+{{< figure src="images/final-result-screenshot.png" >}}
 
 To keep an eye on the build process, I have selected the setting in the Notifications portion of the Settings on GitHub to send me an email on failure.
 I also have the dynamic badge on the README to show the current status of the Action's build results.
 You can get the badge for your repository by clicking on the "Create status badge" in the "Action" tab (the button is visible in the above screenshot).
 
-<img src="images/badge-screenshot.png" width=200>
+{{< figure src="images/badge-screenshot.png" width=200 >}}
