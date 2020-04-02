@@ -7,7 +7,7 @@ authors: ["admin"]
 tags: ["hobby", "succulents", "Lithops", "growing", "plants"]
 categories: ["Plants"]
 date: 2019-08-16T10:31:38-04:00
-draf: false
+draf: true
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
