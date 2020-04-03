@@ -281,7 +281,6 @@ instance, if the assignment arrow `<-` is changed to an `=`, the
 expression is re-evaluated.
 
 ``` r
-# styler: off
 evalWithMemoization({
   print("Evaluating expression.")
   a = 1
@@ -292,9 +291,6 @@ evalWithMemoization({
 
     #> [1] 1
 
-``` r
-# styler: on
-```
 
 For these reasons, I created the ‘mustashe’ package, demonstrated next.
 
@@ -354,7 +350,6 @@ than ‘R.cache’. For instance, if the same code was instead typed by a
 madman, ‘mustashe’ would still not re-run the code chunk.
 
 ``` r
-# styler: off
 stash("y", depends_on = "x", {
 print(    "Calculating 'y'"   )
         y  = x    +  1
@@ -364,9 +359,6 @@ print(    "Calculating 'y'"   )
 
     #> Loading stashed object.
 
-``` r
-# styler: on
-```
 
 Overall, ‘mustashe’ and ‘R.cache’ are very similar, and the main
 differences are stylistic.
@@ -421,4 +413,5 @@ precedence:
     feature.
 4.  For all other caching needs, choose between ‘mustashe’ and ‘R.cache’
     (I prefer using ‘mustashe’, but I am biased).
+
 </div>
