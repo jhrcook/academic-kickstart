@@ -3,7 +3,7 @@
 
 title: "OncoTree Tidygraph"
 subtitle: ""
-summary: ""
+summary: "Transforming the MSK OncoTree into a tidygraph object in R."
 authors: []
 tags: [programming, R, graphs, cancer]
 categories: [Programming]
@@ -32,6 +32,7 @@ links:
    icon_pack: fab
    icon: github
 ---
+
 ## Introduction
 
 Cancers are often first classified by their tissue of origin, but there

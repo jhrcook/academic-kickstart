@@ -1,9 +1,7 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
 title: "GitHub Actions for Compiling and Converting LaTeX"
-subtitle: "Use GitHub actions to design a workflow to test LaTeX compilation and to convert the LaTeX document using pandoc."
-summary: ""
+subtitle: ""
+summary: "Use GitHub actions to design a workflow to test LaTeX compilation and to convert the LaTeX document using pandoc."
 authors: [admin]
 tags: [programming, GitHub, latex, manuscript, science, biology, research]
 categories: []
