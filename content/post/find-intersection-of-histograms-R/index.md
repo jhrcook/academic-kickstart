@@ -10,7 +10,7 @@ categories: []
 date: 2019-08-14T13:02:21-04:00
 lastmod: 2019-08-14T13:02:21-04:00
 featured: false
-draft: true
+draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -82,7 +82,7 @@ p <- p +
        title = "Two density curves")
 ```
 
-{{< figure src="plot1.png" >}}
+![](plot1.png)
 
 ### Finding the point of intersection
 
@@ -113,4 +113,4 @@ p <- p +
            x = poi - 1, y = 0.1, size = 4, angle = 90)
 ```
 
-{{< figure src="plot2.png" >}}
+![](plot2.png)

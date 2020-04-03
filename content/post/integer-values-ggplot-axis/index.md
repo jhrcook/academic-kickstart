@@ -10,7 +10,7 @@ categories: [Programming]
 date: 2019-11-09T08:09:23-05:00
 lastmod: 2019-11-09T08:09:23-05:00
 featured: false
-draft: true
+draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -80,7 +80,7 @@ iris %>%
   theme_bw()
 ```
 
-{{< figure src="prettybreaks-axes.png" >}}
+![](prettybreaks-axes.svg)
 
 Looking through the next few answers gave a hint as to what I needed to do.
 I needed to pass a function, to the `breaks` argument that takes a vector of values to make the axes for and a number indicating the number of ticks.
@@ -88,7 +88,17 @@ I decided to take a look at what `pretty_breaks()` does and see if I could augme
 
 ```r
 scales::pretty_breaks
-#> function (n = 5, ...) #> {#>   force_all(n, ...)#>   function(x) {#>     breaks <- pretty(x, n, ...)#>     names(breaks) <- attr(breaks, "labels")#>     breaks#>   }#> }#> <bytecode: 0x7ff8a81061d8>#> <environment: namespace:scales>
+#> function (n = 5, ...) 
+#> {
+#>   force_all(n, ...)
+#>   function(x) {
+#>     breaks <- pretty(x, n, ...)
+#>     names(breaks) <- attr(breaks, "labels")
+#>     breaks
+#>   }
+#> }
+#> <bytecode: 0x7ff8a81061d8>
+#> <environment: namespace:scales>
 ```
 
 It was such a simple function that I was pretty quickly able to see how I could make it only return integer values.
@@ -115,11 +125,12 @@ iris %>%
   scale_y_continuous(breaks = integer_breaks()) +
   theme_bw()
 ```
-{{< figure src="integer-axes.png" >}}
+
+![](integer-axes.svg)
 
 As a quick comparison, I used ['cowplot'](https://cran.r-project.org/web/packages/cowplot/index.html) to show the same plot with and without the integer axes.
 
-{{< figure src="cowplot_plot.png" >}}
+![](cowplot_plot.svg)
 
 ---
 

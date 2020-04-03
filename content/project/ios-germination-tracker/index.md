@@ -7,7 +7,7 @@ authors: ["admin"]
 tags: ["iOS", "Swift", "application", "app", "open source", "programming"]
 categories: ["Programming"]
 date: 2019-10-05T08:29:29-04:00
-draft: true
+draft: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -60,7 +60,7 @@ Selecting a plant brings in a page containing the general information about the 
 There is also a place for input from the user to record when a seed germinations and when a seedling dies.
 This data is presented graphically in a chart.
 
-{{< figure src="information-view-demo.gif" title="" lightbox="true" width="300">}}
+<img src="information-view-demo.gif" width="300" />
 
 
 ## Notes
@@ -69,7 +69,7 @@ Swiping to the right brings in a table with notes from the user about their plan
 Each is dated and presented in chronological order.
 Taping on a cell allowed the user to delete or edit the note.
 
-{{< figure src="notes-demo.gif" title="" lightbox="true" width="300">}}
+<img src="notes-demo.gif" width="300" />
 
 
 ## Gallery

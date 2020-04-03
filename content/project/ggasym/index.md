@@ -7,7 +7,7 @@ authors: ["admin"]
 tags: ["R", "programming", "CRAN", "package"]
 categories: ["Programming"]
 date: 2019-08-12T20:32:28-04:00
-draft: true
+draft: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://jhrcook.github.io/ggasym/index.html"

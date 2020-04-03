@@ -10,7 +10,7 @@ categories: []
 date: 2019-08-13T19:45:16-04:00
 lastmod: 2019-08-13T19:45:16-04:00
 featured: false
-draft: true
+draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -40,7 +40,7 @@ This was an experimental iOS app explaining how to make a custom interactive tra
 
 ### Final Result
 
-{{< figure src="zoom_animation_interactive_short.gif" title="" lightbox="false" >}}
+<img src="zoom_animation_interactive_short.gif" />
 
 
 ### Resources
@@ -477,7 +477,7 @@ override func collectionView(_ collectionView: UICollectionView, cellForItemAt i
 
 Below is a screen recording of the non-interactive zoom transition!
 
-{{< figure src="zoom_animation_noninteractive_HD.gif" title="" lightbox="false" >}}
+<img src="zoom_animation_noninteractive_HD.gif" />
 
 
 Everything up to this point is available in the branch [`zoom-animation`](https://github.com/jhrcook/PhotoZoomAnimator/tree/zoom-animation).
@@ -759,4 +759,4 @@ The `userDidPanWith(gestureRecognizer:)` method was fairly simple, just respondi
 
 ### Finished!
 
-{{< figure src="zoom_animation_interactive_HD.gif" title="" lightbox="false" >}}
+<img src="zoom_animation_interactive_HD.gif" />

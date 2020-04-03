@@ -75,7 +75,9 @@ I have sown 3 varieties of *Lithops* in one 10 cm round pot. I used a soil of 3 
 
 I placed the pot into a clean yogurt tub with water to keep the soil moist until germination. I also put the lid on with small ventilation holes to keep the environment humid. Now, I need to keep an eye on the water level, daily.
 
-{{< gallery album="images/2019-03-09" lightbox="true">}}
+![](images/2019-03-09/sow_1.jpg)
+![](images/2019-03-09/sow_2.jpg)
+![](images/2019-03-09/sow_3.jpg)
 
 
 ### Germination!
@@ -84,7 +86,7 @@ I placed the pot into a clean yogurt tub with water to keep the soil moist until
 
 The first few seeds have germinated! I have not had to touch the seeds at all since sowing them except for checking that there is plenty of water in the reservoir. This has remained at a good height, so these have been really low maintenance thus far — I’m preparing for that the change, soon.
 
-{{< figure src="images/2019-03-13/germination_day1_0.jpg" title="" lightbox="true" >}}
+![](images/2019-03-13/germination_day1_0.jpg)
 
 
 ### A few more sprouts
@@ -95,9 +97,9 @@ More seeds sprouted today and some are starting to take shape. I have removed th
 
 A few of the plants fell over because they were not covered by a thin layer of sand. I tried to cover everything, the problem is that while I was laying the top layer of sand, I could not seed where I had already covered. Next time, I will put the pot in water, let the water soak to the top, and then add sand. That way, I will be able to see the difference in color between the wet and dry sand to ensure good coverage.
 
-{{< figure src="images/2019-03-14/germination_day2_0.JPG" title="" lightbox="true" >}}
+![](images/2019-03-14/germination_day2_0.jpg)
 
-{{< figure src="images/2019-03-14/germination_day2_2-copy.JPG" title="" lightbox="true" >}}
+![](images/2019-03-14/germination_day2_2-copy.JPG)
 
 
 ### They’re still alive
@@ -110,13 +112,16 @@ In other news, my *Echuveria purpusorum* is sending up a stalk and the *Haworthi
 
 {{< gallery album="images/2019-03-16" lightbox="true">}}
 
+![](images/2019-03-16/group_2.JPG)![](images/2019-03-16/germination_day4.JPG)![](images/2019-03-16/echuveria_bloom_stalk.JPG)
+
+
 ### Update on Growth
 
 **March 23, 2019**
 
 I have watered the lithos by dipping them in water earlier this week. Many are still alive, though I think there has been a bit of die back. They have grown well, especially the *julli*!
 
-{{< figure src="images/2019-03-23/IMG_8367.JPG" title="" lightbox="true" >}}
+![](images/2019-03-23/IMG_8367.JPG)
 
 
 ### Sown *Lithops julii ssp. fulleri* C161
@@ -132,7 +137,7 @@ I planted 22 seeds of *Lithops julii ssp. fulleri* C161 on March 24, 2019. I use
 
 The seeds have sprouted! I think I have counted 19 out of 22 seeds, so pretty good germination rate. I will take them out of water in the next couple of days
 
-{{< figure src="images/2019-03-29/IMG_8390.JPG" title="" lightbox="true" >}}
+![](images/2019-03-29/IMG_8390.JPG)
 
 
 ### New soil mixture for sowing Lithops karasmontana C168
@@ -150,7 +155,9 @@ Also, I have noticed that the water wicking properties of this mixture are much 
 
 It has been just under one month, so I though I should share some update photos of the three varieties a first planted. They are generally growing well, though are already taking on slight different morphologies. There was one round of die-off, and I foresee another one as some are much too close together. However, many still look healthy and I remain hopeful that they will continue to grow.
 
-{{< gallery album="images/2019-04-06" lightbox="true" width="100%">}}
+![](images/2019-04-06/lithops-hallii-C158-copy.JPG)
+![](images/2019-04-06/lithops-julii-C164-copy.JPG)
+![](images/2019-04-06/lithops-karasmontana-C168-copy.JPG)
 
 
 ### Still Growing Strong!
@@ -159,7 +166,7 @@ It has been just under one month, so I though I should share some update photos 
 
 This is just a quick update on the growth of all three containers. The large contiainer (left image below) I planted first is growing very well and the little butts are getting nice and plump. The *Lithops julli ssp. fulleri* C161 (middle image below) are not doing well, likely because I under-watered early on. Finally, the newest seedlings, Lithops karasmontana C168 (right image below), are doing well. You can see the clumps where multiple seeds fell in while I was sowing.
 
-{{< gallery album="images/2019-04-20" lightbox="true" width="100%">}}
+![](images/2019-04-20/IMG_8418-copy.JPG)![](images/2019-04-20/IMG_8419-copy.JPG)![](images/2019-04-20/IMG_8421-copy.JPG)
 
 
 ### Changing Colors
@@ -170,7 +177,7 @@ Since the flower stalk for my *Echeveria* and *Haworthia* has died off, I could 
 
 The seedlings in the most recent potting, the one with the white large-grain sand covering, are doing very well! The tops of the Lithops are right at the line of the top covering. I think this is helping them stand up and also reduce the amount of light reaching the wet top layer of soil, reducing algae growth. I think I will continue with this method for future pots.
 
-{{< figure src="images/2019-05-15/IMG_8460.JPG" title="" lightbox="true" >}}
+![](images/2019-05-15/IMG_8460.JPG)
 
 
 
@@ -184,7 +191,7 @@ I have noticed small, white spots on my *Lithops*. A quick Google search suggest
 
 The dots are still there, though have not grown nor seem to disturb the *Lithops*. They may be natural…
 
-{{< figure src="images/2019-05-18/IMG_8463.JPG" title="" lightbox="true" >}}
+![](images/2019-05-18/IMG_8463.JPG)
 
 
 ### Starting First Split
@@ -193,16 +200,16 @@ The dots are still there, though have not grown nor seem to disturb the *Lithops
 
 This is a general update on the *Lithops* seedlings. The oldest plants in the oldest batch are 3 months old. This pot still receives watering via soaking about once a week. I have noticed that a few are beginning to “open their mouths” and shedding their baby leaves.
 
-{{< figure src="images/2019-06-08/IMG_8520_crop.jpg" title="" lightbox="true" width="400" >}}
+<img src="images/2019-06-08/IMG_8520_crop.jpg" width="400" />
 
 The youngest batch (below) are growing well. I may have given these too much light too early in their lives, stunting their growth. They have since been moved out of direct light.
 
-{{< figure src="images/2019-06-08/IMG_8525.JPG" title="" lightbox="true" width="400" >}}
+<img src="images/2019-06-08/IMG_8525.JPG" width="400" />
 
 Finally, I have found a few mature *Lithops* and other cacti to keep my babies company. The *Sempervivum heuffelli* varieties are doing well, one is even flowering.
 
-{{< figure src="images/2019-06-08/IMG_8510.JPG" title="" lightbox="true" width="400" >}}
-{{< figure src="images/2019-06-08/IMG_8507.JPG" title="" lightbox="true" width="400" >}}
+<img src="images/2019-06-08/IMG_8510.JPG" width="400" />
+<img src="images/2019-06-08/IMG_8507.JPG" width="400" />
 
 ### *Lithops karasmontana* are splitting
 
@@ -212,8 +219,8 @@ Just a minor update on the *Lithops*.
 The *julli* (top) are still splitting, showing a bit more progress every day. 
 A bunch of the *karasmontana* (bottom) are also splitting and revealing new brown leaves.
 
-{{< figure src="images/2019-06-15/IMG_8544.jpg" title="" lightbox="true" width="400" >}}
-{{< figure src="images/2019-06-15/IMG_8541 2.jpg" title="" lightbox="true" width="400" >}}
+<img src="images/2019-06-15/IMG_8544.jpg" width="400" />
+<img src="images/2019-06-15/IMG_8541 2.jpg" width="400" />
 
 
 ### Getting their first real leaves
@@ -226,7 +233,7 @@ He sent me the photo below of them revealing their first set of true leaves.
 As you can see, they are quite etiolated  because their spot on the windowsill has not prevodied enough light. 
 When things settle down in the Fall, I will be able to tend to them more.
 
-{{< figure src="images/2019-07-15/IMG_9329.jpg" title="" lightbox="true" width="100%" >}}
+![](images/2019-07-15/IMG_9329.jpg)
 
 ### Still alive, but very etiolated
 
@@ -235,7 +242,7 @@ When things settle down in the Fall, I will be able to tend to them more.
 The plants are still with my friend as I prepare to move apartments. 
 The photo shows that the babies are still etiolated, but alive. 
 
-{{< figure src="images/2019-08-10/IMG_9402.jpg" title="" lightbox="true" width="100%" >}}
+![](images/2019-08-10/IMG_9402.jpg)
 
 **October 19, 2019**
 
@@ -243,8 +250,8 @@ Some of my little seedlings are still alive, but not many.
 They are beginning to color in and I am decreasing water to around once a month or so.
 
 
-{{< figure src="images/2019-10-19/lithops-seeds-1.JPG" title="" lightbox="true" width="50%" >}}
-{{< figure src="images/2019-10-19/lithops-seeds-2.JPG" title="" lightbox="true" width="50%" >}}
+<img src="images/2019-10-19/lithops-seeds-1.JPG" width="70%" />
+<img src="images/2019-10-19/lithops-seeds-2.JPG" width="70%" />
 
 ---
 
@@ -262,7 +269,7 @@ I will be planting more soon, and will be creating another project that tracks t
 Thus, this project will not be updated frequently as these plants mature.
 Still, I hope it serves as a useful reference for myself and others.
 
-{{< gallery album="images/2020-03-22" >}}
+![](images/2020-03-22/IMG_0422.jpg)![](images/2020-03-22/IMG_0423.jpg)![](images/2020-03-22/IMG_0426.jpg)
 
 ---
 

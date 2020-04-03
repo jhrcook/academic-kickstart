@@ -7,7 +7,7 @@ authors: ["admin"]
 tags: ["hobby", "succulents", "Frailea", "growing", "plants"]
 categories: ["Plants"]
 date: 2020-02-22T16:25:56-05:00
-draft: true
+draft: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -92,10 +92,10 @@ This is a good sign as I wasn't terribly confident that the seeds were still via
 My only fear is that the seedling is above the top layer of soil and may not be able to penetrate the top layer.
 I may add a bit more sand around it to help.
 
-{{< gallery album="images/2020-02-22" >}}
+![](images/2020-02-22/img1.jpg)
 
 #### 2020-03-22 - Still growing
 
 The one germination looks like that's all I'll get. He's still alive and growing. I tried moving him to more light, but it was too strong and he began to redden. I moved him back to the middle level and most of the original green returned.
 
-{{< gallery album="images/2020-03-22" >}}
+![](images/2020-03-22/img1.jpg)

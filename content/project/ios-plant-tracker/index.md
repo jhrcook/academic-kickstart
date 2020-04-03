@@ -7,7 +7,7 @@ authors: ["admin"]
 tags: ["iOS", "Swift", "application", "app", "open source", "programming"]
 categories: ["Programming"]
 date: 2019-08-12T11:55:41-04:00
-draft: true
+draft: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -66,5 +66,5 @@ This app is very much in production. I am still working on the Library tab, thou
 
 You can check out the up-to-date status of this app at it's GitHub repository linked at the top.
 
-{{< figure src="Aug-10-2019 08-20-06.gif" title="" lightbox="true" >}}
+![](Aug-10-2019_08-20-06.gif)
 

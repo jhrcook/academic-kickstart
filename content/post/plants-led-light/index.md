@@ -10,7 +10,7 @@ categories: ["Plants"]
 date: 2019-08-14T10:42:06-04:00
 lastmod: 2019-08-14T10:42:06-04:00
 featured: false
-draft: true
+draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -41,9 +41,7 @@ links:
 
 ---
 
-{{< figure src="images/IMG_8445.JPG" title="" lightbox="true" >}}
-
-
+![](images/IMG_8445.JPG)
 
 
 Due to the drastic differences between the natural environment of lithops and Boston, I have to grow the plants indoors and under artificial light. Below is to documentation of how I built my set up. The lights are setup and running, though I am still in the process of assembling the hanging mechanism.
@@ -81,19 +79,23 @@ CAUTION: This project requires the use of high-powered electricity and should no
 
 The wiring was actually fairly straight-forward. I have a bit of experience with soldering and electrics, but have no official training, still I did not have too much trouble. I began by getting the LEDs on to the heatsink. The heatsink I used has grooves where I can slide a bolt and nut along to clasp the LEDs in place. This saved me from having to drill any holes and is flexible for future changes should I want to add any more LEDs. Fig. 1 shows a side shot of the attachment system. I added a generous amount of thermal paste between the LEDs and the heatsink to aid in conduction of heat away from the LEDs (Fig. 2). I don’t know how much I applied, but there was always some squeezed out the sides when I tightened the LED down. I assume this means I added enough.
 
-{{< figure src="images/IMG_8200_markup.png" title="Figure 1. The attachment of the LEDs to the heatsink made use of the grooves of the heatsink. A bolt, nut, and nylon washer clasped the LED in place." lightbox="true" >}}
+![](images/IMG_8200_markup.png)
+<span style="color:gray">Figure 1. The attachment of the LEDs to the heatsink made use of the grooves of the heatsink. A bolt, nut, and nylon washer clasped the LED in place.</span>
 
-{{< figure src="images/IMG_8202_markup.png" title="Figure 2. A glob of thermal paste was applied to the heatsink before attaching the LEDs. The clasping mechanism was slid down the grooves (see Fig 1)." lightbox="true" >}}
+![](images/IMG_8202_markup.png)
+<span style="color:gray">Figure 2. A glob of thermal paste was applied to the heatsink before attaching the LEDs. The clasping mechanism was slid down the grooves (see Fig 1).</span>
 
 I distributed the LEDs equally over the heatsink. Once they were all in place, I pre-tinned the connections I was going to use on each star and the wires to connect them. Finally, I soldered the wires to the stars to fully connect the LEDs together in series (ie. in one line). The LEDs were all connected + to –. This is important because a diode (the “d” in LED) only allows for the flow of electricity in one direction. If even one LED is mis-wired, none will turn on. To the first and last LED, I added a long length of wire to be connected to the LED driver. To aid me in disassembling the system in the future, I wired the driver to the LEDs through a barrel connector (Fig. 3). Thus, I can detach the heatsink from the rest of the electrics to make the system more mobile in general. For this connection, the V+ of the driver’s DC out goes to the remaining + LED. The V– of the driver’s DC out attaches to the remaining – connection of the LEDs.
 
-{{< figure src="images/IMG_8223_markup.png" title="Figure 3. The barrel connection from the LEDs to the LED driver. This connection is + to + and – to –." lightbox="true" >}}
+![](images/IMG_8223_markup.png)
+<span style="color:gray">Figure 3. The barrel connection from the LEDs to the LED driver. This connection is + to + and – to –."</span>
 
 The last step was to wire the driver to the wall outlet. I used a cable I found at my work on a piece of equipment that was being thrown-out. Its a thick cable and took quite a bit of effort to cut and strip the wires. There are three wires inside, green, white, and black. The green in ground, white AC Neutral (ACN), and the black is AC Live (ACL). I cut off the remaining green wire as the driver does not have (nor need) a ground. I wired the white wire from the wall to the blue (ACN) wire of the driver. I decided to use the ACL connection for controlling the lights with the relay switch. Therefore, I screwed the black wire from the wall into the middle “Common” terminal of the relay switch. The blue wire was then screwed into the “Normally Open” (NO) terminal. I used the normal open so that the connection is broken (ie. the lights are off) when no powered is supplied. This will ensure that the default state is off, a good safety measure. See Fig. 4. for a better look at the relay.
 
 That’s it. The LEDs were wired and read to be connected to the controller in the next section.
 
-{{< figure src="images/IMG_8224_markup.png" title="Figure 4. A close-up of the relay switch. Either wire could have gone into the Common and the other into the NO terminal. NC stands for “Normally Closed” which would have the connection On by default." lightbox="true" >}}
+![](images/IMG_8224_markup.png)
+<span style="color:gray">Figure 4. A close-up of the relay switch. Either wire could have gone into the Common and the other into the NO terminal. NC stands for “Normally Closed” which would have the connection On by default.</span>
 
 ## Controller
 
@@ -103,9 +105,11 @@ Fig. 5 shows the schematic of my wiring, and Fig. 6 shows the actual bird’s-ne
 
 The [Fritzing](http://fritzing.org/home/) schematic is available for download at the link at the top.
 
-{{< figure src="images/lighting_schematic_v1.png" title="Figure 5. Schematic of the wiring of the controller for the lights." lightbox="true" >}}
+![](images/lighting_schematic_v1.png)
+<span style="color:gray">Figure 5. Schematic of the wiring of the controller for the lights.</span>
 
-{{< figure src="images/IMG_8221_markup.png" title="Figure 6. An image of the actual wiring.It’s a bit of a mess." lightbox="true" >}}
+![](images/IMG_8221_markup.png)
+<span style="color:gray">Figure 6. An image of the actual wiring.It’s a bit of a mess.</span>
 
 **Update**
 
@@ -119,11 +123,15 @@ Until I was able to source the parts, I had the heatsink perched on the edges of
 
 The hanging mechanism is composed of picture frame hangers and wire cord. I attached the picture frame hangers to the back of the heatsink using the nuts and bolts that came with the kit so I knew they would fit perfectly in the grooves (Fig. 7). I made four attachment points and cut two lengths of cord. I fixed each cord to one of the hangers, threaded the two open ends through the two remaining hangers, and tied the loose ends together (Fig 8.). This will leave me with an each way to contract/release the wire to move the lights up/down. Finally, the cords were draped over the PVC frame cross-bar (Fig 9.) I won’t go through the details of the frame, since it is a very simple arrangement, and there are plenty of ways to accomplish the same effect.
 
-{{< figure src="images/IMG_8251 copy.JPG" title="Figure 7. A picture frame wall hanger was attached to the heatsink using the built-in grooves and the included nut and bolt. A washer was placed between the heatsink and hanger and between the hanger and bolt." lightbox="true" >}}
+![](images/IMG_8251-copy.JPG)
+<span style="color:gray">Figure 7. A picture frame wall hanger was attached to the heatsink using the built-in grooves and the included nut and bolt. A washer was placed between the heatsink and hanger and between the hanger and bolt.</span>
 
-{{< figure src="images/IMG_8254 copy.JPG" title="Figure 8. Four attachment points and two wires tied together to make up the hanging assembly." lightbox="true" >}}
+![](images/IMG_8254-copy.JPG)
+<span style="color:gray">Figure 8. Four attachment points and two wires tied together to make up the hanging assembly.</span>
 
-{{< figure src="images/IMG_8255.JPG" title="Figure 9. The entire setup with the heatsink hanging on a PVC frame. (LED lights are off.)" lightbox="true" >}}
+![](images/IMG_8255.JPG)
+<span style="color:gray">Figure 9. The entire setup with the heatsink hanging on a PVC frame. (LED lights are off.)</span>
 
-{{< figure src="images/IMG_8257.JPG" title="Figure 10. The entire setup with the heatsink hanging on a PVC frame. (LED lights are on.)" lightbox="true" >}}
+![](images/IMG_8257.JPG)
+<span style="color:gray">Figure 10. The entire setup with the heatsink hanging on a PVC frame. (LED lights are on.)</span>
 
