@@ -7,7 +7,7 @@ summary: "A brief look at the systems for caching in R."
 authors: []
 tags: [programming, R, cache]
 categories: [Programming]
-date: 2020-04-03T08:29:19-04:00
+date: 2020-04-04T07:00:00-00:00
 lastmod: 2020-04-03T08:29:19-04:00
 featured: false
 draft: false
