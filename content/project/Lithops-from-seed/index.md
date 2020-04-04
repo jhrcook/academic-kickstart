@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Growing Lithops from seed"
-summary: "Documenting my journey from seed to *Lithops*"
+summary: "Documenting my journey from seed to *Lithops*."
 authors: ["admin"]
 tags: ["hobby", "succulents", "Lithops", "growing", "plants"]
 categories: ["Plants"]
