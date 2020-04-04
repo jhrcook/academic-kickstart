@@ -2,8 +2,8 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Photo Zoom Animator in iOS"
-subtitle: "A in-depth tutorial on how to replicate the interactive zoom transition used in the native iOS Photos app."
-summary: ""
+subtitle: ""
+summary: "A in-depth tutorial on how to replicate the interactive zoom transition used in the native iOS Photos app."
 authors: ["admin"]
 tags: ["programming", "iOS", "Swift", "animations", "application"]
 categories: []

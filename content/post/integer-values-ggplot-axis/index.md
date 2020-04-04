@@ -2,8 +2,8 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Setting axes to integer values in 'ggplot2'"
-subtitle: "A seemingly simple task took quite a bit of research and experimentation to figure out."
-summary: ""
+subtitle: ""
+summary: "A seemingly simple task took quite a bit of research and experimentation to figure out."
 authors: [~]
 tags: [R, programming]
 categories: [Programming]

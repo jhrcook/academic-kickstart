@@ -3,7 +3,7 @@
 
 title: "Cutstom Plant LED Lights"
 subtitle: ""
-summary: "A LED lighting set-up for my indoors plants"
+summary: "A LED lighting set-up for my indoors plants."
 authors: ["admin"]
 tags: ["hobby", "plants", "cacti", "succulents", "electronics", "Arduino"]
 categories: ["Plants"]

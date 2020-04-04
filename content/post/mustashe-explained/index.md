@@ -3,7 +3,7 @@
 
 title: "'mustashe' Explained"
 subtitle: ""
-summary: ""
+summary: "An explanation of the caching system employed in 'mustashe'."
 authors: []
 tags: [programming, R, package]
 categories: [Programming]
