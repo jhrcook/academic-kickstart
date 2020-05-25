@@ -451,7 +451,49 @@ makes sense when we think about the use of the diagonal sidewalks as
 just a rotation of the current grid system. The net total would be no
 change in the average distance walked to city hall.
 
------
+---
+
+## An analytic solution
+
+A few days after posting this article, I recieved an email from David Lubinsky explaining how the problem could be solved analytically.
+Below is his explination (with a few modifications with his permission).
+
+> Fun article on the Pedestrian puzzle. 
+> There is a much simpler analytic solution.
+> 
+> First, let's assume the centre point is at the origin and look at only the upper-right quadrant where $(x,y) \ge 0$. 
+> Now restrict it more so that $x \ge y$. 
+> So we are only looking at the area below the $y = x$ line in the upper-right quadrant.
+> 
+> The rectilinear distance $R(x,y) = x+y$. 
+> Since we walk $x$ blocks across and $y$ up.
+> 
+> Now the distance with the diagonal sidewalks is $D(x,y) = \sqrt{2}y + \sqrt{2}(x-y)$. 
+> Starting from $(0,0)$, we now take $y$ diagonal steps up to the point $(y,y)$ then $(x-y)$ steps to the right to $(x,y)$, but now each right step is also $\sqrt{2}$ times the length of the original unit since we have to go diagonally up the centre of the square and down.
+> 
+> Simplifying $D(x,y) = \sqrt{2}x$.
+> In other words $y$ doesn't matter since $x \ge y$, so it is just $x$ steps of length $\sqrt{2}$.
+> 
+> Now to find the are where $R(x,y) \ge D(x,y)$.
+> 
+> $x+y \ge \sqrt{2}x$
+> 
+> $y \ge (\sqrt{2}-1) x$
+> 
+> $\frac{y}{x} >= \sqrt{2}-1$
+> 
+> $\arctan(\sqrt{2}-1) = 22.5 \text{ degrees}$
+> 
+> Recall that the line $y=x$ is at 45 degrees. 
+> So the triangle where $R(X,Y) \ge D(X,Y)$ is half of the restricted area we are looking at.
+> Therefore, the $\Pr(R(X,Y) \ge D(X,Y)) = 0.5$, as you discovered in your article.
+> 
+> This assumes that the integer points are equally distributed in each triangular sliver, but, since we said the city is very large, that's okay.
+
+A huge thank you to David Lubinsky for taking the time to write this up and send it over.
+Mr. Lubinsky can be contacted via his [LinkedIn](https://www.linkedin.com/in/david-lubinsky-422419/) profile.
+
+---
 
 ## Acknowledgements
 
