@@ -41,6 +41,10 @@ links:
 
 ## FiveThirtyEight’s Riddler Express
 
+*<span style="color:#e36f6f">The following article has been updated to
+fix an error identified by several readers. Thank you for your
+help!</span>*
+
 [link](https://fivethirtyeight.com/features/can-you-connect-the-dots/)
 
 > In Riddler City, the city streets follow a grid layout, running
@@ -444,11 +448,28 @@ simulation_results <- simulation_results %>%
     filter(i == 10) %>%
     mutate(reduced_direction = reduce_angle(direction))
 
-prob_north <- sum(simulation_results$reduced_direction == 0.5) / N_sims
+prob_north <- sum(simulation_results$reduced_direction %in% c(0.5, -1.5)) / N_sims
 ```
 
 **The probability of still facing north after randomly turning left and
-right at each intersection is 0.369.**
+right at each intersection is 0.495.**
+
+``` r
+is_north_pal <- c("TRUE" = "#5887db", "FALSE" = "#a7bfeb")
+
+simulation_results %>%
+    count(reduced_direction) %>%
+    mutate(is_north = reduced_direction %in% c(0.5, -1.5)) %>%
+    ggplot(aes(x = factor(reduced_direction), y = n)) +
+    geom_col(aes(fill = is_north)) +
+    scale_fill_manual(values = is_north_pal, guide = FALSE) +
+    labs(x = "final direction (reduced to the range of [-2, 2])",
+         y = "count",
+         title = "The distribution of final directions in the simulation",
+         subtitle = "The highlighted columns represent angles pointing north.")
+```
+
+![](assets/unnamed-chunk-15-1.png)<!-- -->
 
 ## Extra credit
 
@@ -471,19 +492,34 @@ tibble(sim = 1:5) %>%
     plot_simulation()
 ```
 
-![](assets/unnamed-chunk-14-1.png)<!-- -->
+![](assets/unnamed-chunk-16-1.png)<!-- -->
 
 ``` r
 set.seed(0)
 
-simulation_results <- tibble(sim = 1:N_sims) %>%
+simulation_results_ec <- tibble(sim = 1:N_sims) %>%
     mutate(res = map(sim, ~ simulate_one_drive(1/3, 1/3, 1/3, n_steps = 10))) %>%
     unnest(res) %>%
     filter(i == 10) %>%
     mutate(reduced_direction = reduce_angle(direction))
 
-prob_north <- sum(simulation_results$reduced_direction == 0.5) / N_sims
+prob_north <- sum(simulation_results_ec$reduced_direction %in% c(0.5, -1.5)) / N_sims
 ```
 
 **The probability of still facing north after randomly turning left,
-right, or continuing straight at each intersection is 0.205.**
+right, or continuing straight at each intersection is 0.253.**
+
+``` r
+simulation_results_ec %>%
+    count(reduced_direction) %>%
+    mutate(is_north = reduced_direction %in% c(0.5, -1.5)) %>%
+    ggplot(aes(x = factor(reduced_direction), y = n)) +
+    geom_col(aes(fill = is_north)) +
+    scale_fill_manual(values = is_north_pal, guide = FALSE) +
+    labs(x = "final direction (reduced to the range of [-2, 2])",
+         y = "count",
+         title = "The distribution of final directions in the extra credit simulation",
+         subtitle = "The highlighted columns represent angles pointing north.")
+```
+
+![](assets/unnamed-chunk-18-1.png)<!-- -->
