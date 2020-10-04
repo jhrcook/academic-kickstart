@@ -5,7 +5,7 @@ title: "WaterMe"
 summary: "An iPhone app for tracking when plants have been watered. There is also an Apple Watch app that makes work in the garden a bit easier. (demo GIFs)"
 authors: []
 tags: ["watchOS", "Swift", "application", "app", "open source", "programming", "SwiftUI"]
-categories: ["Programming"]
+categories: ["Applications"]
 date: 2020-10-04T17:39:41-04:00
 
 # Optional external URL for project (replaces project detail page).

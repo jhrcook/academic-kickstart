@@ -5,7 +5,7 @@ title: "Germination Tracker iOS App"
 summary: "A simple app to help me record data on my seedlings."
 authors: ["admin"]
 tags: ["iOS", "Swift", "application", "app", "open source", "programming"]
-categories: ["Programming"]
+categories: ["Applications"]
 date: 2019-10-05T08:29:29-04:00
 draft: false
 

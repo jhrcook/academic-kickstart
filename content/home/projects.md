@@ -23,8 +23,12 @@ subtitle = ""
   filter_default = 0
   
  [[content.filter_button]]
-   name = "Programming"
-   tag = "programming"
+   name = "Applications"
+   tag = "application"
+   
+ [[content.filter_button]]
+   name = "R Packages"
+   tag = "CRAN"
   
  [[content.filter_button]]
    name = "Plants"

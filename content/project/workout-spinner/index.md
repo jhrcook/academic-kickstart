@@ -5,7 +5,7 @@ title: "Workout Spinner Apple Watch App"
 summary: "An Apple Watch application that randomly selects quick exercises using a Wheel-of-Fortune-like spinning wheel."
 authors: []
 tags: ["watchOS", "Swift", "application", "app", "open source", "programming", "SwiftUI"]
-categories: ["Programming"]
+categories: ["Applications"]
 date: 2020-10-04T17:24:52-04:00
 
 # Optional external URL for project (replaces project detail page).
