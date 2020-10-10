@@ -29,6 +29,10 @@ subtitle = ""
  [[content.filter_button]]
    name = "R Packages"
    tag = "CRAN"
+   
+ [[content.filter_button]]
+   name = "Data Analysis"
+   tag = "data analysis"
   
  [[content.filter_button]]
    name = "Plants"
