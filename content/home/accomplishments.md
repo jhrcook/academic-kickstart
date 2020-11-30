@@ -18,6 +18,16 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+[[item]]
+  title = "Completed Hacktoberfest 2020"
+  url = ""
+  organization = "Hacktoberfest"
+  organization_url = "https://hacktoberfest.digitalocean.com"
+  certificate_url = ""
+  date_start = "2020-10-01"
+  date_end = ""
+  description = "I opened four pull requests to open source projects to complete the Hacktoberfest challenge. The first two added iPhone-to-Watch connectivity and Workout Session capabilities to my Apple Watch telemetry-recording application ([1](https://github.com/jhrcook/TelemetryRecorder/pull/1), [2](https://github.com/jhrcook/TelemetryRecorder/pull/3)). The third PR added the Workout Session capability to my Workout Spinner Apple Watch app ([3](https://github.com/jhrcook/Workout-Spinner-watchapp/pull/1)). Finally, the fourth PR merged the resubmission branch of the *KRAS* comutation project code repository ([4](https://github.com/jhrcook/comutation/pull/2))."
+
 
 [[item]]
   organization = "CRAN"
