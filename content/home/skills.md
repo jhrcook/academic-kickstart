@@ -30,7 +30,7 @@ subtitle = ""
   icon = "swift"
   icon_pack = "fab"
   name = "Swift"
-  description = "Beginner"
+  description = "Intermediate"
   
 [[feature]]
   icon = "linux"
@@ -42,12 +42,12 @@ subtitle = ""
   icon = "chart-bar"
   icon_pack = "fas"
   name = "Statistics"
-  description = "Moderate"
+  description = "Intermediate"
  
 [[feature]]
   icon = "apple"
   icon_pack = "fab"
-  name = "iOS"
-  description = "Beginner"
+  name = "iOS & watchOS"
+  description = "Intermediate"
 
 +++
