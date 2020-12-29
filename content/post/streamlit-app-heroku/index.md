@@ -37,22 +37,29 @@ links:
 
 ---
 
-Quick introduction.
-- link to text summarization app that this guide creates: https://textrank-summarizer.herokuapp.com/
-- how easy it is to do
-- introduce Streamlit
-- general steps: Streamlit app dev; Docker; Heroku; GitHub Action
+This tutorial is meant to act as a guide for deploying [Streamlit]() applications on [Heroku]() using [Docker]() and [GitHub Actions]().
+As a data scientist, Streamlit offers the simplest route from analysis to application by providing an API to create an interactive UI in a normal Python script.
+We'll see more about this in the example later on, but there are many examples in their [gallery]().
+
+Once the application is built and running locally, we just need to package it up using Docker and deploy to Heroku.
+In addition, I have included a step to use GitHub Actions to build and push the Docker image, saving my local computer some computation and time.
+Below, I walk through this process, step-by-step.
 
 ## Create a Streamlit application
 
-### Overview of using Streamlit
+### Introduction to Streamlit
 
-- general idea
-- link to website, documentation, and gallery
+Streamlit is built for data scientists and analysts.
+Instead of building applications like many software engineers, we often write scripts that collect and clean data, visualize the data, design and train models, etc.
+While it is possible to turn these scripts into applications to interactive use, Streamlit offers a clever API: just "print" the plots, text, etc. and accept user input to variables.
+Streamlit then handles all of the UI design, reacts to the user, and presents interactive widgets.
+If this seems appealing to you, I would recommend looking through their [website](), [gallery](), and [documentation]() to see examples and guidance on implementation. 
 
 ### Example: text-summarizing application
 
-- virtual environment, libraries, and "requirements.txt"
+As an example of using Streamlit, I built an application that summarizes text.
+
+First things first, it is generally a good idea (and will be necessary for using Docker) to create a virtual environment for this project and installing ['summa']() and ['streamlit'](); 'summa' is the library that I used to summarize the text.
 
 ```bash
 $ python3 -m venv env
@@ -60,50 +67,56 @@ $ source env/bin/activate
 (env)$ pip install summa streamlit
 ```
 
-- the code with explination focusing on the Streamlit portion
+Below is the ***entire*** Streamlit application!
+I won't provide much explination because I don't think much is required - in most cases, it is very obvious what Streamlit is doing.
+Using the `st.title()` function, a title is placed at the top of the app.
+Then some text is collected from the user by the `st.text_area()` function - this text is saved as a string to `input_sent`.
+The summarization ratio is obtained using a slider with the `st.slider()` function.
+Finally, the text is summarized using the 'summa' library and printed to the application using `st.write()` in a for-loop.
 
 ```python
 #!/usr/bin/env python
+
 from summa import summarizer
 import streamlit as st
 
-# Add title on the page
+# Add title to the page.
 st.title("Text summarization")
 
-# Ask user for input text
+# Ask user for input text.
 input_sent = st.text_area("Input Text", "", height=400)
 
+# User input on what fraction of the original text to return.
 ratio = st.slider(
     "Summarization fraction", min_value=0.0, max_value=1.0, value=0.2, step=0.01
 )
 
-# Display named entities
+# Summarize the original text.
 summarized_text = summarizer.summarize(
     input_sent, ratio=ratio, language="english", split=True, scores=True
 )
 
+# Print out the results.
 for sentence, score in summarized_text:
     st.write(sentence)
 ```
 
-- code on command line to run the app locally
+The application can be run locally with the following command and going to [http://localhost:8501](http://localhost:8501) in your browser.
+The initial blank application is shown below followed by an example of summarizing the opening scene to [Monty Python and the Holy Grail]() ([text source](http://www.montypython.50webs.com/scripts/Holy_Grail/Scene1.htm))
 
 ```bash
 (env)$ streamlit run app.py
 ```
 
-- image of working app (blank and with example text)
-
 <img src="assets/demo_blank.png" width="85%">
-
-- example with script of Holy Grail (http://www.montypython.50webs.com/scripts/Holy_Grail/Scene1.htm)
 
 <img src="assets/demo_monty-python.png" width="85%">
 
-## Build a Docker file
 
-- overview of Docker and explination of pieces
-- include the text of the docker file
+## Build a Dockerfile
+
+The next step is to construct a file called "Dockerfile" that provide instructions to produce a Docker image with the running application.
+Below is the complete Dockerfile and I have provided a brief explination afterwards.
 
 ```docker
 FROM python:3.9
@@ -115,23 +128,40 @@ COPY . .
 CMD streamlit run app.py
 ```
 
-- build and run (make sure Docker is running on your computer)
+The `FROM python:3.9` at the beginning of the file means that this Dockerfile builds ontop of another that has Python 3.9 already installed and configured.
+In order to use this, you must have a [Dockerhub]() account and link it to the Docker application on you computer.
+Here is the link to the Python Dockerhub page: [https://hub.docker.com/\_/python](https://hub.docker.com/\_/python).
+
+Next, the `EXPOSE 8501` command exposes port 8501 from the Docker image so that it can be reached when the image is run.
+
+All of the commands from `WORKDIR /app` to `COPY . .` set-up of the Docker environment and create the virtual environment. I'm no expert in Docker, so the details are lost on me, but I think the overall objective is clear from the statements.
+
+Finally, `CMD streamlit run app.py` declares that the Docker image should run `streamlit run app.py` and exit when it finishes.
+
+With the Dockerfile in place, the Docker image can be built and run.
 
 ```bash
 $ docker build -t app:latest .
 $ docker run -p 8501:8501 app:latest
 ```
 
+Going to the same [http://localhost:8501](http://localhost:8501), you should again see the application.
 
 ## Connect and publish to Heroku
 
-- set-up user
-- install CLI (doc: https://devcenter.heroku.com/categories/command-line)
+### Setting up Heroku
+
+The next step is to deploy the application on the World Wide Web using [Heroku](https://heroku.com).
+In order to do so, you will need to create an account - there is a free tier for hobbyists that will be sufficient.
+
+Then the command line interface (CLI) for interfacing with Heroku from your computer must be installed.
+Full instructions can be found [here](https://devcenter.heroku.com/categories/command-line); I use a Mac, so I used the Homebrew option.
 
 ```bash
 $ brew tap heroku/brew && brew install heroku
 ```
-- CLI login (opens browser)
+With a Heroku account created and the CLI installed, the next step is to login with the CLI.
+The command `heroku login` will open a login window in your browser.
 
 ```bash
 $ heroku login
@@ -143,11 +173,13 @@ Logging in... done
 Logged in as me@example.com
 ```
 
-- create Heroku app (in project directory)
+Finally, we can create a Heroku app by running `heroku create` while within the project directory.
 
 ```bash
 heroku create
 ```
+
+### Deploying a Heroku app
 
 - Heroku doc for deplying Docker images: https://devcenter.heroku.com/articles/container-registry-and-runtime
 - adjust Dockerfile
