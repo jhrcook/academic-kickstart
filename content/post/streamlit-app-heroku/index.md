@@ -108,7 +108,7 @@ The application can be run locally with the following command and going to [http
 (env)$ streamlit run app.py
 ```
 
-The initial blank application is shown below followed by an example of summarizing the opening scene to [Monty Python and the Holy Grail](https://en.wikipedia.org/wiki/Monty_Python_and_the_Holy_Grail) ([text source](http://www.montypython.50webs.com/scripts/Holy_Grail/Scene1.htm))
+The initial blank application is shown below followed by an example of summarizing the opening scene to [Monty Python and the Holy Grail](https://en.wikipedia.org/wiki/Monty_Python_and_the_Holy_Grail) ([text source](http://www.montypython.50webs.com/scripts/Holy_Grail/Scene1.htm)).
 
 <img src="assets/demo_blank.png" width="85%">
 
