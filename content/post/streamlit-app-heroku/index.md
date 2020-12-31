@@ -51,15 +51,16 @@ Below, I walk through this process, step-by-step.
 
 Streamlit is built for data scientists and analysts.
 Instead of building applications like many software engineers, we often write scripts that collect and clean data, visualize the data, design and train models, etc.
-While it is possible to turn these scripts into applications to interactive use, Streamlit offers a clever API: just "print" the plots, text, etc. and accept user input to variables.
+While it is possible to process the output of these scripts into interactive applications that requires a substantial amount of work and maintenance.
+Instead, Streamlit offers a clever API: just "print" the plots, text, etc. and accept user input to variables.
 Streamlit then handles all of the UI design, reacts to the user, and presents interactive widgets.
-If this seems appealing to you, I would recommend looking through their [website](https://www.streamlit.io), [gallery](https://www.streamlit.io/gallery), and [documentation](https://docs.streamlit.io/en/stable/) to see examples and guidance on implementation. 
+If this seems appealing to you, I would recommend looking through their [website](https://www.streamlit.io), [gallery](https://www.streamlit.io/gallery), and [documentation](https://docs.streamlit.io/en/stable/) to see examples and get guidance on implementation. 
 
 ### Example: text-summarizing application
 
 As an example of using Streamlit, I built an application that summarizes text.
 
-First things first, it is generally a good idea (and will be necessary for using Docker) to create a virtual environment for this project and installing ['summa'](https://github.com/summanlp/textrank) and ['streamlit'](https://github.com/streamlit/streamlit); 'summa' is the library that I used to summarize the text.
+First things first, it is generally a good idea (and will be necessary for using Docker) to create a virtual environment for this project and installing ['summa'](https://github.com/summanlp/textrank) (the library that I used to summarize the text) and ['streamlit'](https://github.com/streamlit/streamlit).
 
 ```bash
 $ python3 -m venv env
@@ -102,11 +103,12 @@ for sentence, score in summarized_text:
 ```
 
 The application can be run locally with the following command and going to [http://localhost:8501](http://localhost:8501) in your browser.
-The initial blank application is shown below followed by an example of summarizing the opening scene to [Monty Python and the Holy Grail](https://en.wikipedia.org/wiki/Monty_Python_and_the_Holy_Grail) ([text source](http://www.montypython.50webs.com/scripts/Holy_Grail/Scene1.htm))
 
 ```bash
 (env)$ streamlit run app.py
 ```
+
+The initial blank application is shown below followed by an example of summarizing the opening scene to [Monty Python and the Holy Grail](https://en.wikipedia.org/wiki/Monty_Python_and_the_Holy_Grail) ([text source](http://www.montypython.50webs.com/scripts/Holy_Grail/Scene1.htm))
 
 <img src="assets/demo_blank.png" width="85%">
 
@@ -158,6 +160,7 @@ Then the command line interface (CLI) for interfacing with Heroku from your comp
 Full instructions can be found [here](https://devcenter.heroku.com/categories/command-line); I use a Mac, so I used the Homebrew option.
 
 ```bash
+$ # Make sure to use the correct installation steps for *your* computer.
 $ brew tap heroku/brew && brew install heroku
 ```
 With a Heroku account created and the CLI installed, the next step is to login with the CLI.
@@ -227,7 +230,7 @@ Therefore, I turned to [GitHub Actions](https://github.com/features/actions) to 
 Below is the GitHub Actions workflow file; you will need to place this in the subdirectory `./.github/workflows/CI.yml`.
 It is a YAML file with a single job with multiple steps that perform the same operations using the Heroku command line we preformed above.
 Additional details are available below.
-Once you have the YAML file and the authorization secret setup for the repo, pushing the changes to GitHub should result in the building and deployment of the app.
+Once you have the YAML file and the authorization secret setup for the repo (explained below), pushing the changes to GitHub should result in the building and deployment of the app.
 
 ```yaml
 name: Build Docker image and deploy to Heroku
@@ -279,9 +282,9 @@ jobs:
 ```
 
 This next chunk is fairly standard for simple workflows.
-To begin, it declares a new job (workflows can have multiple jobs that run in parallel) and is set to run on a "runner" using Ubuntu.
+To begin, it declares a new job (workflows can have multiple jobs that run in parallel) and is set to run on a "runner" server using Ubuntu.
 Then, the first step is to use the `actions/checkout@v1` action to checkout the current repository.
-This step is provided by GitHub and must be run in order to use the files in the repo.
+This action is provided by GitHub and must be run in order to use the files in the repo.
 
 ```yaml
 - name: Login to Heroku Container registry
@@ -299,7 +302,7 @@ This step is provided by GitHub and must be run in order to use the files in the
 ```
 
 The following steps perform the same commands we just ran on our local machine to login to the Heroku container registry, build the Docker image, and deploy it to the web.
-The only difference is the declaration and use of the variable `HEROKU_API_KEY`.
+The only difference is the declaration and use of the `HEROKU_API_KEY` variable.
 This is declared in the YAML structure under the heading `env`.
 To actually set it to a key to allow access to Heroku, we must use [GitHub secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets) - *do NOT put your login information the workflow file in plain text.*
 To add the key to secrets, run the following command on your computer to get an authorization key.
@@ -308,10 +311,11 @@ To add the key to secrets, run the following command on your computer to get an 
 $ heroku authorizations:create
 ```
 
-Then, put the key in a secrete by going to the "Settings" tab of your GitHub repo, navigating to "Secrets" in the bar on the left, and clicking "New repository secret".
-I named the secret key `HEROKU_API_KEY` to match the variable name use by Heroku, though you can change it to whatever makes sense to you, just make sure to also change the workflow file.
+Then, put the key in a secret by going to the "Settings" tab of your GitHub repo, navigating to "Secrets" in the bar on the left, and clicking "New repository secret."
+I named the secret key `HEROKU_API_KEY` to match the variable name used by Heroku, though you can change it to whatever makes sense to you, just make sure to also change the workflow file.
 
 ## Conclusion
 
 This simple project was amazing to me - the ability to build a good application in ~20 lines of code and deploy it to the web *for free* with such ease really speaks to the incredible state of open source tooling.
-I look forward to using this setup as a starting point for more complex and capable apps.
+So far I have deployed two Streamlit apps currently running on Heroku: the [Text Summarization](https://textrank-summarizer.herokuapp.com/) ([source](https://github.com/jhrcook/textrank-streamlit)) application demonstrated here and a [Suduko Solver](https://streamlit-sudoku-solver.herokuapp.com/) ([source](https://github.com/jhrcook/streamlit-sudoku)) that uses linear programming to find the solution.
+I look forward to using this setup as a starting point for more complex apps in the future.
