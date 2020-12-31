@@ -37,9 +37,9 @@ links:
 
 ---
 
-This tutorial is meant to act as a guide for deploying [Streamlit]() applications on [Heroku]() using [Docker]() and [GitHub Actions]().
+This tutorial is meant to act as a guide for deploying [Streamlit](https://www.streamlit.io) applications on [Heroku](https://heroku.com) using [Docker](https://www.docker.com) and [GitHub Actions](https://github.com/features/actions).
 As a data scientist, Streamlit offers the simplest route from analysis to application by providing an API to create an interactive UI in a normal Python script.
-We'll see more about this in the example later on, but there are many examples in their [gallery]().
+We'll see more about this in the example later on, but there are many examples in their [gallery](https://www.streamlit.io/gallery).
 
 Once the application is built and running locally, we just need to package it up using Docker and deploy to Heroku.
 In addition, I have included a step to use GitHub Actions to build and push the Docker image, saving my local computer some computation and time.
@@ -53,13 +53,13 @@ Streamlit is built for data scientists and analysts.
 Instead of building applications like many software engineers, we often write scripts that collect and clean data, visualize the data, design and train models, etc.
 While it is possible to turn these scripts into applications to interactive use, Streamlit offers a clever API: just "print" the plots, text, etc. and accept user input to variables.
 Streamlit then handles all of the UI design, reacts to the user, and presents interactive widgets.
-If this seems appealing to you, I would recommend looking through their [website](), [gallery](), and [documentation]() to see examples and guidance on implementation. 
+If this seems appealing to you, I would recommend looking through their [website](https://www.streamlit.io), [gallery](https://www.streamlit.io/gallery), and [documentation](https://docs.streamlit.io/en/stable/) to see examples and guidance on implementation. 
 
 ### Example: text-summarizing application
 
 As an example of using Streamlit, I built an application that summarizes text.
 
-First things first, it is generally a good idea (and will be necessary for using Docker) to create a virtual environment for this project and installing ['summa']() and ['streamlit'](); 'summa' is the library that I used to summarize the text.
+First things first, it is generally a good idea (and will be necessary for using Docker) to create a virtual environment for this project and installing ['summa'](https://github.com/summanlp/textrank) and ['streamlit'](https://github.com/streamlit/streamlit); 'summa' is the library that I used to summarize the text.
 
 ```bash
 $ python3 -m venv env
@@ -68,7 +68,7 @@ $ source env/bin/activate
 ```
 
 Below is the ***entire*** Streamlit application!
-I won't provide much explination because I don't think much is required - in most cases, it is very obvious what Streamlit is doing.
+I won't provide much explanation because I don't think much is required - in most cases, it is very obvious what Streamlit is doing.
 Using the `st.title()` function, a title is placed at the top of the app.
 Then some text is collected from the user by the `st.text_area()` function - this text is saved as a string to `input_sent`.
 The summarization ratio is obtained using a slider with the `st.slider()` function.
@@ -102,7 +102,7 @@ for sentence, score in summarized_text:
 ```
 
 The application can be run locally with the following command and going to [http://localhost:8501](http://localhost:8501) in your browser.
-The initial blank application is shown below followed by an example of summarizing the opening scene to [Monty Python and the Holy Grail]() ([text source](http://www.montypython.50webs.com/scripts/Holy_Grail/Scene1.htm))
+The initial blank application is shown below followed by an example of summarizing the opening scene to [Monty Python and the Holy Grail](https://en.wikipedia.org/wiki/Monty_Python_and_the_Holy_Grail) ([text source](http://www.montypython.50webs.com/scripts/Holy_Grail/Scene1.htm))
 
 ```bash
 (env)$ streamlit run app.py
@@ -116,7 +116,7 @@ The initial blank application is shown below followed by an example of summarizi
 ## Build a Dockerfile
 
 The next step is to construct a file called "Dockerfile" that provide instructions to produce a Docker image with the running application.
-Below is the complete Dockerfile and I have provided a brief explination afterwards.
+Below is the complete Dockerfile and I have provided a brief explanation afterwards.
 
 ```docker
 FROM python:3.9
@@ -128,8 +128,8 @@ COPY . .
 CMD streamlit run app.py
 ```
 
-The `FROM python:3.9` at the beginning of the file means that this Dockerfile builds ontop of another that has Python 3.9 already installed and configured.
-In order to use this, you must have a [Dockerhub]() account and link it to the Docker application on you computer.
+The `FROM python:3.9` at the beginning of the file means that this Dockerfile builds on-top of another that has Python 3.9 already installed and configured.
+In order to use this, you must have a [Dockerhub](https://hub.docker.com) account and link it to the Docker application on you computer.
 Here is the link to the Python Dockerhub page: [https://hub.docker.com/\_/python](https://hub.docker.com/\_/python).
 
 Next, the `EXPOSE 8501` command exposes port 8501 from the Docker image so that it can be reached when the image is run.
@@ -181,33 +181,38 @@ heroku create
 
 ### Deploying a Heroku app
 
-- Heroku doc for deplying Docker images: https://devcenter.heroku.com/articles/container-registry-and-runtime
-- adjust Dockerfile
+The following steps deploy the Streamlit app to Heroku using their *Docker registry*.
+You can find the full documentation [here](https://devcenter.heroku.com/categories/deploying-with-docker); specifically, I used the [Container Registry](https://devcenter.heroku.com/articles/container-registry-and-runtime) option.
+
+We need to make one change to the Dockerfile in order to deploy on Heroku.
+As documented [here](https://devcenter.heroku.com/articles/container-registry-and-runtime), the port to the app must be set to the variable `$PORT`.
+This is accomplished using the `--server.port` flag for the `streamlit` command, resulting in the following change to the Dockerfile.
 
 ```docker
 ...
 # CMD streamlit run app.py
 CMD streamlit run --server.port $PORT app.py
 ```
-- login to Heroku's container registry
+From there, deploying using the Docker registry in Heroku is routine.
+First, you must log in to the registry using the command below.
 
 ```bash
 $ heroku container:login
 ```
 
-- build & push image to registry
+Then, the following command builds the Docker image and pushes it to the Heroku registry.
 
 ```bash
 $ heroku container:push web
 ```
 
-- release the image to the app
+The app is then deployed to the web as follows.
 
 ```bash
 $ heroku container:release web
 ```
 
-- verify it worked
+After allowing a few minutes for Heroku to work its magic, you can open the app on the web from the command line or in your [Heroku Dashboard](https://dashboard.heroku.com/apps).
 
 ```bash
 $ heroku open
@@ -215,7 +220,14 @@ $ heroku open
 
 ## Set up deployment with GitHub Actions
 
-- create CI.yml
+You can stop here if the above pipeline works for you, but I wanted to automate the deployment pipeline and move the computation of my computer.
+Therefore, I turned to [GitHub Actions](https://github.com/features/actions) to build the Docker image and push to Heroku's registry when I push changes to the remote repository.
+(Obviously, to use GitHub Actions, you will need to have the project under git source control and an accompanying GitHub repo.)
+
+Below is the GitHub Actions workflow file; you will need to place this in the subdirectory `./.github/workflows/CI.yml`.
+It is a YAML file with a single job with multiple steps that perform the same operations using the Heroku command line we preformed above.
+Additional details are available below.
+Once you have the YAML file and the authorization secret setup for the repo, pushing the changes to GitHub should result in the building and deployment of the app.
 
 ```yaml
 name: Build Docker image and deploy to Heroku
@@ -244,15 +256,62 @@ jobs:
         run: heroku container:release -a textrank-summarizer web
 ```
 
-- describe general steps and link to GitHub Actions documentation
-- set up Heroku auth GitHub secrets
+### Explanation of the GitHub Action workflow
+
+```yaml
+name: Build Docker image and deploy to Heroku
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - master
+```
+
+The name of the  workflow is stated first, followed by a description of when the  workflow should be run. In this case, I have it set to run when there are pushes to the `master` branch. More details and options can be found in the documentation on [Events that trigger workflows](https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows).
+
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+```
+
+This next chunk is fairly standard for simple workflows.
+To begin, it declares a new job (workflows can have multiple jobs that run in parallel) and is set to run on a "runner" using Ubuntu.
+Then, the first step is to use the `actions/checkout@v1` action to checkout the current repository.
+This step is provided by GitHub and must be run in order to use the files in the repo.
+
+```yaml
+- name: Login to Heroku Container registry
+  env:
+    HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  run: heroku container:login
+- name: Build and push
+  env:
+    HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  run: heroku container:push -a textrank-summarizer web
+- name: Release
+  env:
+    HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  run: heroku container:release -a textrank-summarizer web
+```
+
+The following steps perform the same commands we just ran on our local machine to login to the Heroku container registry, build the Docker image, and deploy it to the web.
+The only difference is the declaration and use of the variable `HEROKU_API_KEY`.
+This is declared in the YAML structure under the heading `env`.
+To actually set it to a key to allow access to Heroku, we must use [GitHub secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets) - *do NOT put your login information the workflow file in plain text.*
+To add the key to secrets, run the following command on your computer to get an authorization key.
 
 ```bash
 $ heroku authorizations:create
 ```
 
+Then, put the key in a secrete by going to the "Settings" tab of your GitHub repo, navigating to "Secrets" in the bar on the left, and clicking "New repository secret".
+I named the secret key `HEROKU_API_KEY` to match the variable name use by Heroku, though you can change it to whatever makes sense to you, just make sure to also change the workflow file.
+
 ## Conclusion
 
-- simple way to turn a fun project into a web application
-- make a template and copy it every time
-- etc.
+This simple project was amazing to me - the ability to build a good application in ~20 lines of code and deploy it to the web *for free* with such ease really speaks to the incredible state of open source tooling.
+I look forward to using this setup as a starting point for more complex and capable apps.
