@@ -19,6 +19,16 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  title = "Completed Advent of Code 2020"
+  url = "https://github.com/jhrcook/advent-of-code_2020"
+  organization = "Advent of Code"
+  organization_url = "https://adventofcode.com/"
+  certificate_url = ""
+  date_start = "2020-12-01"
+  date_end = ""
+  description = "I completed both coding puzzles released on each of the 25 days before Christmas as a part of the Advent of Code challenge."
+
+[[item]]
   title = "Completed Hacktoberfest 2020"
   url = ""
   organization = "Hacktoberfest"
