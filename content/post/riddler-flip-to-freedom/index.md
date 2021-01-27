@@ -5,7 +5,7 @@ title: "Riddler: Can You Flip Your Way To Freedom?"
 subtitle: "My solution to this Riddler using R"
 summary: "For this week's Riddler, we were asked to solve the 3D structure given a series of cross-sections. I used R to reconstruct this structure and presented it as an interactive plot."
 authors: []
-tags: [R, programming, Riddler, puzzle]
+tags: ["R", "programming", "Riddler", "puzzle", "R-posts"]
 categories: [Programming]
 date: 2020-05-02T12:05:03-04:00
 lastmod: 2020-05-02T12:05:03-04:00

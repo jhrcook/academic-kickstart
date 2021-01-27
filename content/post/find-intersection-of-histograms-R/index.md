@@ -5,7 +5,7 @@ title: "Find the intersection of overlapping histograms in R"
 subtitle: ""
 summary: "How to find the point where two histograms overlap."
 authors: ["admin"]
-tags: ["R", "programming", "statistics"]
+tags: ["R", "programming", "statistics", "R-posts"]
 categories: []
 date: 2019-08-14T13:02:21-04:00
 lastmod: 2019-08-14T13:02:21-04:00

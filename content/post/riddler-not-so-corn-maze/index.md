@@ -5,7 +5,7 @@ title: "Riddler: Can you solve the not-so-corn maze?"
 subtitle: "My solution to this Riddler using R"
 summary: "How I used graph theory in R to solve a mathematical corn maze."
 authors: []
-tags: [R, programming, Riddler, puzzle]
+tags: ["R", "programming", "Riddler", "puzzle", "R-posts"]
 categories: [Programming]
 date: 2020-06-20T13:59:41-04:00
 lastmod: 2020-06-20T13:59:41-04:00

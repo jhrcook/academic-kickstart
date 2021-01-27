@@ -5,8 +5,8 @@ title: "Setting axes to integer values in 'ggplot2'"
 subtitle: ""
 summary: "A seemingly simple task took quite a bit of research and experimentation to figure out."
 authors: [~]
-tags: [R, programming]
-categories: [Programming]
+tags: ["R", "programming", "R-posts"]
+categories: ["Programming"]
 date: 2019-11-09T08:09:23-05:00
 lastmod: 2019-11-09T08:09:23-05:00
 featured: false

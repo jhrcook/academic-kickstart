@@ -5,7 +5,7 @@ title: "Riddler: Can You Just Keep Turning?"
 subtitle: "My solution to this Riddler using R."
 summary: "Using simulation in R to solve this directionally-discombobulating puzzle."
 authors: []
-tags: [R, programming, Riddler, puzzle]
+tags: ["R", "programming", "Riddler", "puzzle", "R-posts"]
 categories: [Programming]
 date: 2020-06-27T13:48:22-04:00
 lastmod: 2020-06-27T13:48:22-04:00

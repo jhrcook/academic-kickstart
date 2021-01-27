@@ -5,7 +5,7 @@ title: "Riddler: Can You Solve The Chess Mystery?"
 subtitle: "My solution to this Riddler using R"
 summary: "This week’s Riddler involves finding the path used by the knight to kill the opposing queen in a game of chess. I show how I solved puzzle using two methods: a siumulation of the chessboard and by building a graph of the possible paths for the knight."
 authors: []
-tags: [R, programming, Riddler, puzzle]
+tags: ["R", "programming", "Riddler", "puzzle", "R-posts"]
 categories: [Programming]
 date: 2020-04-25T13:41:49-04:00
 lastmod: 2020-04-25T13:41:49-04:00

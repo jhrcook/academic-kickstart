@@ -5,7 +5,7 @@ title: "Caching in R"
 subtitle: ""
 summary: "A brief look at the systems for caching in R."
 authors: []
-tags: [programming, R, cache]
+tags: [programming, R, cache, R-posts]
 categories: [Programming]
 date: 2020-04-04T07:00:00-00:00
 lastmod: 2020-04-03T08:29:19-04:00

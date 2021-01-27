@@ -5,7 +5,7 @@ title: "Riddler: Can You Beat MLB Recods?"
 subtitle: "My solution to this Riddler using R."
 summary: "A simple statistical solution to this Riddler accompanied by descriptive simulations."
 authors: []
-tags: [R, programming, Riddler, puzzle]
+tags: ["R", "programming", "Riddler", "puzzle", "R-posts"]
 categories: [Programming]
 date: 2020-07-18T18:24:03-04:00
 lastmod: 2020-07-18T18:24:03-04:00

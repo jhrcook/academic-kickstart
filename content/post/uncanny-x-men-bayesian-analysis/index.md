@@ -5,7 +5,7 @@ title: "Uncanny X-Men: Bayesian take on Dr. Silge’s analysis"
 subtitle: "The Bayesian analysis equivalent to Dr. Silge's TidyTuesday."
 summary: "I present a breif take on Dr. Silge's Uncanny X-Men analysis using Bayesian methods."
 authors: []
-tags: [R, programming, TidyTuesday, Bayesian, statistics]
+tags: ["R", "programming", "TidyTuesday", "Bayesian", "statistics", "R-posts"]
 categories: [Programming]
 date: 2020-07-05T10:08:00-04:00
 lastmod: 2020-07-05T10:08:00-04:00

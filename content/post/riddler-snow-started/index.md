@@ -5,7 +5,7 @@ title: "Riddler: Can You Tell When The Snow Started?"
 subtitle: ""
 summary: "This puzzle was to find the shortest paths of two indivduals sharing a sidewalk while obsering the COVID-19 6-foot social distancing guideline. I simulated the scenario in R and plotted the travels of the individuals using 'gganimate'."
 authors: []
-tags: [R, programming, Riddler, puzzle]
+tags: ["R", "programming", "Riddler", "puzzle", "R-posts"]
 categories: [Programming]
 date: 2020-05-09T12:05:02-04:00
 lastmod: 2020-05-09T12:05:02-04:00
