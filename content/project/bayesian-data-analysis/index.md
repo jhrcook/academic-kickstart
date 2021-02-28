@@ -71,6 +71,13 @@ Below are the books I have worked through or are currently studying.
 <img width="25%" src="assets/bayesian-data-analysis.png">
 
 ---
+## Tutorials
+
+[GitHub repo](https://github.com/jhrcook/pymc3-tutorials)
+
+I have repository of Jupyter notebooks where I follow, annotate, and experiment with tutorials on using the probabilistic programming language PyMC3.
+
+---
 
 ## Examples
 
@@ -108,8 +115,11 @@ We found novel comutation interactions that she used as preliminary data in a gr
 I am currently building a hierarchical model to identify synthetic lethal targets with specific *KRAS* mutations using CRISPR-Cas9 knockout screen.
 This work is meant to help select candidate genes for follow up experimentation in organoids and mouse models.
 
-For some practice with the data, I experimented with recreating parts of a previously published model [DEMETER2](https://www.nature.com/articles/s41467-018-06916-5) using STAN.
-That repository is available on [GitHub](https://github.com/jhrcook/demeter2-stan).
+#### Differential gene expression of *DUSP* genes
+
+I did a small analysis to see if there was evidence for differential expression of *DUSP* genes associated with the *KRAS* alleles or with the loss *APC* in human samples of colorectal cancer tumors.
+
+<img width="75%" src="assets/dusp-dge/dusp-dge.png">
 
 ---
 
@@ -134,13 +144,3 @@ Below are the instances where I have explored Bayesian data analysis.
 I wrote a [blog post](https://joshuacook.netlify.app/post/uncanny-x-men-bayesian-analysis/) as a follow-up on an article to Julia Silge's [Uncanny X-Men analysis](https://juliasilge.com/blog/uncanny-xmen/).
 She used a bootstrapping method to build confidence intervals for an estimate of some feature of the comic books (more details are in my original post).
 My analysis was focussed on how this was similar to using a Bayesian technique, while also highlighting how a fit Bayesian model is more easily interpreted than 95% confidence intervals from a permutation test.
-
-
-
-
-
-
-
-
-
-
