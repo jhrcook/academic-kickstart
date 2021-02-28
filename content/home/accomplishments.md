@@ -19,6 +19,16 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  title = "The origins and genetic interactions of *KRAS* mutations are allele- and tissue-specific"
+  url = ""
+  organization = "Nature Communications"
+  organization_url = "https://www.nature.com/ncomms/"
+  certificate_url = ""
+  date_start = "2021-02-15"
+  date_end = ""
+  description = "We have published our analysis on the genetic interactions of *KRAS* alleles in four different cancer types in *Nature Communications*. "
+
+[[item]]
   title = "Completed Advent of Code 2020"
   url = "https://github.com/jhrcook/advent-of-code_2020"
   organization = "Advent of Code"
@@ -27,6 +37,7 @@ date_format = "Jan 2006"
   date_start = "2020-12-01"
   date_end = ""
   description = "I completed both coding puzzles released on each of the 25 days before Christmas as a part of the Advent of Code challenge."
+
 
 [[item]]
   title = "Completed Hacktoberfest 2020"
@@ -71,6 +82,7 @@ date_format = "Jan 2006"
   date_end = ""
   description = "I opened four pull requests to open source projects to complete the Hacktoberfest challenge. I merged large features into my Germination and Plant Tracker apps ([1](https://github.com/jhrcook/Germination-Tracker/commit/e2a11d53a1ff677914538511682c90efb5edb199), [2](https://github.com/jhrcook/PlantTracker/commit/42058c41ba7f9b3b294a9bf87ed9128a04c01c6f), [3](https://github.com/jhrcook/PlantTracker/commit/5977d394048301058325cd9f10f8896e70ea00c4)). Also, I made a pull request to add documentation for a statsitcal test using by [Hierarchical HotNet](https://github.com/raphael-group/hierarchical-hotnet) ([Reyna, *et al.*. *Bioinformatics*. 2018](https://academic.oup.com/bioinformatics/article/34/17/i972/5093236/)) from the Raphael Lab at Princton University ([4](https://github.com/raphael-group/hierarchical-hotnet/pull/5))."
 
+
 [[item]]
   title = "100 Days of Swift"
   url = "https://github.com/jhrcook/100DaysOfSwift"
@@ -80,6 +92,7 @@ date_format = "Jan 2006"
   date_start = "2019-06-05"
   date_end = "2019-09-27"
   description = "I challenged myself to do at least an hour of Swift every day for 100 days. I recorded my progress at the linked GitHub repository. Towards the end of the challenge, I started developing two iOS apps, a [Plant Tracker](project/ios-plant-tracker/) and a [Germinaton Tracker](https://github.com/jhrcook/Germination-Tracker)."
+
 
 [[item]]
   organization = "Cancer Discovery"
@@ -91,6 +104,7 @@ date_format = "Jan 2006"
   date_end = ""
   description = "The Haigis Lab published on a biochemical, signaling, and computational description of the KRAS A146T allele."
 
+
 [[item]]
   organization = "NSF"
   organization_url = "https://www.nsf.gov"
@@ -101,6 +115,7 @@ date_format = "Jan 2006"
   date_end = ""
   description = "I have been awarded an Honorable Mention in the 2019 National Science Foundation (NSF) Graduate Research Fellowship Program competition"
 
+
 [[item]]
   organization = "CRAN"
   organization_url = "https://cran.r-project.org"
@@ -110,7 +125,8 @@ date_format = "Jan 2006"
   date_start = "2019-03-23"
   date_end = ""
   description = "My R package, 'ggasym', has been accepted to CRAN. It was further promoted by RStudio in their [March edition of Top 40 New CRAN Packages](https://rviews.rstudio.com/2019/04/26/march-2019-top-40-new-cran-packages/) and [R Weekly (March 18, 2019)](https://rweekly.org/2019-11.html#NewPackages)."  
-  
+
+
 [[item]]
   organization = "Journal of Biological Chemistry"
   organization_url = "http://www.jbc.org/content/293/9/3374.long"
