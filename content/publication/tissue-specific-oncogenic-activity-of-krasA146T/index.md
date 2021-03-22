@@ -26,7 +26,7 @@ summary: ""
 
 tags: ["KRAS", "tissue-specificity", "cancer", "mouse", "biochemistry", "molecular biology", "allele-specific", "computational biology", "bioinformatics"]
 categories: []
-featured: true
+featured: false
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
