@@ -19,14 +19,14 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
-  title = "The origins and genetic interactions of *KRAS* mutations are allele- and tissue-specific"
-  url = ""
+  title = "The origins and genetic interactions of *KRAS* mutations are allele- and tissue-specific."
+  url = "https://www.nature.com/articles/s41467-021-22125-z"
   organization = "Nature Communications"
   organization_url = "https://www.nature.com/ncomms/"
   certificate_url = ""
-  date_start = "2021-02-15"
+  date_start = "2021-03-22"
   date_end = ""
-  description = "We have published our analysis on the genetic interactions of *KRAS* alleles in four different cancer types in *Nature Communications*. "
+  description = "We have published our analysis on the genetic interactions of *KRAS* alleles in four different cancer types in *Nature Communications*."
 
 [[item]]
   title = "Completed Advent of Code 2020"
