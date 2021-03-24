@@ -32,10 +32,10 @@ featured: true
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
 links:
-  # - name: PubMed
-  #   url: https://www.ncbi.nlm.nih.gov/pubmed/?term=30952657
-  #   icon_pack: ai
-  #   icon: pubmed
+  - name: PubMed
+    url: https://www.ncbi.nlm.nih.gov/pubmed/?term=33753749
+    icon_pack: ai
+    icon: pubmed
   - name: Nat. Comm.
     url: https://www.nature.com/articles/s41467-021-22125-z
     icon_pack: fas
