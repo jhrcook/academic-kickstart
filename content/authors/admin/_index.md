@@ -23,9 +23,13 @@ bio: My research interests include cancer genetics and evolution. I also learnin
 interests:
 - Cancer genetics and evolution
 - Swift and iOS development
+- Bayesian data analysis
 
 education:
   courses:
+  - course: PhD in Computational Biology
+    institution: Harvard Medical School
+    year: (in progress)
   - course: BS in Biochemistry and Molecular Biology
     institution: University of California, Irvine
     year: 2017
@@ -72,6 +76,6 @@ email: ""
 # - Visitors
 ---
 
-Josh is a computational biologist pursuing his PhD. at Harvard Medical School. There, he is co-advised by Professor Kevin Haigis and Professor Peter Park as he studies cancer genetics and evolution. Specifically, he is working to understand the tissue-specific impacts of *KRAS* mutations on the behavior of cancers.
+Josh is a computational biologist pursuing his PhD. at Harvard Medical School. There, he is co-advised by Professor Kevin Haigis and Professor Peter Park as he studies cancer genetics and evolution. Specifically, he is working to understand the tissue-specific behavior of *KRAS* mutations in cancers.
 
-In his free time, Josh enjoys learning about programming and computer science - his current project is creating an iOS app in Swift. Off the computer, his hobbies include running and caring for his plants.
+In his free time, Josh enjoys learning about programming and computer science - his current project is creating a MacOS app to summarize text using machine learning. Off the computer, his hobbies include running and caring for his plants.

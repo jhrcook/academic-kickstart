@@ -21,7 +21,11 @@ subtitle = ""
   
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
-  
+
+ [[content.filter_button]]
+   name = "Data Analysis"
+   tag = "data analysis"
+   
  [[content.filter_button]]
    name = "Applications"
    tag = "application"
@@ -29,10 +33,6 @@ subtitle = ""
  [[content.filter_button]]
    name = "Packages"
    tag = "package"
-   
- [[content.filter_button]]
-   name = "Data Analysis"
-   tag = "data analysis"
   
  [[content.filter_button]]
    name = "Plants"
