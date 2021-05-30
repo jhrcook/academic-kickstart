@@ -48,34 +48,22 @@ Below is a record of the resources I have used followed by examples of my work t
 
 ## Books
 
-Below are the books I have worked through or are currently studying.
+Below are the books I have worked through for learning how to conduct Bayesian data analyses.
+I plan to revist both Kruschke and Gelman so that I can practice the coding alongside the theory.
 
-**Statistical Rethinking** (2e) by Richard McElreath
-
-[repo](https://github.com/jhrcook/statistical-rethinking)
-
-<img width="25%" src="assets/statistical-rethinking.png">
-
-**Doing Bayesian Data Analysis** (2e) by John Kruschke
-
-<img width="25%" src="assets/doing-bayesian-data-analysis.png">
-
-**Bayesian Analysis with Python** (2e) by Osvaldo Martin
-
-[repo](https://github.com/jhrcook/bayesian-analysis-with-python_e2)
-
-<img width="25%" src="assets/bayesian-analysis-with-python.png">
-
-**Bayesian Data Analysis** (3e) by Andrew Gelman
-
-<img width="25%" src="assets/bayesian-data-analysis.png">
+| Title                                    | Author            | Links                                                               |
+|------------------------------------------|-------------------|---------------------------------------------------------------------|
+| ***Statistical Rethinking*** (2e)        | Richard McElreath | [repo](https://github.com/jhrcook/statistical-rethinking)           |
+| ***Doing Bayesian Data Analysis*** (2e)  | John Kruschke     |                                                                     |
+| ***Bayesian Analysis with Python*** (2e) | Osvaldo Martin    | [repo](https://github.com/jhrcook/bayesian-analysis-with-python_e2) |
+| ***Bayesian Data Analysis*** (3e)        | Andrew Gelman     |                                                                     |
 
 ---
 ## Tutorials
 
 [GitHub repo](https://github.com/jhrcook/pymc3-tutorials)
 
-I have repository of Jupyter notebooks where I follow, annotate, and experiment with tutorials on using the probabilistic programming language PyMC3.
+I have repository of Jupyter notebooks where I follow, annotate, and experiment with tutorials on using the probabilistic programming language [PyMC3](https://docs.pymc.io).
 
 ---
 
@@ -120,6 +108,19 @@ This work is meant to help select candidate genes for follow up experimentation 
 I did a small analysis to see if there was evidence for differential expression of *DUSP* genes associated with the *KRAS* alleles or with the loss *APC* in human samples of colorectal cancer tumors.
 
 <img width="75%" src="assets/dusp-dge/dusp-dge.png">
+
+### Miscellaneous analyses
+
+#### Analyzing the results of “Inhibiting and Facilitating Conditions of the Human Smile: A Nonobtrusive Test of the Facial Feedback Hypothesis”
+
+After reading about it in [Daniel Kahneman's](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) [*Thinking, Fast and Slow*](https://en.wikipedia.org/wiki/Daniel_Kahneman), I conducted my own analysis of the results from a replication report on the famous social psychology paper ["Inhibiting and Facilitating Conditions of the Human Smile: A Nonobtrusive Test of the Facial Feedback Hypothesis"](https://doi.apa.org/doiLanding?doi=10.1037%2F0022-3514.54.5.768).
+I began with several different visualizations of the data and then fit several different models, analyzing each and comparing them all together.
+The full analysis can be found here: [https://jhrcook.github.io/wagenmaker-data-analysis/](https://jhrcook.github.io/wagenmaker-data-analysis/).
+
+<img width="75%" src="assets/wagenmaker/unnamed-chunk-9-1.png">
+
+<img width="75%" src="assets/wagenmaker/unnamed-chunk-27-2.png">
+
 
 ---
 
