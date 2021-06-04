@@ -85,10 +85,11 @@ This file will be imported into Python as a module, makign the `DEEPAI_API_KEY` 
 
 ### 2. Prepare Python
 
-The only third-party (i.e. not built-in) package that is required for this is ['requests'](https://requests.readthedocs.io/en/master/), so create a virtual environment ([Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/#using-virtual-environments)) and install it before continuing.
+The only third-party (i.e. not built-in) package that is required for this is ['requests'](https://requests.readthedocs.io/en/master/), so create a virtual environment ([Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/#using-virtual-environments)), activate the virtual environment, and install it before continuing.
 
 ```bash
 python3 -m venv colorizer-env
+source colorizer-env/bin/activate
 pip install requests
 ```
 
@@ -96,6 +97,7 @@ or
 
 ```bash
 conda create -n colorizer-env python=3.8
+conda activate colorizer-env
 conda install requests
 ```
 
@@ -210,3 +212,8 @@ for input_image in all_input_images:
         colorize(input_image, output_path, DEEPAI_API_KEY)
 ```
 
+---
+
+### Edits
+
+- Include the instruction to activate the Python virtual environment. (2021-06-04)
