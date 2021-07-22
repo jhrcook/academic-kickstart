@@ -142,6 +142,10 @@ Below are the instances where I have explored Bayesian data analysis.
 
 ### Blog Posts
 
-I wrote a [blog post](https://joshuacook.netlify.app/post/uncanny-x-men-bayesian-analysis/) as a follow-up on an article to Julia Silge's [Uncanny X-Men analysis](https://juliasilge.com/blog/uncanny-xmen/).
+I wrote a [blog post]({{< ref "post/uncanny-x-men-bayesian-analysis" >}}) as a follow-up on an article to Julia Silge's [Uncanny X-Men analysis](https://juliasilge.com/blog/uncanny-xmen/).
 She used a bootstrapping method to build confidence intervals for an estimate of some feature of the comic books (more details are in my original post).
 My analysis was focussed on how this was similar to using a Bayesian technique, while also highlighting how a fit Bayesian model is more easily interpreted than 95% confidence intervals from a permutation test.
+
+Another [post]({{< ref "post/mixed-parameterization-hierarchical-model" >}}) I made was just a PyMC3 version of Betancourt's post on funnel degenercies that commonly plague hierarchical models.
+The main point was to increase my own understanding of the theory Betancourt explained and the diagnostics he demonstrated.
+Also, this served as an opportunity to create a model in PyMC3 with a mixture of centered and non-centered parameterizations, a technique I may need in my own work.
