@@ -1,12 +1,11 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Bayesian Data Analysis"
 summary: "The steps I have taken to learn how to conduct Bayesian data analysis."
 authors: []
 tags: ["Bayesian", "Bayesian", "data analysis", "data", "data science", "statistics"]
 categories: ["Bayesian Data Analysis"]
-date: 2020-10-04T18:04:32-04:00
+date: 2021-08-03T07:00:00-00:00
 draft: false
 
 # Optional external URL for project (replaces project detail page).
@@ -16,8 +15,6 @@ external_link: ""
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
-  focal_point: ""
   preview_only: true
 
 # Custom links (optional).
@@ -28,17 +25,6 @@ image:
 #   icon_pack: fab
 #   icon: twitter
 
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
 ---
 
 For the past few months, I have been learning about and implementing Bayesian techniques for data analysis.
