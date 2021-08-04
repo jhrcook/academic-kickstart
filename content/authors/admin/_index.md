@@ -27,7 +27,7 @@ interests:
 
 education:
   courses:
-  - course: PhD in Computational Biology
+  - course: PhD in Computational Biology & Cancer Genetics
     institution: Harvard Medical School
     year: (in progress)
   - course: BS in Biochemistry and Molecular Biology

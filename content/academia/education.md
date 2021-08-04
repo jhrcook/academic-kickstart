@@ -19,13 +19,13 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
-  title = "Ph.D. in Computational Biology"
+  title = "Ph.D. in Computational Biology & Cancer Genetics"
   company = "Harvard Medical School"
   company_url = "http://hms.harvard.edu"
   location = "Boston, Massachusetts"
   date_start = "2017-09-01"
   date_end = ""
-  description = "I am currently pursuing my Ph.D. in computational biology in the Biological and Biomedical Sciences program at Harvard Medical School."
+  description = "I am currently pursuing my Ph.D. in computational biology and cancer genetics in the Biological and Biomedical Sciences program at Harvard Medical School."
 
 [[experience]]
   title = "B.S. in Biochemistry and Molecular Biology"
@@ -34,7 +34,7 @@ date_format = "Jan 2006"
   location = "Irvine, California"
   date_start = "2013-09-01"
   date_end = "2017-06-19"
-  description = "While at UCI I focused on conducting research and pursuing a diverse yet in-depth understanding of biology."
+  description = "While at UCI, I focused on conducting research and pursuing a diverse yet in-depth understanding of biology."
   
 [[experience]]
   title = "B.S. in Chemistry"

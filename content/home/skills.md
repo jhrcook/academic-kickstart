@@ -24,7 +24,7 @@ subtitle = ""
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-  description = "Intermediate"
+  description = "Proficient"
 
 [[feature]]
   icon = "swift"

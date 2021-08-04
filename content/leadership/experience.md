@@ -24,9 +24,31 @@ date_format = "Jan 2006"
   company_url = ""
   location = "Cambridge, Massachusetts"
   date_start = "2018-09-01"
-  date_end = ""
+  date_end = "2021-07-01"
   description = """
-I am a general tutor for a high school freshman. Therefore, in any one night, we will range from history to physics to computer science. Mainly, I ensure that he understands the material and help him grasp topics he finds difficult. While I have a good handle on most of the information covered, sometimes his course material stretches well beyond my comfort level (for example, his Mandarin course). When I find myself in these scenarios, I probe his understanding by asking questions and having him teach me the material.
+I was a general tutor for a high school student from his freshman through junior year. In any one night, we would range from history to physics to computer science. Mainly, I ensured that he understood the material and helped him grasp topics he found difficult. While I have a good handle on most of the information we would cover, sometimes his course material stretched well beyond my comfort level (for example, his Mandarin course). When faced with these challenges, I probed his understanding by asking questions and having him teach me the material.
+  """
+
+[[experience]]
+  title = "Undergrad Mentorship"
+  company = "Harvard Medical School"
+  company_url = ""
+  location = "Boston, Massachusetts"
+  date_start = "2019-10-01"
+  date_end = "2020-11-01"
+  description = """
+I mentored an undergraduate student from Harvard as he designed and built a website that is a data portal for a proteomics dataset the Haigis Lab had generated. As the student was majoring in Computer Science, I spent a lot of time teaching him about the what the data represented, focussing on what this meant for how it should be presented and described on the website. Also, I assisted him in preparing for meetings with PIs, an intimidating event for a young student.
+  """
+  
+[[experience]]
+  title = "Teaching Assistant"
+  company = "BMI 713"
+  company_url = "https://dbmi.hms.harvard.edu/education/courses/bmi-713"
+  location = "Boston, Massachusetts"
+  date_start = "2019-08-01"
+  date_end = "2019-10-01"
+  description = """
+I TA'ed for the course *Computing Skills for Biomedical Sciences* where I taught graduate students how to use the R programming language to analyze data. This included the essentials of data preparation, augmentation, and visualization. My reposonsibilities were to assist with instruction during class, hold weekly office hours, help several students who requested additional help with one-on-one meetings, and create and grade weekly problem sets.
   """
 
 [[experience]]
