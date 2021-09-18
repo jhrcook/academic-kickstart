@@ -166,22 +166,22 @@ I have appended implementation notes for myself at the end of the post.
 
 #### Strategy 2. Work like Teddy Roosevelt
 
-- work on the task at hand exclusively and with *high intensity* ("Roosevelt dash")
+- work on the task at hand exclusively and with *high intensity* ("Roosevelt dash"; pg. 167)
 	- "incompatible with distraction"
 - impose a deadline to force the intensity
 
 #### Strategy 3. Meditate productively
 
-- during periods of physical activity, but mental inactivity, focus your attention on a single well-defined professional problem
+- during periods of physical activity, but mental inactivity, focus your attention on a single well-defined professional problem (pg. 170)
 	- goal is to improve your ability to think deeply, though will also likely see direct productivity improvements
-- two common issues:
-	- be wary of distractions (mind wandering) and looping (thinking about a solved problem over and over)
-	- structure your deep thinking
+- two suggestions:
+	- be wary of distractions (mind wandering) and looping (thinking about a solved problem over and over) (pg. 172)
+	- structure your deep thinking (pg. 173)
 		- recommends first listing all variables related to the problem and them working one step at a time towards a solution
 
 #### Strategy 4. Memorize a deck of cards
 
-- recommends memory training; deck of cards is a good place to start
+- recommends memory training; deck of cards is a good place to start (pg. 174)
 
 ### Rule 3. Quit Social Media
 
@@ -249,25 +249,60 @@ I have appended implementation notes for myself at the end of the post.
 
 ## Personal Implementation Notes
 
-- I should use the *rhythmic* philosophy of deep work with less frequent ventures into the *bimodal* philosophy.
-- Need to implement some rules for the different types of deep work I do (e.g. different rules when trying to code vs trying to read papers or reading online articles).
-- Figure out a few good places to do work (Boston Public Library, etc.) as a ritual and grand gesture.
-- Implement the 4DX principles:
-	1. Write down all goals and select few for each deep work session.
-	2. Decide on lead measures and make a system of record keeping.
-	3. Create a "scoreboard" for tallying number of deep work hours per day.
-- Need a shutdown ritual.
-	- to-do: check email, check Slack, check notes, check GitHub, record incomplete tasks, look ahead on calendar
-	- Newport's example on page 152
-- Have a central location where all larger projects are listed.
-- Experiment with the Rooseveltian method (described at the bottom of pg. 167).
-- Experiment with "productive meditation" - I like letting my mind wander while exercising or focus on the exercise, but this strategy is worth trying; might be best while showering, walking, commuting, etc.
-- Put together a list of activities, hobbies, jobs to do in free time and leave in a visible area.
-- Not too much to do for social media. Can put a specific time limit and notification rules on specific apps.
-- Get in the habit of scheduling the day every morning.
-- Score the depth of each activity using the "college grad" test
-	- How to integrate this with the scheduling and weekly review?
-- Finish working by 5:30 pm.
+<span style='color:grey'>The following are notes for myself and are specific to my implementation of Newports recommendations.</span>
+
+For my current job as a graduate student, I believe I should follow the *rhythmic philosophy of deep work* with the possibility for intermittent use of the bimodal philosophy when possible or if there is specific motivation to do so.
+For the moment, I require the flexibility of this system so that I can take care of the shallow tasks required by my employers.
+
+I have multiple different types of deep activities, specifically reading scientific literature, learning new skills/classwork, coding, and reading less structured texts (e.g. software development blog posts).
+I think these different activities will require different rules for their execution.
+For instance, the method for reading a journal article is different from a blog post and the freedom to search the internet should be different for each, too.
+I may want to develop general guidelines for each type of common task that can then be augmented for the specifics of each individual activity.
+
+With regards to the rituals and grand gestures, I should think of an assortment of good places to do work around Boston.
+For instance, the Boston Public Library or Countway Library at HMS are good starters.
+These kinds of spots help put me into the correct mood for deep work.
+I should think about the options for transportation, too, including the MBTA and M2 shuttle (which I can take up to MIT and Harvard Yard for free anytime).
+I am not sure what other "grand gestures" I could implement as I need to be cautious with money, but maybe I will find a few good ideas over time.
+
+I need to take several steps and develop a few habits to accomplish the 4DX principles.
+For starters, I want to create a central location to keep track of my projects so that I can then choose from the list for each activity.
+Preferably this will be a physical object that I can have visible at all times.
+In a similar vein, I want to have a physical scoreboard so that it is easy to see and interact with.
+I think I should organize my whiteboard for this need.[^1]
+
+[^1]: Maybe a future project for myself is to create a simple app that does this for me. It could be as simple as a SwiftBar app or as complicated as a pair of macOS and iOS apps.
+
+The next order of business is to create a shutdown ritual.
+When creating my own, I should start with an analog of the algorithm that Newport uses (pg. 152) and then adapt it over time to better suit me.
+
+Two methods for improving my concentration that I want to experiment with are the "Rooseveltian method" (pg. 167) and "productive meditation" (pg. 170).
+Some experimentation with "Roosevelt dashes" sounds interesting and potentially fun.
+For the productive meditation, I am not sure I would use it while running or exercising because I use those as valuable relaxation and head-clearing time.
+But perhaps while walking to and from places, I can replace some podcasts with training my ability to concentrate.
+
+With respect to social media, I am already pretty close to zero use.
+The only apps I use daily are iMessage/phone/FaceTime, Snapchat, and YouTube.[^2]
+I live in a different state from my family and girlfriend, so texting or calling are the only way to communicate with them.
+And I only use Snapchat to send a few light-hearted photos and videos to my girlfriend every now and then so they do not take up space on our phones.
+YouTube is probably my biggest time-suck, so I need to watch my consumption more.
+Relative to the average American, I do not think I use social networks very much, so I do not think I need to make many changes here.
+I will experiment with only checking texts and calls at scheduled times and making sure to turn off notifications while I am working.
+
+[^2]: I do use Twitter, but I implement the Joe Rogan method of just posting if I publish something new and getting out.
+
+I definitely have the problem of not structuring my leisure time, primarily when plans change in the evening and leave me with a gap in my schedule.
+My solution is to put together a list of activities, hobbies, chores, etc. to do in my free time then peruse the list when I find myself in this situation.
+That way I do not just fall to watching YouTube videos.
+
+Turning to the last Rule on draining the shallows.
+I want to develop the habit of scheduling my day every morning.
+I used to do this with a slightly different strategy than Newport describes, but I will try his black-based method now as it sounds very attractive.
+Next, I want to begin scoring activities using the "college grad" test before and after the scheduled block.
+That way, I can work to improve in my estimation of the depth of an activity.
+I will need to integrate this scoring system into the scheduling and weekly review process.
+Lastly, I will set a strict end-of-day time at 5:30 pm.
+From my own experiences, I have felt the issues that Newport outlines with carrying work into the night and would like to try his method to alleviate them.
 
 ### Other books
 
@@ -280,4 +315,4 @@ I have appended implementation notes for myself at the end of the post.
 7. *Digital Minimalism* by Cal Newport
 8. *A World Without Email* by Cal Newport
 
-- look into [the "time-block" planner](https://www.timeblockplanner.com)
+Think about using Cal Newport's ["time-block" planner](https://www.timeblockplanner.com).
