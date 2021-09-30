@@ -19,6 +19,17 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  organization = "PyPI"
+  organization_url = "https://pypi.org"
+  title = "`boston311` Python package"
+  url = "https://pypi.org/project/boston311/"
+  certificate_url = ""
+  date_start = "2021-08-14"
+  date_end = ""
+  description = "My (first) Python package, `boston311`, for querying the Boston 311 reporting service API is available on PyPI."
+
+
+[[item]]
   title = "The origins and genetic interactions of *KRAS* mutations are allele- and tissue-specific."
   url = "https://www.nature.com/articles/s41467-021-22125-z"
   organization = "Nature Communications"
@@ -27,6 +38,7 @@ date_format = "Jan 2006"
   date_start = "2021-03-22"
   date_end = ""
   description = "We have published our analysis on the genetic interactions of *KRAS* alleles in four different cancer types in *Nature Communications*."
+
 
 [[item]]
   title = "Completed Advent of Code 2020"
@@ -53,12 +65,12 @@ date_format = "Jan 2006"
 [[item]]
   organization = "CRAN"
   organization_url = "https://cran.r-project.org"
-  title = "mustashe"
+  title = "`mustashe` R package"
   url = "https://CRAN.R-project.org/package=mustashe"
   certificate_url = ""
   date_start = "2020-03-28"
   date_end = ""
-  description = "My R package, 'mustashe', has been accepted to CRAN. It is 'A simple system for saving and loading objects in R. Long running computations can be stashed after the first run and then reloaded the next time. Dependencies can be added to ensure that a computation is re-run if any of its dependencies or inputs have changed.'" 
+  description = "My R package, `mustashe`, has been accepted to CRAN. It is 'A simple system for saving and loading objects in R. Long running computations can be stashed after the first run and then reloaded the next time. Dependencies can be added to ensure that a computation is re-run if any of its dependencies or inputs have changed.'" 
 
 
 [[item]]
@@ -119,12 +131,12 @@ date_format = "Jan 2006"
 [[item]]
   organization = "CRAN"
   organization_url = "https://cran.r-project.org"
-  title = "ggasym"
+  title = "`ggasym` R package"
   url = "https://CRAN.R-project.org/package=ggasym"
   certificate_url = ""
   date_start = "2019-03-23"
   date_end = ""
-  description = "My R package, 'ggasym', has been accepted to CRAN. It was further promoted by RStudio in their [March edition of Top 40 New CRAN Packages](https://rviews.rstudio.com/2019/04/26/march-2019-top-40-new-cran-packages/) and [R Weekly (March 18, 2019)](https://rweekly.org/2019-11.html#NewPackages)."  
+  description = "My R package, `ggasym`, has been accepted to CRAN. It was further promoted by RStudio in their [March edition of Top 40 New CRAN Packages](https://rviews.rstudio.com/2019/04/26/march-2019-top-40-new-cran-packages/) and [R Weekly (March 18, 2019)](https://rweekly.org/2019-11.html#NewPackages)."  
 
 
 [[item]]
