@@ -51,8 +51,8 @@ Below is an exmaple of how to fit a spline using the Bayesian framework [PyMC3](
 
 Below is a full working example of how to fit a spline using the probabilitic programming language PyMC3.
 The data and model are taken from [*Statistical Rethinking* 2e](https://xcelab.net/rm/statistical-rethinking/) by Richard McElreath.
-As the book uses Stan (another advanced probabilitistic programming language), the modeling code is primarily taken from the [GitHub repository of the PyMC3 implementation of *Statistical Rethinking*](https://github.com/pymc-devs/resources/blob/master/Rethinking_2/Chp_04.ipynb).
-My contributions are primarily of explination and additional analyses of the data and results.
+As the book uses [Stan](https://mc-stan.org) (another advanced probabilitistic programming language), the modeling code is primarily taken from the [GitHub repository of the PyMC3 implementation of *Statistical Rethinking*](https://github.com/pymc-devs/resources/blob/master/Rethinking_2/Chp_04.ipynb).
+My contributions are primarily of explanation and additional analyses of the data and results.
 
 ### Set-up
 
@@ -62,7 +62,7 @@ Of those that may not be well known are ['ArviZ'](https://arviz-devs.github.io/a
 'ArviZ' is a library for managing the components of a Bayesian model.
 I will use it to manage the results of fitting the model and some standard data visualizations.
 The 'patsy' library is an interface to statistical modeling using a specific formula language simillar to that used in the R language.
-Finally, 'plotnine' is a plotting library that implements the "Grammar or Graphics" system based on the ['ggplot2']() R package.
+Finally, 'plotnine' is a plotting library that implements the ["Grammar or Graphics"](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/ref=as_li_ss_tl) system based on the ['ggplot2'](https://ggplot2.tidyverse.org) R package.
 As I have a lot of experience with R, I found 'plotnine' far more natural than the "standard" in Python data science, 'matplotlib'.
 
 
@@ -91,8 +91,8 @@ rethinking_data_path = Path("../data/rethinking_data")
 
 ### Data
 
-The data for this example is the number of days of the year (`doy`) that some cherry trees were in bloom in each year (`year`).
-We will ignore the other columns for now.
+The data for this example was the number of days (`doy` for "days of year") that the cherry trees were in bloom in each year (`year`).
+Years missing a `doy` were dropped.
 
 ```python
 d = pd.read_csv(rethinking_data_path / "cherry_blossoms.csv")
@@ -143,14 +143,14 @@ $\qquad w \sim \mathcal{N}(0, 10)$
 $\quad \sigma \sim \text{Exp}(1)$
 
 The number of days of bloom will be modeled as a normal distribution with mean $\mu$ and standard deviation $\sigma$.
-The mean will be a linear model composed of a y-intercept $a$ and spline with basis $w$.
+The mean will be a linear model composed of a y-intercept $a$ and spline defined by the basis $B$ multiplied by the model parameter $w$ with a variable for each region of the basis.
 Both have relatively weak normal priors.
 
 #### Prepare the spline
 
 We can now prepare the spline matrix.
-First, we must determine the boundaries of the spline, often referred to as "knots" because the different lines will be tied together at these boundaries to make a continuous and smooth curve.
-For this example, we will create 15 knots evenly spaced as quantiles of the years data (the x-axis).
+First, we must determine the boundaries of the spline, often referred to as "knots" because the individual lines will be tied together at these boundaries to make a continuous and smooth curve.
+For this example, we will create 15 knots unevenly spaced over the years such that each region will have the same proportion of data.
 
 ```python
 num_knots = 15
@@ -247,7 +247,9 @@ DesignMatrix with shape (827, 17)
   (to view full data, use np.asarray(this_obj))
 ```
 
-The b-spline basis is plotted below.
+The b-spline basis is plotted below, showing the "domain" of each piece of the spline.
+The height of each curve indicates how influential the corresponding model covariate (one per spline region) will be on the final model.
+The overlapping regions represent the knots showing how the smooth transition from one region to the next is formed.
 
 ```python
 spline_df = (
@@ -313,12 +315,17 @@ az_m4_7 = az.from_pymc3(
 )
 ```
 
+## Analysis
+
+Now we can analyze the draws from the posterior of the model.
+
 ### Fit parameters
 
 Below is a table summarizing the posterior distributions of the model parameters.
 The posteriors of $a$ and $\sigma$ are quite narrow while those for $w$ are wider.
 This is likely because all of the data points are used to estimate $a$ and $\sigma$ whereas only a subset are used for each value of $w$.
-The number of effective samples for $a$ is quite low, though, likely due to autocorrelation of the MCMC chains (this is visible in the following plots of the trace).
+(It could be interesting to model these hierarchically allowing for the sharing of information and adding regularization across the spline.) 
+The effective sample size and $\widehat{R}$ values all look good, indiciating that the model has converged and sampled well from the posterior distribution.
 
 ```python
 az.summary(az_m4_7, var_names=["a", "w", "sigma"])
@@ -365,7 +372,7 @@ plt.show()
 ![w-forest](assets/w-forest.png)
 
 Another visualization of the fit spline values is to plot them multiplied against the basis matrix.
-The knot boundaries are shown in gray again, but now the spline bases are multipled against the values of $w$ (represented as the rainbow-colored curves).
+The knot boundaries are shown in gray again, but now the spline basis is multipled against the values of $w$ (represented as the rainbow-colored curves).
 The dot product of $B$ and $w$ - the actual computation in the linear model - is shown in blue.
 
 ```python
