@@ -19,6 +19,16 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  title = "Completed Hacktoberfest 2021"
+  url = ""
+  organization = "Hacktoberfest"
+  organization_url = "https://hacktoberfest.digitalocean.com"
+  certificate_url = ""
+  date_start = "2021-10-01"
+  date_end = ""
+  description = "I opened four pull requests to open source projects to complete the 2021 Hacktoberfest challenge. This year, I challenged myself to commit primarily to other's projects and was successful in this pursuit. I added specifications for `R` and `Rscript` commands to [Fig](), a tool that brings autocomplete to the terminal ([1](https://github.com/withfig/autocomplete/pull/635)). I also added the specification for `Rscript` to the command line tool [`tldr`](https://tldr.sh) ([2](https://github.com/tldr-pages/tldr/pull/6686)). My third PR was to add an example of fitting a spline with [PyMC3](https://docs.pymc.io/en/stable/) to the [pymc3-examples](https://github.com/pymc-devs/pymc-examples) repository ([3](https://github.com/pymc-devs/pymc-examples/pull/232)). The fourth PR was to my own project where I added Section 5 notes and exercises to my [repository](https://github.com/jhrcook/bayesian-data-analysis-course) for the course [*Bayesian Data Analysis*](https://avehtari.github.io/BDA_course_Aalto/index.html) ([4](https://github.com/jhrcook/bayesian-data-analysis-course/pull/6)). While these were the four PRs that counted for Hacktoberfest, I continued with several others including fixing a bug in [snakemake](https://snakemake.readthedocs.io/en/stable/#) ([5](https://github.com/snakemake/snakemake/pull/1201)), a typo in a file for the class I am working on ([6](https://github.com/avehtari/BDA_course_Aalto/pull/105)), Section 6 to my course repo ([7](https://github.com/jhrcook/bayesian-data-analysis-course/pull/7)), and created a tutorial, blog post, and demo app using [Appwrite](https://appwrite.io) and added these to the [awesome-appwrite](https://github.com/appwrite/awesome-appwrite) repo ([8](https://github.com/appwrite/awesome-appwrite/pull/152), [9](https://github.com/appwrite/awesome-appwrite/pull/158))."
+
+[[item]]
   organization = "PyPI"
   organization_url = "https://pypi.org"
   title = "`boston311` Python package"
