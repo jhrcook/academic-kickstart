@@ -70,7 +70,7 @@ For inspiration, here are some examples of the Image Colorization DNN at work.
 
 The first step to using the API is to get a free API key from DeepAI.
 All you need to do is create an account (there is a "login with GitHub" option that I often like to use for these sorts of applications) and you'll find your API key on your profile page.
-If you want to experiment with the API first, you can use the demo API key `100e7990-a2b3-4da0-a2ab-281ffd41395c` for a few images.
+If you want to experiment with the API first, you can use the demo API key `quickstart-QUdJIGlzIGNvbWluZy4uLi4K` for a few images.
 
 ![deepai-profile](assets/deepai-profile.png)
 
