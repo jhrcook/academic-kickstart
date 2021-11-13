@@ -1,13 +1,15 @@
 {
     "cSpell.words": [
-        "BFMI",
         "Betancourt",
         "Betancourt's",
+        "BFMI",
         "Deta",
+        "dunder",
         "MCMC",
         "Monolithically",
-        "Streamlit",
         "parameterizations",
-        "subcommands"
-    ]
+        "Streamlit",
+        "subcommands",
+    ],
+    "python.formatting.provider": "black"
 }
