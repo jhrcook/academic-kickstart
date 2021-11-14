@@ -3,13 +3,16 @@
         "Betancourt",
         "Betancourt's",
         "BFMI",
+        "colorectal",
+        "comutation",
         "Deta",
         "dunder",
         "MCMC",
         "Monolithically",
+        "organoids",
         "parameterizations",
         "Streamlit",
-        "subcommands",
+        "subcommands"
     ],
     "python.formatting.provider": "black"
 }
