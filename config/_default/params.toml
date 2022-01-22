@@ -27,7 +27,14 @@ twitter = "joshdoesa"
 # Enable source code highlighting? true/false
 # Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
 highlight = true
-highlight_languages = ["r", "swift", "python", "bash", "docker"]  # Add support for highlighting additional languages
+highlight_languages = [
+  "r",
+  "swift",
+  "python",
+  "bash",
+  "docker",
+  "stan",
+] # Add support for highlighting additional languages
 # highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
 # Enable LaTeX math rendering? true/false
@@ -45,7 +52,7 @@ privacy_pack = false
 
 # Enable visitors to edit pages?
 # `repo` defines the repository URL. `editable` defines which page types can be edited.
-edit_page = {repo_url = "", repo_branch = "master", editable = {docs = true, page = false, post = false}}
+edit_page = { repo_url = "", repo_branch = "master", editable = { docs = true, page = false, post = false } }
 
 # Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
 #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
@@ -61,7 +68,7 @@ time_format = "3:04 PM"
 email = "joshhrcook@gmail.com"
 phone = ""
 # address = "Boston, Massachusetts, 02215, USA"
-address = {city = "Boston", region = "MA", postcode = "02215", country = "United States of America", country_code = "US"}
+address = { city = "Boston", region = "MA", postcode = "02215", country = "United States of America", country_code = "US" }
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = ""
@@ -71,13 +78,7 @@ appointment_url = ""
 
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
-contact_links = [
-  # {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/joshdoesa"},
-  # {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
-  # {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
-  # {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
-  # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
-  ]
+contact_links = []
 
 
 ############################
@@ -88,7 +89,7 @@ contact_links = [
 #   E.g. To load `/assets/css/custom.css`, set `plugins_css = ["custom"]`.
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
 plugins_css = []
-plugins_js  = []
+plugins_js = []
 
 ############################
 ## Advanced options       ##
@@ -98,14 +99,14 @@ plugins_js  = []
 gravatar = false
 
 # Main menu alignment (l = left, c = center, r = right) and logo options.
-main_menu = {align = "l", show_logo = true}
+main_menu = { align = "l", show_logo = true }
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
 
 # Display next/previous section pager? (true/false)
 section_pager = false
-docs_section_pager = true  # Display pager in Docs layout (e.g. tutorials)?
+docs_section_pager = true # Display pager in Docs layout (e.g. tutorials)?
 
 # Address format (choose from the [address_formats] list below or add you own to the list).
 address_format = "en-us"
@@ -118,91 +119,121 @@ link_authors = true
 
 # Configuration of publication pages.
 [publications]
-  # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
-  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "January 2006"
+# Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
+#   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+date_format = "January 2006"
 
-  # Citation style ("apa" or "mla")
-  citation_style = "apa"
+# Citation style ("apa" or "mla")
+citation_style = "apa"
 
 # Configuration of project pages.
 [projects]
-  # Views for associated content.
-  #   1: List
-  #   2: Compact
-  #   3: Card
-  #   4: Citation (publications only)
-  post_view = 2
-  publication_view = 2
-  talk_view = 2
+# Views for associated content.
+#   1: List
+#   2: Compact
+#   3: Card
+#   4: Citation (publications only)
+post_view = 2
+publication_view = 2
+talk_view = 2
 
 # Comments.
 [comments]
-  # Comment provider:
-  #   0: Disabled
-  #   1: Disqus (https://disqus.com)
-  #   2: Commento (https://commento.io)
-  engine = 1
+# Comment provider:
+#   0: Disabled
+#   1: Disqus (https://disqus.com)
+#   2: Commento (https://commento.io)
+engine = 1
 
-  # Which page types are commentable?
-  commentable = {page = true, post = true, docs = true}
+# Which page types are commentable?
+commentable = { page = true, post = true, docs = true }
 
-  # Configuration of Disqus.
-  [comments.disqus]
-    shortname = "joshua-cook-personal-website"  # Paste the shortname from your Disqus dashboard.
-    show_count = true  # Show comment count in page header? (true/false)
-	
-  # Configuration of Commento.
-  [comments.commento]
-    # If self-hosting Commento, enter its URL here (e.g. "https://commento.?.com"), otherwise leave empty.
-    url = ""
+# Configuration of Disqus.
+[comments.disqus]
+shortname = "joshua-cook-personal-website" # Paste the shortname from your Disqus dashboard.
+show_count = true                          # Show comment count in page header? (true/false)
+
+# Configuration of Commento.
+[comments.commento]
+# If self-hosting Commento, enter its URL here (e.g. "https://commento.?.com"), otherwise leave empty.
+url = ""
 
 # Search.
 [search]
-  # Search provider:
-  #   0: No search engine
-  #   1: Academic (built-in)
-  #   2: Algolia (https://www.algolia.com)
-  engine = 1
+# Search provider:
+#   0: No search engine
+#   1: Academic (built-in)
+#   2: Algolia (https://www.algolia.com)
+engine = 1
 
-  # Configuration of Algolia search engine.
-  # Paste the values from your Algolia dashboard.
-  [search.algolia]
-    app_id = ""
-    api_key = ""
-    index_name = ""
-    show_logo = false
+# Configuration of Algolia search engine.
+# Paste the values from your Algolia dashboard.
+[search.algolia]
+app_id = ""
+api_key = ""
+index_name = ""
+show_logo = false
 
 [map]
-  # To show your address on a map in the Contact widget, enter your latitude and longitude (above)
-  # and choose a map provider below.
-  #
-  # To use Google Maps, set `engine` to 1 and enter your API key that can be obtained here:
-  #   https://developers.google.com/maps/documentation/javascript/get-api-key
-  # To use OpenStreetMap tiles, set `engine` to 2.
-  # To use OpenStreetMap on a high traffic site, set `engine` to 3 and enter your API key that can be obtained here:
-  #   https://www.mapbox.com/studio/account/tokens
-  #
-  # Map provider:
-  #   0: No map
-  #   1: Google Maps
-  #   2: OpenStreetMap (Mapnik)
-  #   3: OpenStreetMap (Mapbox)
-  engine = 2
-  api_key = ""
-  coordinates = {latitude = "37.4275", longitude = "-122.1697"}
-  zoom = 15
- 
+# To show your address on a map in the Contact widget, enter your latitude and longitude (above)
+# and choose a map provider below.
+#
+# To use Google Maps, set `engine` to 1 and enter your API key that can be obtained here:
+#   https://developers.google.com/maps/documentation/javascript/get-api-key
+# To use OpenStreetMap tiles, set `engine` to 2.
+# To use OpenStreetMap on a high traffic site, set `engine` to 3 and enter your API key that can be obtained here:
+#   https://www.mapbox.com/studio/account/tokens
+#
+# Map provider:
+#   0: No map
+#   1: Google Maps
+#   2: OpenStreetMap (Mapnik)
+#   3: OpenStreetMap (Mapbox)
+engine = 2
+api_key = ""
+coordinates = { latitude = "37.4275", longitude = "-122.1697" }
+zoom = 15
+
 # Available address formats.
 [address_formats]
-  en-us = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', '']}
-  en-gb = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ', ', '']}
-  zh = {order = ['postcode', 'region', 'city', 'street'], delimiters = [' ', ' ', ' ', '']}
-  
+en-us = { order = [
+  'street',
+  'city',
+  'region',
+  'postcode',
+], delimiters = [
+  ', ',
+  ', ',
+  ' ',
+  '',
+] }
+en-gb = { order = [
+  'street',
+  'city',
+  'region',
+  'postcode',
+], delimiters = [
+  ', ',
+  ', ',
+  ', ',
+  '',
+] }
+zh = { order = [
+  'postcode',
+  'region',
+  'city',
+  'street',
+], delimiters = [
+  ' ',
+  ' ',
+  ' ',
+  '',
+] }
+
 
 ############################
 ## Marketing
 ############################
 [marketing]
-  google_analytics = "UA-145596899-1"
-  google_tag_manager = ""
+google_analytics = "UA-145596899-1"
+google_tag_manager = ""
