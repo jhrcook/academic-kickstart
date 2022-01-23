@@ -76,6 +76,8 @@ email: ""
 # - Visitors
 ---
 
-Josh is a computational biologist pursuing his PhD. at Harvard Medical School. There, he is co-advised by Professor Kevin Haigis and Professor Peter Park as he studies cancer genetics and evolution. Specifically, he is working to understand the tissue-specific behavior of *KRAS* mutations in cancers.
+I am a computational biologist pursuing a PhD. in computational biology at Harvard Medical School.
+My primary interest is in understanding the tissue-specific behaviors of oncogenes in cancers.
 
-In his free time, Josh enjoys learning about programming and computer science - his current project is creating a MacOS app to summarize text using machine learning. Off the computer, his hobbies include running and caring for his plants.
+In my free time, I enjoy learning about programming and computer science - my current project is working on [comparing AI/ML summarization methods on scientific publications](https://github.com/jhrcook/sci-article-summarization).
+Off the computer, my hobbies include running and exercising and caring for my plants.
