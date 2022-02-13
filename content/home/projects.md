@@ -35,8 +35,8 @@ subtitle = ""
    tag = "package"
   
  [[content.filter_button]]
-   name = "Plants"
-   tag = "plants"
+   name = "Hobbies"
+   tag = "hobby"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

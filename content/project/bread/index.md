@@ -1,0 +1,76 @@
+---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Bread"
+summary: "Just pictures and descriptions of bread I have made."
+authors: []
+tags: ["hobby"]
+categories: ["Bread"]
+date: 2022-02-13T08:13:48-05:00
+
+# Optional external URL for project (replaces project detail page).
+external_link: ""
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: True
+
+# Custom links (optional).
+#   Uncomment and edit lines below to show custom links.
+links:
+- name: "<em>FWSY</em>"
+  url: https://kensartisan.com/flour-water-salt-yeast/
+  icon_pack: fa
+  icon: book
+- name: "<em>Tartine Bread</em>"
+  url: https://www.goodreads.com/book/show/8185785-tartine-bread
+  icon_pack: fa
+  icon: book
+- name: "<em>Bread Making at Home</em>"
+  url: https://www.simonandschuster.com/books/Making-Bread-at-Home/Jane-Mason/9781788791908
+  icon_pack: fa
+  icon: book
+
+
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+slides: ""
+---
+
+This project is here to loosely document my journey in bread making.
+
+## Intro
+
+I didn't have an outsized desire to make bread, but someone in my apartment building put three high-quality bread-making books out by the front door with a "Free" sign, so I took this as a sign from the heavens to pick up a new hobby.
+Immediately, I was very excited to get started.
+I ordered a handful of items I needed (e.g. a quick-read thermometer) on Amazon, and as I waited for them to arrive I couldn't stop reading about the process.
+
+The three books are [*Flour Water Salt Yeast*](https://kensartisan.com/flour-water-salt-yeast/) (FWSY) by Ken Forkish, [*Tartine Bread*](https://www.goodreads.com/book/show/8185785-tartine-bread) by Chad Robertson, and [*Bread Making at Home*](https://www.simonandschuster.com/books/Making-Bread-at-Home/Jane-Mason/9781788791908) by Jane Mason.
+So far, I am working through FWSY and then, as I get more knowledge and experience, will try recipes from the other two.
+
+## 2022
+
+### Feb. 10, 2022
+
+My first bread.
+I followed the basic Saturday White Bread recipe and instructions from FWSY.
+The second load was proofed overnight in the fridge and baked the following morning.
+
+| Bread 1 | Bread 2 |
+|:-------:|:-------:|
+| <img src="assets/2022/2022-02-10_b1.jpeg" width="350" alt="Feb. 10, 2022 loaf 1"> | <img src="assets/2022/2022-02-10_b2.jpeg" width="350" alt="Feb. 10, 2022 loaf 2"> |
+
+The room was around 75 ºF, a bit warmer than the recommended 70 ºF, so I  think the bulk fermentation was faster than expected.
+Both tasted great, though!
