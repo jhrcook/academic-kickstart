@@ -70,7 +70,7 @@ However, *KRAS* A59E/T mutant tumor samples had similar probabilities of having 
 
 This work will likely be published within the next year or so as part of a broader study of the dynamics of the Kras A59 mutants.
 
-<img width="75%" src="assets/kras-a59/prop-hypermutants.png">
+<img src="assets/kras-a59/prop-hypermutants.png" width="50%">
 <img width="75%" src="assets/kras-a59/m3_hdi.png">
 <img width="75%" src="assets/kras-a59/m3_fitted_draws.png">
 
@@ -95,7 +95,7 @@ I did a small analysis to see if there was evidence for differential expression 
 
 #### Analyzing the results of “Inhibiting and Facilitating Conditions of the Human Smile: A Nonobtrusive Test of the Facial Feedback Hypothesis”
 
-[<i class="fab fa-github"></i> Source](https://github.com/jhrcook/wagenmaker-data-analysis) | 
+[<i class="fab fa-github"></i> Source](https://github.com/jhrcook/wagenmaker-data-analysis) |
 [<i class="fas fa-laptop"></i> Website](https://jhrcook.github.io/wagenmaker-data-analysis/)
 
 After reading about it in [Daniel Kahneman's](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) [*Thinking, Fast and Slow*](https://en.wikipedia.org/wiki/Daniel_Kahneman), I conducted my own analysis of the results from a replication report on the famous social psychology paper ["Inhibiting and Facilitating Conditions of the Human Smile: A Nonobtrusive Test of the Facial Feedback Hypothesis"](https://doi.apa.org/doiLanding?doi=10.1037%2F0022-3514.54.5.768).
@@ -105,7 +105,6 @@ The full analysis can be found here: [https://jhrcook.github.io/wagenmaker-data-
 <img width="75%" src="assets/wagenmaker/unnamed-chunk-9-1.png">
 
 <img width="75%" src="assets/wagenmaker/unnamed-chunk-27-2.png">
-
 
 ---
 
@@ -127,10 +126,19 @@ Below are the instances where I have explored Bayesian data analysis.
 
 ### Blog Posts
 
-I wrote a [blog post]({{< ref "post/uncanny-x-men-bayesian-analysis" >}}) as a follow-up on an article to Julia Silge's [Uncanny X-Men analysis](https://juliasilge.com/blog/uncanny-xmen/).
+#### Uncanny X-Men - Bayesian version
+
+I wrote a [**post**]({{< ref "post/uncanny-x-men-bayesian-analysis" >}}) as a follow-up on an article to Julia Silge's [Uncanny X-Men analysis](https://juliasilge.com/blog/uncanny-xmen/).
 She used a bootstrapping method to build confidence intervals for an estimate of some feature of the comic books (more details are in my original post).
 My analysis was focussed on how this was similar to using a Bayesian technique, while also highlighting how a fit Bayesian model is more easily interpreted than 95% confidence intervals from a permutation test.
 
-Another [post]({{< ref "post/mixed-parameterization-hierarchical-model" >}}) I made was just a PyMC3 version of Betancourt's post on funnel degeneracies that commonly plague hierarchical models.
+#### Understanding the "funnel of doom"
+
+Another [**post**]({{< ref "post/mixed-parameterization-hierarchical-model" >}}) I made was just a PyMC3 version of Betancourt's post on funnel degeneracies that commonly plague hierarchical models.
 The main point was to increase my own understanding of the theory Betancourt explained and the diagnostics he demonstrated.
 Also, this served as an opportunity to create a model in PyMC3 with a mixture of centered and non-centered parameterizations, a technique I may need in my own work.
+
+#### Non-linear modeling of serial dilutions
+
+This was a [**post**]({{< ref "post/stan-serial-dilution" >}}) following the model for serial dilutions in the *Bayesian Data Aanlysis* book by Gelman *et al.*
+I built the model with Stan and sampling from the posterior with MCMC then conducted some standard analyses of the posterior distributions and predictions.
