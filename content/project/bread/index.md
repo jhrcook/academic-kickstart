@@ -68,9 +68,19 @@ My first bread.
 I followed the basic Saturday White Bread recipe and instructions from FWSY.
 The second load was proofed overnight in the fridge and baked the following morning.
 
-| Bread 1 | Bread 2 |
+| Boule 1 | Boule 2 |
 |:-------:|:-------:|
 | <img src="assets/2022/2022-02-10_b1.jpeg" width="350" alt="Feb. 10, 2022 loaf 1"> | <img src="assets/2022/2022-02-10_b2.jpeg" width="350" alt="Feb. 10, 2022 loaf 2"> |
 
 The room was around 75 ºF, a bit warmer than the recommended 70 ºF, so I  think the bulk fermentation was faster than expected.
 Both tasted great, though!
+
+### Feb. 14, 2022
+
+This was an over-night fermentation.
+It starts with less yeast so that there is more time for the microorganisms to produce more complex flavors.
+I didn't taste a remarkable difference, but the texture and mouth feel was more buttery.
+
+| Pre-fermentation | Post-fermentation (12 hr) | Final boules |
+|:----------------:|:-------------------------:|:------------:|
+| <img src="assets/2022/2022-02-14_b1.jpeg" height="250" alt="Feb. 14, 2022 pre-fermenation"> | <img src="assets/2022/2022-02-14_b2.jpeg" height="250" alt="Feb. 14, 2022 post-fermentation"> | <img src="assets/2022/2022-02-14_b3.jpeg" height="350" alt="Feb. 14, 2022 final breads"> |
