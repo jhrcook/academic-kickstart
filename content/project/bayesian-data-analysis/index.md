@@ -132,6 +132,13 @@ I wrote a [**post**]({{< ref "post/uncanny-x-men-bayesian-analysis" >}}) as a fo
 She used a bootstrapping method to build confidence intervals for an estimate of some feature of the comic books (more details are in my original post).
 My analysis was focussed on how this was similar to using a Bayesian technique, while also highlighting how a fit Bayesian model is more easily interpreted than 95% confidence intervals from a permutation test.
 
+#### Splines
+
+I have two blog posts about modeling splines.
+The [first]({{<ref "post/pymc3-spline">}}) is a more detialed introduction to these forms of transformations and how the model interprets the spline basis.
+The [second]({{<ref "post/pymc-multilevel-spline">}}) is a more exploratory comparison of different structures for multi-level and hierarchical spline regressions.
+These models are more problematic to fit, so I experimented with different forms of spline bases and hierarchical prior distributions.
+
 #### Understanding the "funnel of doom"
 
 Another [**post**]({{< ref "post/mixed-parameterization-hierarchical-model" >}}) I made was just a PyMC3 version of Betancourt's post on funnel degeneracies that commonly plague hierarchical models.
