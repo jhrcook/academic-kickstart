@@ -257,12 +257,14 @@ Again, this is a simple first model with a global intercept $a$ and spline "weig
 I built the spline basis with 10 knots and *without* the intercept in the design matrix, instead including the intercept explicitly as $a$.
 Because I do not include the intercept in the design matrix, there are $N=11$ dimensions on the spline parameter: one between each knot plus one at the end.
 
+$$
 \begin{aligned}
-y &\sim Normal(\mu, \sigma) \\
-\mu &= a + \mathbf{B} \mathbf{w}^\text{T} \\
-a &\sim N(0, 5) \\
-w_n &\sim N(0, 5) \quad \forall i \in {1, ..., N}\\
+y &\sim Normal(\mu, \sigma) \\\\
+\mu &= a + \mathbf{B} \mathbf{w}^\text{T} \\\\
+a &\sim N(0, 5) \\\\
+w_n &\sim N(0, 5) \quad \forall i \in {1, ..., N} \\\\
 \end{aligned}
+$$
 
 ```python
 def build_model1(model_data: ModelData) -> pm.Model:
@@ -1112,12 +1114,14 @@ basis_df = (
 
 In theory, I could use a different number of knots per spline basis, but I forced them to have the same number of knots so I could have a 2-dimensional ($K$ knots $\times$ $N$ groups) variable $\bf{w}$.
 
+$$
 \begin{aligned}
-y &\sim N(\mu, \sigma) \\
-\mu_k &= \mathbf{a}_k + \mathbf{B}_k \mathbf{w}_k^\text{T} \\
-a_k &\sim N(0, 5) \quad \forall k \in K \\
-w_{i,k} &\sim N(0, 2) \quad \forall k \in K, \forall i \in {1, \dots, N} \\
+y &\sim N(\mu, \sigma) \\\\
+\mu_k &= \mathbf{a}_k + \mathbf{B}_k \mathbf{w}_k^\text{T} \\\\
+a_k &\sim N(0, 5) \quad \forall k \in K \\\\
+w _ {i,k} &\sim N(0, 2) \quad \forall k \in K, \forall i \in {1, \dots, N}
 \end{aligned}
+$$
 
 ```python
 def build_model2(datas: list[ModelData]) -> pm.Model:
@@ -1629,12 +1633,14 @@ basis_df = (
 For this model, I followed the second option described previously where I included the intercept in the spline basis and then added a single, global intercept $a$ in the model.
 In this case, this pattern was required, otherwise there is weird behavior at the beginning of the spline for the group that has no data (group "b" in this case).
 
+$$
 \begin{aligned}
-y &\sim N(\mu, \sigma) \\
-\mu &= a + \mathbf{B}_k \mathbf{w}_k^\text{T} \\
-a &\sim N(0, 5) \\
-w_{i,k} &\sim N(0, 2) \quad \forall k \in K, \forall i \in {1, \dots, N} \\
+y &\sim N(\mu, \sigma) \\\\
+\mu &= a + \mathbf{B}_k \mathbf{w}_k^\text{T} \\\\
+a &\sim N(0, 5) \\\\
+w _ {i,k} &\sim N(0, 2) \quad \forall k \in K, \forall i \in {1, \dots, N}
 \end{aligned}
+$$
 
 While MCMC does not sample from this model as easily as when using two different spline bases, it avoids the drawbacks mentioned for the previous model.
 Namely, we can make predictions for either group across the full observed range of $x$ (the range within the basis).
@@ -2188,14 +2194,16 @@ This was especially powerful in the current case because where group "a" had no 
 
 ### Model #4
 
+$$
 \begin{aligned}
-y &\sim N(\mu, \sigma) \\
-\mu_k &= a + \mathbf{B}_k \mathbf{w}_k^\text{T} \quad \forall k \in K \\
-a &\sim N(0, 2.5) \\
-w_{k} &\sim N(\mathbf{\mu}_{\mathbf{w}}, \sigma_w) \quad \forall k \in K \\
-\mu_{w,i} &\sim N(0, 1) \quad \forall i \in {1, \dots, N} \\
-\sigma_w &\sim \text{Gam}(2, 0.5)
+y &\sim N(\mu, \sigma) \\\\
+\mu_k &= a + \mathbf{B}_k \mathbf{w}_k^\text{T} \quad \forall k \in K \\\\
+a &\sim N(0, 2.5) \\\\
+w_k &\sim N(\mathbf{\mu} _ \mathbf{w}, \sigma _ \mathbf{w}) \quad \forall k \in K \\\\
+\mu _ {w,i} &\sim N(0, 1) \quad \forall i \in {1, \dots, N} \\\\
+\sigma _ \mathbf{w} &\sim \text{Gam}(2, 0.5)
 \end{aligned}
+$$
 
 ```python
 def build_model4(model_data: ModelData) -> pm.Model:
