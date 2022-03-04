@@ -135,7 +135,7 @@ My analysis was focussed on how this was similar to using a Bayesian technique, 
 #### Splines
 
 I have two blog posts about modeling splines.
-The [first]({{<ref "post/pymc3-spline">}}) is a more detialed introduction to these forms of transformations and how the model interprets the spline basis.
+The [first]({{<ref "post/pymc3-spline">}}) is a more detailed introduction to these forms of transformations and how the model interprets the spline basis.
 The [second]({{<ref "post/pymc-multilevel-spline">}}) is a more exploratory comparison of different structures for multi-level and hierarchical spline regressions.
 These models are more problematic to fit, so I experimented with different forms of spline bases and hierarchical prior distributions.
 
@@ -147,5 +147,10 @@ Also, this served as an opportunity to create a model in PyMC3 with a mixture of
 
 #### Non-linear modeling of serial dilutions
 
-This was a [**post**]({{< ref "post/stan-serial-dilution" >}}) following the model for serial dilutions in the *Bayesian Data Aanlysis* book by Gelman *et al.*
+This was a [**post**]({{< ref "post/stan-serial-dilution" >}}) following the model for serial dilutions in the *Bayesian Data Analysis* book by Gelman *et al.*
 I built the model with Stan and sampling from the posterior with MCMC then conducted some standard analyses of the posterior distributions and predictions.
+
+#### Comparing MCMC runtimes
+
+I did a brief analysis of the [runtimes of MCMC sampling]({{< ref "post/theano-blas-warning" >}}) from a very large (several thousand parameters) hierarchical negative binomial model under several conditions.
+Unexpectedly, this drove me to update my graduate project to version 4 of PyMC for the gain in sampling speed.
