@@ -62,7 +62,7 @@ So far, I am working through FWSY and then, as I get more knowledge and experien
 
 ## 2022
 
-### Feb. 10, 2022
+### Feb. 10, 2022 – The beginning
 
 My first bread.
 I followed the basic Saturday White Bread recipe and instructions from FWSY.
@@ -75,7 +75,7 @@ The second load was proofed overnight in the fridge and baked the following morn
 The room was around 75 ºF, a bit warmer than the recommended 70 ºF, so I  think the bulk fermentation was faster than expected.
 Both tasted great, though!
 
-### Feb. 14, 2022
+### Feb. 14, 2022 – Saturday white bread
 
 This was an over-night fermentation.
 It starts with less yeast so that there is more time for the microorganisms to produce more complex flavors.
@@ -84,3 +84,23 @@ I didn't taste a remarkable difference, but the texture and mouth feel was more 
 | Pre-fermentation | Post-fermentation (12 hr) | Final boules |
 |:----------------:|:-------------------------:|:------------:|
 | <img src="assets/2022/2022-02-14_b1.jpeg" height="250" alt="Feb. 14, 2022 pre-fermenation"> | <img src="assets/2022/2022-02-14_b2.jpeg" height="250" alt="Feb. 14, 2022 post-fermentation"> | <img src="assets/2022/2022-02-14_b3.jpeg" height="350" alt="Feb. 14, 2022 final breads"> |
+
+### Feb. 26, 2022 – *Biga* pre-fermentation
+
+This was my first *biga* pre-fermentation.
+This begins with a small amount of yeast in 800 g of flour and about 200 g of water.
+It triples in size overnight and the smell the next morning is delightful with far more complex aromas than a standard white bread.
+
+From this batch, I produced a standard boule and a tomato, rosemary focaccia.
+The *biga* definitely made a large difference to the taste and I don't think Ill ever do a standard Saturday white boule again (unless under a time restriction).
+
+| *biga* 0 hr | *biga* 13 hr | Boule | Focaccia |
+|:-------------------------:|:------------:|:-------------------------:|:------------:|
+| <img src="assets/2022/2022-02-26_b3.jpeg" height="250" alt="Feb. 25, 2022 beginning the biga pre-fermentation"> | <img src="assets/2022/2022-02-26_b4.jpeg" height="350" alt="Feb. 26, 2022 biga after 13 hours of fermentation"> | <img src="assets/2022/2022-02-26_b1.jpeg" height="250" alt="Feb. 26, 2022 boule"> | <img src="assets/2022/2022-02-26_b2.jpeg" height="350" alt="Feb. 26, 2022 focaccia"> |
+
+### March 5, 2022 – *Biga* pre-fermentation
+
+Another *biga* pre-fermentation to make a boule and focaccia.
+I left this focaccia plain so I could pay more attention to the texture and flavor of the final bread.
+
+<img src="assets/2022/2022-03-05.jpeg" width="75%" alt="March 5, 2022 Boule and focaccia.">
