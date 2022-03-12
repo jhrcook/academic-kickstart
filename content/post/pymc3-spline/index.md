@@ -32,7 +32,7 @@ links:
    url: https://xcelab.net/rm/statistical-rethinking/
    icon_pack: fa
    icon: book
- - name: PyMC3
+ - name: PyMC
    url: https://docs.pymc.io
    icon_pack: fa
    icon: chart-bar
@@ -44,27 +44,26 @@ links:
 Often, the model we want to fit is not a perfect line between some $x$ and $y$.
 Instead, the parameters of the model are expected to vary over $x$.
 There are multiple ways to handle this situation, one of which is to fit a *spline*.
-The spline is effectively multiple individual lines, each fit to a different section of $x$, that are tied togehter at their boundaries, often called *knots*.
-Below is an exmaple of how to fit a spline using the Bayesian framework [PyMC3](https://docs.pymc.io).
+The spline is effectively multiple individual lines, each fit to a different section of $x$, that are tied together at their boundaries, often called *knots*.
+Below is an example of how to fit a spline using the Bayesian framework [PyMC](https://docs.pymc.io).
 
 ## Fitting a spline with PyMC3
 
-Below is a full working example of how to fit a spline using the probabilitic programming language PyMC3.
+Below is a full working example of how to fit a spline using the probabilistic programming language PyMC (v4.0.0b2).
 The data and model are taken from [*Statistical Rethinking* 2e](https://xcelab.net/rm/statistical-rethinking/) by Richard McElreath.
-As the book uses [Stan](https://mc-stan.org) (another advanced probabilitistic programming language), the modeling code is primarily taken from the [GitHub repository of the PyMC3 implementation of *Statistical Rethinking*](https://github.com/pymc-devs/resources/blob/master/Rethinking_2/Chp_04.ipynb).
+As the book uses [Stan](https://mc-stan.org) (another advanced probabilistic programming language), the modeling code is primarily taken from the [GitHub repository of the PyMC3 implementation of *Statistical Rethinking*](https://github.com/pymc-devs/resources/blob/master/Rethinking_2/Chp_04.ipynb).
 My contributions are primarily of explanation and additional analyses of the data and results.
 
 ### Set-up
 
 Below is the code to import packages and set some variables used in the analysis.
-Most of the libraries and modules are likely familiar to most.
-Of those that may not be well known are ['ArviZ'](https://arviz-devs.github.io/arviz/) and ['patsy'](https://patsy.readthedocs.io/en/latest/), and ['plotnine'](https://plotnine.readthedocs.io/en/stable/).
+Most of the libraries and modules are likely familiar to many.
+Of those that may not be well known are ['ArviZ'](https://arviz-devs.github.io/arviz/), ['patsy'](https://patsy.readthedocs.io/en/latest/), and ['plotnine'](https://plotnine.readthedocs.io/en/stable/).
 'ArviZ' is a library for managing the components of a Bayesian model.
 I will use it to manage the results of fitting the model and some standard data visualizations.
-The 'patsy' library is an interface to statistical modeling using a specific formula language simillar to that used in the R language.
+The 'patsy' library is an interface to statistical modeling using a specific formula language similar to that used in the R language.
 Finally, 'plotnine' is a plotting library that implements the ["Grammar or Graphics"](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/ref=as_li_ss_tl) system based on the ['ggplot2'](https://ggplot2.tidyverse.org) R package.
 As I have a lot of experience with R, I found 'plotnine' far more natural than the "standard" in Python data science, 'matplotlib'.
-
 
 ```python
 from pathlib import Path
@@ -74,7 +73,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import plotnine as gg
-import pymc3 as pm
+import pymc as pm
 import seaborn as sns
 from patsy import dmatrix
 
@@ -91,7 +90,7 @@ rethinking_data_path = Path("../data/rethinking_data")
 
 ### Data
 
-The data for this example was the number of days (`doy` for "days of year") that the cherry trees were in bloom in each year (`year`).
+The data for this example was the first day of the year (`doy`) that the cherry trees bloomed in each year (`year`).
 Years missing a `doy` were dropped.
 
 ```python
@@ -99,6 +98,7 @@ d = pd.read_csv(rethinking_data_path / "cherry_blossoms.csv")
 d2 = d.dropna(subset=["doy"]).reset_index(drop=True)
 d2.head(n=10)
 ```
+
 |    |   year |   doy |   temp |   temp_upper |   temp_lower |
 |---:|-------:|------:|-------:|-------------:|-------------:|
 |  0 |    812 |    92 | nan    |       nan    |       nan    |
@@ -126,7 +126,7 @@ Below is the `doy` values plotted over `year`.
     gg.ggplot(d2, gg.aes(x="year", y="doy"))
     + gg.geom_point(color="black", alpha=0.4, size=1.3)
     + gg.theme(figure_size=(10, 5))
-    + gg.labs(x="year", y="days of year", title="Cherry blossom data")
+    + gg.labs(x="year", y="day of year", title="Cherry blossom data")
 )
 ```
 
@@ -142,7 +142,7 @@ $\qquad a \sim \mathcal{N}(100, 10)$
 $\qquad w \sim \mathcal{N}(0, 10)$  
 $\quad \sigma \sim \text{Exp}(1)$
 
-The number of days of bloom will be modeled as a normal distribution with mean $\mu$ and standard deviation $\sigma$.
+The day of first bloom will be modeled as a normal distribution with mean $\mu$ and standard deviation $\sigma$.
 The mean will be a linear model composed of a y-intercept $a$ and spline defined by the basis $B$ multiplied by the model parameter $w$ with a variable for each region of the basis.
 Both have relatively weak normal priors.
 
@@ -171,13 +171,13 @@ Below is the plot of the data we are modeling with the splines indicated by the 
     + gg.geom_point(color="black", alpha=0.4, size=1.3)
     + gg.geom_vline(xintercept=knot_list, color="gray", alpha=0.8)
     + gg.theme(figure_size=(10, 5))
-    + gg.labs(x="year", y="days of year", title="Cherry blossom data with spline knots")
+    + gg.labs(x="year", y="day of year", title="Cherry blossom data with spline knots")
 )
 ```
 
 ![blossom-knots](assets/blossom-knots.png)
 
-We can get an idea of what the spline will look like by fitting a LOESS curve (a local ploynomial regression).
+We can get an idea of what the spline will look like by fitting a LOESS curve (a local polynomial regression).
 
 ```python
 (
@@ -186,7 +186,7 @@ We can get an idea of what the spline will look like by fitting a LOESS curve (a
     + gg.geom_smooth(method = "loess", span=0.3, size=1.5, color="blue", linetype="-")
     + gg.geom_vline(xintercept=knot_list, color="gray", alpha=0.8)
     + gg.theme(figure_size=(10, 5))
-    + gg.labs(x="year", y="days of year", title="Cherry blossom data with spline knots")
+    + gg.labs(x="year", y="day of year", title="Cherry blossom data with spline knots")
 )
 ```
 
@@ -202,10 +202,12 @@ d2["knot_group"] = pd.Categorical(d2["knot_group"], ordered=True)
 (
     gg.ggplot(d2, gg.aes(x="year", y="doy"))
     + gg.geom_point(color="black", alpha=0.4, size=1.3)
-    + gg.geom_smooth(gg.aes(group = "knot_group"), method="lm", size=1.5, color="red", linetype="-")
+    + gg.geom_smooth(
+        gg.aes(group="knot_group"), method="lm", size=1.5, color="red", linetype="-"
+    )
     + gg.geom_vline(xintercept=knot_list, color="gray", alpha=0.8)
     + gg.theme(figure_size=(10, 5))
-    + gg.labs(x="year", y="days of year", title="Cherry blossom data with spline knots")
+    + gg.labs(x="year", y="day of year", title="Cherry blossom data with spline knots")
 )
 ```
 
@@ -270,13 +272,13 @@ spline_df = (
 
 #### Fitting
 
-Finally, the model can be built using PyMC3.
+Finally, the model can be built using PyMC.
 A graphical diagram shows the organization of the model parameters.
 
 ```python
-with pm.Model() as m4_7:
-    a = pm.Normal("a", 100, 10)
-    w = pm.Normal("w", mu=0, sd=10, shape=B.shape[1])
+with pm.Model(rng_seeder=RANDOM_SEED) as m4_7:
+    a = pm.Normal("a", 100, 5)
+    w = pm.Normal("w", mu=0, sd=3, shape=B.shape[1])
     mu = pm.Deterministic("mu", a + pm.math.dot(np.asarray(B, order="F"), w.T))
     sigma = pm.Exponential("sigma", 1)
     D = pm.Normal("D", mu, sigma, observed=d2.doy)
@@ -288,31 +290,44 @@ pm.model_to_graphviz(m4_7)
 
 ![model-graphviz](assets/model-graphviz.svg)
 
-2000 samples of the posterior distribution are taken along with samples for prior and posterior predictive checks.
+2000 samples of the posterior distribution are taken and the posterior predictions are calculated.
 
 ```python
 with m4_7:
-    prior_pc = pm.sample_prior_predictive(random_seed=RANDOM_SEED)
-    trace_m4_7 = pm.sample(2000, tune=2000, random_seed=RANDOM_SEED)
-    post_pc = pm.sample_posterior_predictive(trace_m4_7, random_seed=RANDOM_SEED)
+    trace_m4_7 = pm.sample(2000, tune=2000, chains=2, return_inferencedata=True)
+    _ = pm.sample_posterior_predictive(trace_m4_7, extend_inferencedata=True)
 ```
 
-```
+```text
 Auto-assigning NUTS sampler...
 Initializing NUTS using jitter+adapt_diag...
 Multiprocess sampling (2 chains in 2 jobs)
-NUTS: [sigma, w, a]
-Sampling 2 chains, 0 divergences: 100%|██████████| 8000/8000 [00:30<00:00, 259.07draws/s]
-The number of effective samples is smaller than 25% for some parameters.
-100%|██████████| 4000/4000 [00:06<00:00, 591.29it/s]
+NUTS: [a, w, sigma]
 ```
 
-As mentioned above, the model and sampling results are collated into an ArviZ object for ease of use.
+<style>
+    /*Turns off some styling*/
+    progress {
+        /*gets rid of default border in Firefox and Opera.*/
+        border: none;
+        /*Needs to be in here for Safari polyfill so background images work as expected.*/
+        background-size: auto;
+    }
+    .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
+        background: #F44336;
+    }
+</style>
+<progress value='8000' class='' max='8000' style='width:300px; height:20px; vertical-align: middle;'></progress>
 
+```text
+100.00% [8000/8000 00:41<00:00 Sampling 2 chains, 0 divergences]
+Sampling 2 chains for 2_000 tune and 2_000 draw iterations (4_000 + 4_000 draws total) took 57 seconds.
 ```
-az_m4_7 = az.from_pymc3(
-    model=m4_7, trace=trace_m4_7, posterior_predictive=post_pc, prior=prior_pc
-)
+
+<progress value='4000' class='' max='4000' style='width:300px; height:20px; vertical-align: middle;'></progress>
+
+```text
+100.00% [4000/4000 00:00<00:00]
 ```
 
 ## Analysis
@@ -324,59 +339,58 @@ Now we can analyze the draws from the posterior of the model.
 Below is a table summarizing the posterior distributions of the model parameters.
 The posteriors of $a$ and $\sigma$ are quite narrow while those for $w$ are wider.
 This is likely because all of the data points are used to estimate $a$ and $\sigma$ whereas only a subset are used for each value of $w$.
-(It could be interesting to model these hierarchically allowing for the sharing of information and adding regularization across the spline.) 
-The effective sample size and $\widehat{R}$ values all look good, indiciating that the model has converged and sampled well from the posterior distribution.
+(It could be interesting to model these hierarchically allowing for the sharing of information and adding regularization across the spline.)
+The effective sample size and $\widehat{R}$ values all look good, indicating that the model has converged and sampled well from the posterior distribution.
 
 ```python
-az.summary(az_m4_7, var_names=["a", "w", "sigma"])
+az.summary(trace_m4_7, var_names=["a", "w", "sigma"])
 ```
 
-|       |    mean |    sd |   hdi_3% |   hdi_97% |   mcse_mean |   mcse_sd |   ess_mean |   ess_sd |   ess_bulk |   ess_tail |   r_hat |
-|:------|--------:|------:|---------:|----------:|------------:|----------:|-----------:|---------:|-----------:|-----------:|--------:|
-| a     | 103.303 | 2.424 |   98.879 |   107.724 |       0.098 |     0.069 |        615 |      614 |        618 |       1027 |       1 |
-| w[0]  |  -2.876 | 3.862 |  -10.391 |     4.208 |       0.11  |     0.078 |       1225 |     1225 |       1223 |       2105 |       1 |
-| w[1]  |  -0.92  | 3.944 |   -7.944 |     6.87  |       0.109 |     0.077 |       1303 |     1303 |       1306 |       1794 |       1 |
-| w[2]  |  -0.95  | 3.64  |   -7.69  |     5.972 |       0.115 |     0.082 |        994 |      994 |        995 |       1799 |       1 |
-| w[3]  |   4.896 | 2.917 |   -1.005 |    10.029 |       0.099 |     0.07  |        871 |      871 |        872 |       1236 |       1 |
-| w[4]  |  -0.827 | 2.937 |   -6.642 |     4.437 |       0.105 |     0.075 |        776 |      776 |        781 |       1199 |       1 |
-| w[5]  |   4.384 | 2.969 |   -0.994 |    10.089 |       0.098 |     0.069 |        921 |      921 |        922 |       1600 |       1 |
-| w[6]  |  -5.305 | 2.848 |  -10.728 |    -0.249 |       0.103 |     0.073 |        771 |      771 |        774 |       1226 |       1 |
-| w[7]  |   7.899 | 2.845 |    2.319 |    12.968 |       0.098 |     0.07  |        848 |      818 |        849 |       1546 |       1 |
-| w[8]  |  -0.974 | 2.921 |   -6.47  |     4.431 |       0.1   |     0.07  |        861 |      861 |        863 |       1402 |       1 |
-| w[9]  |   3.132 | 3.007 |   -2.191 |     9.091 |       0.1   |     0.071 |        910 |      906 |        913 |       1399 |       1 |
-| w[10] |   4.676 | 2.909 |   -0.455 |    10.563 |       0.104 |     0.074 |        780 |      780 |        781 |       1377 |       1 |
-| w[11] |  -0.085 | 2.952 |   -5.434 |     5.604 |       0.098 |     0.069 |        909 |      909 |        911 |       1468 |       1 |
-| w[12] |   5.6   | 2.947 |    0.167 |    11.29  |       0.104 |     0.073 |        809 |      809 |        813 |       1279 |       1 |
-| w[13] |   0.784 | 3.116 |   -5.015 |     6.579 |       0.103 |     0.073 |        924 |      924 |        927 |       1382 |       1 |
-| w[14] |  -0.782 | 3.333 |   -7.152 |     5.164 |       0.104 |     0.073 |       1030 |     1030 |       1030 |       1404 |       1 |
-| w[15] |  -6.933 | 3.501 |  -13.454 |    -0.133 |       0.106 |     0.075 |       1091 |     1091 |       1084 |       1684 |       1 |
-| w[16] |  -7.61  | 3.292 |  -14.056 |    -1.642 |       0.104 |     0.075 |       1003 |      965 |       1005 |       1368 |       1 |
-| sigma |   5.946 | 0.147 |    5.66  |     6.199 |       0.002 |     0.002 |       3684 |     3671 |       3709 |       2558 |       1 |
+|       |    mean |    sd |  hdi_3% | hdi_97% | mcse_mean | mcse_sd | ess_bulk | ess_tail | r_hat |
+|------:|--------:|------:|--------:|--------:|----------:|--------:|---------:|---------:|------:|
+|     a | 103.651 | 0.755 | 102.296 | 105.120 |     0.018 |   0.013 |   1691.0 |   1572.0 |   1.0 |
+|  w[0] |  -1.795 | 2.202 |  -6.027 |   2.212 |     0.037 |   0.031 |   3496.0 |   2923.0 |   1.0 |
+|  w[1] |  -1.654 | 2.057 |  -5.351 |   2.409 |     0.037 |   0.027 |   3028.0 |   2949.0 |   1.0 |
+|  w[2] |  -0.252 | 1.935 |  -4.041 |   3.326 |     0.035 |   0.026 |   3042.0 |   2976.0 |   1.0 |
+|  w[3] |   3.326 | 1.481 |   0.632 |   6.144 |     0.029 |   0.020 |   2632.0 |   2603.0 |   1.0 |
+|  w[4] |   0.204 | 1.512 |  -2.574 |   3.114 |     0.027 |   0.020 |   3063.0 |   2893.0 |   1.0 |
+|  w[5] |   2.104 | 1.635 |  -1.024 |   5.124 |     0.031 |   0.022 |   2818.0 |   2936.0 |   1.0 |
+|  w[6] |  -3.561 | 1.472 |  -6.320 |  -0.720 |     0.025 |   0.018 |   3349.0 |   3466.0 |   1.0 |
+|  w[7] |   5.536 | 1.422 |   2.802 |   8.075 |     0.027 |   0.019 |   2787.0 |   3028.0 |   1.0 |
+|  w[8] |  -0.067 | 1.512 |  -2.861 |   2.788 |     0.026 |   0.019 |   3322.0 |   3377.0 |   1.0 |
+|  w[9] |   2.227 | 1.561 |  -0.665 |   5.200 |     0.029 |   0.021 |   2973.0 |   3255.0 |   1.0 |
+| w[10] |   3.766 | 1.485 |   0.909 |   6.471 |     0.029 |   0.020 |   2681.0 |   2929.0 |   1.0 |
+| w[11] |   0.311 | 1.493 |  -2.428 |   3.196 |     0.028 |   0.021 |   2917.0 |   2911.0 |   1.0 |
+| w[12] |   4.143 | 1.537 |   1.292 |   7.047 |     0.030 |   0.021 |   2574.0 |   2562.0 |   1.0 |
+| w[13] |   1.077 | 1.601 |  -1.686 |   4.270 |     0.030 |   0.021 |   2938.0 |   3144.0 |   1.0 |
+| w[14] |  -1.818 | 1.795 |  -4.994 |   1.719 |     0.035 |   0.025 |   2665.0 |   2802.0 |   1.0 |
+| w[15] |  -5.979 | 1.834 |  -9.503 |  -2.679 |     0.032 |   0.023 |   3262.0 |   2979.0 |   1.0 |
+| w[16] |  -6.190 | 1.876 |  -9.943 |  -2.839 |     0.032 |   0.023 |   3370.0 |   2896.0 |   1.0 |
+| sigma |   5.954 | 0.145 |   5.684 |   6.230 |     0.002 |   0.001 |   5054.0 |   3315.0 |   1.0 |
 
-We can visualize the trace (MCMC samples) of $a$ and $\sigma$, again showing they were confidently estimated.
+We can visualize the trace (MCMC samples) of the parameters, again showing they were confidently estimated.
 
 ```python
-az.plot_trace(az_m4_7, var_names=["a", "sigma"])
-plt.show()
+az.plot_trace(trace_m4_7, var_names=["a", "w", "sigma"])
+plt.tight_layout();
 ```
 
-![a-and-sigma_trace](assets/a-and-sigma_trace.png)
+![a-and-sigma_trace](assets/model-trace.png)
 
 A forest plot shows the distributions of the values for $w$ are larger, though some do fall primarily away from 0 indicating a non-null effect/association.
 
 ```python
-az.plot_forest(az_m4_7, var_names=["w"], combined=True)
-plt.show()
+az.plot_forest(trace_m4_7, var_names=["w"], combined=True);
 ```
 
 ![w-forest](assets/w-forest.png)
 
 Another visualization of the fit spline values is to plot them multiplied against the basis matrix.
-The knot boundaries are shown in gray again, but now the spline basis is multipled against the values of $w$ (represented as the rainbow-colored curves).
+The knot boundaries are shown in gray again, but now the spline basis is multiplied against the values of $w$ (represented as the rainbow-colored curves).
 The dot product of $B$ and $w$ - the actual computation in the linear model - is shown in blue.
 
 ```python
-wp = trace_m4_7["w"].mean(0)
+wp = trace_m4_7.posterior["w"].values.mean(axis=(0, 1))
 
 spline_df = (
     pd.DataFrame(B * wp.T)
@@ -392,7 +406,7 @@ spline_df_merged = (
 
 (
     gg.ggplot(spline_df, gg.aes(x="year", y="value"))
-    + gg.geom_vline(xintercept=knot_list, color="gray", alpha=0.5)
+    + gg.geom_vline(xintercept=knot_list, color="#0C73B4", alpha=0.5)
     + gg.geom_line(data=spline_df_merged, linetype="-", color="blue", size=2, alpha=0.7)
     + gg.geom_line(gg.aes(group="spline_i", color="spline_i"), alpha=0.7, size=1)
     + gg.scale_color_discrete(guide=gg.guide_legend(ncol=2), color_space="husl")
@@ -408,7 +422,7 @@ spline_df_merged = (
 Lastly, we can visualize the predictions of the model using the posterior predictive check.
 
 ```python
-post_pred = az.summary(az_m4_7, var_names=["mu"]).reset_index(drop=True)
+post_pred = az.summary(trace_m4_7, var_names=["mu"]).reset_index(drop=True)
 d2_post = d2.copy().reset_index(drop=True)
 d2_post["pred_mean"] = post_pred["mean"]
 d2_post["pred_hdi_lower"] = post_pred["hdi_3%"]
@@ -427,10 +441,20 @@ d2_post["pred_hdi_upper"] = post_pred["hdi_97%"]
     + gg.theme(figure_size=(10, 5))
     + gg.labs(
         x="year",
-        y="days of year",
+        y="day of year",
         title="Cherry blossom data with posterior predictions",
     )
 )
 ```
 
 ![posterior-predictions](assets/posterior-predictions.png)
+
+---
+
+## Updates
+
+### 2022-03-12
+
+It was pointed out to me by a reader that `doy` was not the number of days of bloom, but the day of the year with the first bloom.
+I fixed this in the text and plots.
+I also took this opportunity to fix the embarrassingly large number of typos and update the code to use PyMC v4.
