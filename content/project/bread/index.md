@@ -104,3 +104,31 @@ Another *biga* pre-fermentation to make a boule and focaccia.
 I left this focaccia plain so I could pay more attention to the texture and flavor of the final bread.
 
 <img src="assets/2022/2022-03-05.jpeg" width="75%" alt="March 5, 2022 Boule and focaccia.">
+
+### May 25, 2022 – *Biga* pre-fermentation
+
+Produced a great-looking boule.
+
+<img src="assets/2022/2022-05-25.jpeg" width="75%" alt="May 25, 2022 Boule.">
+
+
+### June 2, 2022 – 50% whole wheat with *biga* pre-fermentation
+
+This wasn't my first time making a whole-wheat bread with the *biga*, but I think I let the final rise go for too long on a rather warm day.
+It was generally 75ºF out and I let the rise go for 4 hours, which is the longest recommended endpoint.
+I actually made two boules (gave one away) and they both came out a bit flat and didn't have the best air holes.
+Still tasted fine.
+
+<img src="assets/2022/2022-06-02.jpeg" width="75%" alt="June 2, 2022 50% whole wheat bould with biga pre-ferment.">
+
+
+### June 14, 2022 - White bread with *biga* pre-ferment
+
+My favorite combination to split the dough in two, make a boule the same day, and bake a focaccia the next (leaving the shaped round in the fridge overnight).
+I included a picture of my "ultimate sammy" I make with the boule.
+I cook the bacon, then follow with the eggs in the grease and toast the bread afterwards, melting cheese on one side.
+I throw in some avocado to top it off.
+
+| Boule | Sandwich | Focaccia |
+|:-------------------------:|:------------:|:-------------------------:|
+| <img src="assets/2022/2022-06-14-boule.jpeg" height="250" alt="June 14, 2022 White bread boule"> | <img src="assets/2022/2022-06-14-sandwich.jpeg" height="250" alt="June 14, 2022 Sandwich from the boule"> | <img src="assets/2022/2022-06-14-focaccia.jpeg" height="250" alt="June 14, 2022 Tomato and rosemary faoccia."> |
