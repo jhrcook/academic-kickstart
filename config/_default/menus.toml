@@ -37,5 +37,5 @@ weight = 60
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
 name = "CV"
-url = "https://jhrcook.github.io/cv/"
+url = "files/Joshua Cook CV.pdf"
 weight = 70
