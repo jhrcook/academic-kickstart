@@ -81,3 +81,7 @@ My primary interest is in understanding the tissue-specific behaviors of oncogen
 
 In my free time, I enjoy learning about programming and computer science - my current project is working on [comparing AI/ML summarization methods on scientific publications](https://github.com/jhrcook/sci-article-summarization).
 Off the computer, my hobbies include running, exercising, caring for my plants, and baking bread.
+
+> I will be graduating in late November and am **currently looking for future employment**.
+> I am looking for **computational biology and data science positions**.
+> If you are actively recruiting or know of a job I might be interested in, please contact me through the email form at the bottom of this page or on LinkedIn (linked to the left).
