@@ -31,23 +31,45 @@ subtitle = ""
   icon_pack = "fab"
   name = "Swift"
   description = "Intermediate"
-  
+
+# ----
+
+[[feature]]
+  icon = "chart-bar"
+  icon_pack = "fas"
+  name = "Bayesian Modeling"
+  description = "Proficient"
+
+[[feature]]
+  icon = "project-diagram"
+  icon_pack = "fas"
+  name = "Machine Learning"
+  description = "Intermediate"
+
+[[feature]]
+  icon = "images"
+  icon_pack = "fas"
+  name = "Data Visualization"
+  description = "Proficient"
+
+# ----
+
 [[feature]]
   icon = "linux"
   icon_pack = "fab"
   name = "Linux"
   description = "Sufficient"
-
-[[feature]]
-  icon = "chart-bar"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = "Intermediate"
  
 [[feature]]
   icon = "apple"
   icon_pack = "fab"
-  name = "iOS & watchOS"
+  name = "iOS, macOS & watchOS"
   description = "Intermediate"
+
+[[feature]]
+  icon = "raspberry-pi"
+  icon_pack = "fab"
+  name = "Raspberry Pi & Arduino"
+  description = "Hobbiest"
 
 +++
