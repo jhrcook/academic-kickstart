@@ -56,7 +56,7 @@ social:
 #   link: https://dev.to/jhrcook
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/joshua-hr-cook/
+  link: https://www.linkedin.com/in/joshuahrcook
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0001-9815-6879
