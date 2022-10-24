@@ -72,7 +72,7 @@ height = "300px"
   overlay_filter = 0.3  # Darken the image. Value in range 0-1.
   
   cta_label = "Download"
-  cta_url = "files/cv.pdf"
+  cta_url = "files/Joshua Cook CV.pdf"
   cta_icon_pack = "fas"
   cta_icon = "download"
 
