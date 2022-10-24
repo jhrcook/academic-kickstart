@@ -25,14 +25,18 @@ subtitle = ""
  [[content.filter_button]]
    name = "Data Analysis"
    tag = "data analysis"
-   
+
  [[content.filter_button]]
-   name = "Applications"
-   tag = "application"
+   name = "Research"
+   tag = "research"
    
  [[content.filter_button]]
    name = "Packages"
    tag = "package"
+   
+ [[content.filter_button]]
+   name = "Applications"
+   tag = "application"
   
  [[content.filter_button]]
    name = "Hobbies"
