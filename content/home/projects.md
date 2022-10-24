@@ -25,10 +25,6 @@ subtitle = ""
  [[content.filter_button]]
    name = "Data Analysis"
    tag = "data analysis"
-
- [[content.filter_button]]
-   name = "Research"
-   tag = "research"
    
  [[content.filter_button]]
    name = "Packages"
