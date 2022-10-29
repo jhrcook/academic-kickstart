@@ -18,6 +18,37 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+
+# [[item]]
+#   organization = "Harvard Medical School"
+#   organization_url = ""
+#   title = "Defended my Ph.D. Dissertation"
+#   url = ""
+#   certificate_url = ""
+#   date_start = "2022-11-21"
+#   date_end = ""
+#   description = "Earned my Ph.D. from Harvard Medical School with my dissertation on 'Studying the tissue-specificity of cancer driver genes through *KRAS* and genetic dependency screens.'"
+
+[[item]]
+  organization = "PyPI"
+  organization_url = "https://pypi.org"
+  title = "`tumoroscope-pymc` Python package"
+  url = "https://pypi.org/project/tumoroscope-pymc/"
+  certificate_url = ""
+  date_start = "2022-10-25"
+  date_end = ""
+  description = "Python package of the ['Tumoroscope'](https://www.biorxiv.org/content/10.1101/2022.09.22.508914v1) model implemented in PyMC."
+
+[[item]]
+  title = "Completed Hacktoberfest 2022"
+  url = ""
+  organization = "Hacktoberfest"
+  organization_url = "https://hacktoberfest.com/"
+  certificate_url = ""
+  date_start = "2022-10-01"
+  date_end = ""
+  description = "Performed over four pull requests to open source projects including to my R package ['mustashe'](https://github.com/jhrcook/mustashe) ([1](https://github.com/jhrcook/mustashe/pull/38)), my repository where I experimented with implementing the ['Tumoroscope'](https://www.biorxiv.org/content/10.1101/2022.09.22.508914v1) model in PyMC ([2](https://github.com/jhrcook/pymc-tumoroscope/pull/1), [3](https://github.com/jhrcook/pymc-tumoroscope/pull/2), [4](https://github.com/jhrcook/pymc-tumoroscope/pull/3)), and the Python package [`tumoroscope-pymc`](https://github.com/jhrcook/tumoroscope-pymc) that I eventually developed afterward ([5](https://github.com/jhrcook/tumoroscope-pymc/pull/1), [6](https://github.com/jhrcook/tumoroscope-pymc/pull/2))."
+
 [[item]]
   title = "Completed Hacktoberfest 2021"
   url = ""

@@ -21,9 +21,10 @@ organizations:
 bio: My research interests include cancer genetics and evolution. I also learning about programming and computer science in general.
 
 interests:
-- Cancer genetics and evolution
-- Swift and iOS development
 - Bayesian data analysis
+- Cancer genetics
+- Python and R programming
+- Swift and iOS development
 
 education:
   courses:
@@ -76,11 +77,11 @@ email: ""
 # - Visitors
 ---
 
-I am a computational biologist pursuing a PhD. in computational biology at Harvard Medical School.
+I am a computational biologist pursuing a Ph.D. in computational biology at Harvard Medical School.
 My primary interest is in understanding the tissue-specific behaviors of oncogenes in cancers.
 
 In my free time, I enjoy learning about programming and computer science - my current project is working on [comparing AI/ML summarization methods on scientific publications](https://github.com/jhrcook/sci-article-summarization).
-Off the computer, my hobbies include running, exercising, caring for my plants, and baking bread.
+Off the computer, my hobbies include running 🏃🏻‍♂️, exercising 🏋🏻, caring for my plants 🌵, and baking bread 🍞.
 
 > I will be graduating in late November and am **currently looking for future employment**.
 > I am looking for **computational biology and data science positions**.
