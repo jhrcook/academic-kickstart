@@ -6,7 +6,7 @@ subtitle: "I experimented with different structures for multi-level and hierarch
 summary: "I experimented with different structures for multi-level and hierarchical splines in PyMC, including using a multivariate normal prior distribution over the spline parameters."
 authors: []
 tags: [python, programming, statistics, Bayesian]
-categories: [Programming]
+categories: [Data Analysis]
 date: 2022-02-27T08:24:36-05:00
 lastmod: 2022-02-27T08:24:36-05:00
 featured: false

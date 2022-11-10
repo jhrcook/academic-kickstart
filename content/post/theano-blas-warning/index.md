@@ -6,7 +6,7 @@ subtitle: "Does the warning 'Using NumPy C-API based implementation for BLAS fun
 summary: "Does the warning 'Using NumPy C-API based implementation for BLAS functions' from Theano when using PyMC3 affect the performance of MCMC?"
 authors: []
 tags: ["programming", "data science", "Bayesian"]
-categories: []
+categories: [Programming]
 date: 2022-02-11T11:09:46-05:00
 lastmod: 2022-02-11T11:09:46-05:00
 featured: false

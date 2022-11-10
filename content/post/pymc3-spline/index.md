@@ -6,7 +6,7 @@ subtitle: "How to fit a spline using the Bayesian modeling framework PyMC3."
 summary: "How to fit a spline using the Bayesian modeling framework PyMC3."
 authors: [Josh Cook]
 tags: [python, programming, statistics, Bayesian]
-categories: [Programming]
+categories: [Data Analysis]
 date: 2020-11-14T12:10:49-05:00
 lastmod: 2020-11-14T12:10:49-05:00
 featured: false

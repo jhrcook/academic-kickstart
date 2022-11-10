@@ -6,7 +6,7 @@ subtitle: "Modeling the standard curve of a standard dilution experiment with St
 summary: "Modeling the standard curve of a standard dilution experiment with Stan as presented in *Bayesian Data Analysis* by Gelman *et al*."
 authors: []
 tags: ["R", "Stan", "modeling", "Bayesian", "data analysis"]
-categories: ["Bayesian Data Analysis"]
+categories: ["Data Analysis"]
 date: 2022-01-22T07:41:59-05:00
 lastmod: 2022-01-22T07:41:59-05:00
 featured: false
