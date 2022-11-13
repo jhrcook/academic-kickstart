@@ -16,7 +16,7 @@ baseurl = "https://joshuacook.netlify.app/"
 copyright = "&copy;{year}"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = "UA-145596899-1"
+# googleAnalytics = "UA-145596899-1"
 
 ############################
 ## Advanced options below ##
