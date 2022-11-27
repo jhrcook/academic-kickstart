@@ -24,8 +24,8 @@ date_format = "Jan 2006"
   company_url = "http://hms.harvard.edu"
   location = "Boston, Massachusetts"
   date_start = "2017-09-01"
-  date_end = ""
-  description = "I am currently pursuing my Ph.D. in computational biology and cancer genetics in the Biological and Biomedical Sciences program at Harvard Medical School."
+  date_end = "2022-11-21"
+  description = "I earned a Ph.D. in computational biology and cancer genetics in the Biological and Biomedical Sciences program at Harvard Medical School."
 
 [[experience]]
   title = "B.S. in Biochemistry and Molecular Biology"

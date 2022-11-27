@@ -14,15 +14,14 @@ role: Graduate Student
 
 # Organizations/Affiliations
 organizations:
-- name: Harvard Medical School
-  url: "https://hms.harvard.edu"
+- name: Vertex Pharmaceuticals
+  url: "https://www.vrtx.com/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include cancer genetics and evolution. I also learning about programming and computer science in general.
+bio: I am a computational biologist with a particular interest in Bayesian modeling methods.
 
 interests:
 - Bayesian data analysis
-- Cancer genetics
 - Python and R programming
 - Swift and iOS development
 
@@ -30,7 +29,7 @@ education:
   courses:
   - course: PhD in Computational Biology & Cancer Genetics
     institution: Harvard Medical School
-    year: (in progress)
+    year: 2022
   - course: BS in Biochemistry and Molecular Biology
     institution: University of California, Irvine
     year: 2017
@@ -77,12 +76,7 @@ email: ""
 # - Visitors
 ---
 
-I am a computational biologist pursuing a Ph.D. in computational biology at Harvard Medical School.
-My primary interest is in understanding the tissue-specific behaviors of oncogenes in cancers.
+I am a computational biologist at [Vertex Pharmaceuticals](https://www.vrtx.com/) in Boston, MA.
 
-In my free time, I enjoy learning about programming and computer science - my current project is working on [comparing AI/ML summarization methods on scientific publications](https://github.com/jhrcook/sci-article-summarization).
+In my free time, I enjoy learning about programming and computer science - my current project is [learning the basics of causal inference](https://github.com/jhrcook/the-effect-notes).
 Off the computer, my hobbies include running 🏃🏻‍♂️, exercising 🏋🏻, caring for my plants 🌵, and baking bread 🍞.
-
-> I will be graduating in late November and am **currently looking for future employment**.
-> I am looking for **computational biology and data science positions**.
-> If you are actively recruiting or know of a job I might be interested in, please contact me through the email form at the bottom of this page or on LinkedIn (linked to the left).

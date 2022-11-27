@@ -18,16 +18,25 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+[[item]]
+  organization = "Vertex Pharmaceuticals"
+  organization_url = "https://www.vrtx.com/"
+  title = "Started at Vertex Pharmaceuticals"
+  url = ""
+  certificate_url = ""
+  date_start = "2023-01-01"
+  date_end = ""
+  description = "I have joined Vertex Pharmaceuticals as a *Computational Genomics Research Scientist*."
 
-# [[item]]
-#   organization = "Harvard Medical School"
-#   organization_url = ""
-#   title = "Defended my Ph.D. Dissertation"
-#   url = ""
-#   certificate_url = ""
-#   date_start = "2022-11-21"
-#   date_end = ""
-#   description = "Earned my Ph.D. from Harvard Medical School with my dissertation on 'Studying the tissue-specificity of cancer driver genes through *KRAS* and genetic dependency screens.'"
+[[item]]
+  organization = "Harvard Medical School"
+  organization_url = "https://hms.harvard.edu/"
+  title = "Defended my Ph.D. dissertation"
+  url = ""
+  certificate_url = ""
+  date_start = "2022-11-21"
+  date_end = ""
+  description = "Earned my Ph.D. from Harvard Medical School with my dissertation on \"Studying the tissue-specificity of cancer driver genes through *KRAS* and genetic dependency screens.\""  # TODO: link my thesis when available publically.
 
 [[item]]
   organization = "PyPI"
