@@ -35,30 +35,42 @@ height = "300px"
   cta_icon = "github-alt"
 
 [[item]]
-  title = "Haigis Lab"
-  content = "Curing *KRAS* driven cancers."
+  title = "Vertex Pharmaceuticals"
+  content = "The science of possibility"
   align = "center"
-
-  overlay_color = ""  # An HTML color value.
-  overlay_img = "haigis_lab_1.jpg"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0.2  # Darken the image. Value in range 0-1.
-  
-  cta_label = "lab website"
-  cta_url = "https://www.haigislab.org"
+  overlay_color = ""
+  overlay_img = "vertex-1.jpg" 
+  overlay_filter = 0.5 
+  cta_label = "Vertex"
+  cta_url = "https://www.vrtx.com/"
   cta_icon_pack = "fas"
-  cta_icon = "dna"
+  cta_icon = "prescription-bottle-alt"
 
-[[item]]
-  title = "Park Lab"
-  content = "Computational methods to understanding cancer biology."
-  align = "center"
+# [[item]]
+#   title = "Haigis Lab"
+#   content = "Curing *KRAS* driven cancers."
+#   align = "center"
 
-  overlay_color = ""  # An HTML color value.
-  overlay_img = "isidro_figure.png"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0.5  # Darken the image. Value in range 0-1.
+#   overlay_color = ""  # An HTML color value.
+#   overlay_img = "haigis_lab_1.jpg"  # Image path relative to your `static/img/` folder.
+#   overlay_filter = 0.2  # Darken the image. Value in range 0-1.
   
-  cta_label = "lab website"
-  cta_url = "https://compbio.hms.harvard.edu/index"
-  cta_icon_pack = "fas"
-  cta_icon = "laptop-code"
+#   cta_label = "lab website"
+#   cta_url = "https://www.haigislab.org"
+#   cta_icon_pack = "fas"
+#   cta_icon = "dna"
+
+# [[item]]
+#   title = "Park Lab"
+#   content = "Computational methods to understanding cancer biology."
+#   align = "center"
+
+#   overlay_color = ""  # An HTML color value.
+#   overlay_img = "isidro_figure.png"  # Image path relative to your `static/img/` folder.
+#   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
+  
+#   cta_label = "lab website"
+#   cta_url = "https://compbio.hms.harvard.edu/index"
+#   cta_icon_pack = "fas"
+#   cta_icon = "laptop-code"
 +++

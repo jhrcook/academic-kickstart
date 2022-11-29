@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Graduate Student
+role: Computational Genomics Research Scientist
 
 # Organizations/Affiliations
 organizations:
