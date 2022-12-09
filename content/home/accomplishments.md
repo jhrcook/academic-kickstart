@@ -19,15 +19,27 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 
+[[item]]
+  organization = "Harvard Medical School"
+  organization_url = ""
+  title = "Defended my Ph.D. Dissertation"
+  url = ""
+  certificate_url = ""
+  date_start = "2022-11-21"
+  date_end = ""
+  description = "Earned my Ph.D. from Harvard Medical School with my dissertation on 'Studying the tissue-specificity of cancer driver genes through *KRAS* and genetic dependency screens.'"
+
+
 # [[item]]
-#   organization = "Harvard Medical School"
-#   organization_url = ""
-#   title = "Defended my Ph.D. Dissertation"
+#   organization = "CRC Press"
+#   organization_url = "https://www.routledge.com/go/crc-press"
+#   title = "Reviewed *Soccer Analytics: An Introduction using R* by Clive Beggs"
 #   url = ""
 #   certificate_url = ""
-#   date_start = "2022-11-21"
+#   date_start = "2022-11-01"
 #   date_end = ""
-#   description = "Earned my Ph.D. from Harvard Medical School with my dissertation on 'Studying the tissue-specificity of cancer driver genes through *KRAS* and genetic dependency screens.'"
+#   description = "I reviewed the soccer analytics textbook *Soccer Analytics: An Introduction using R* by Clive Beggs for CRC Press. I recommended fix, changes, and additions that appear in the final text."
+
 
 [[item]]
   organization = "PyPI"
