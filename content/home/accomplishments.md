@@ -24,7 +24,7 @@ date_format = "Jan 2006"
   title = "Started at Vertex Pharmaceuticals"
   url = ""
   certificate_url = ""
-  date_start = "2023-01-01"
+  date_start = "2022-12-19"
   date_end = ""
   description = "I have joined Vertex Pharmaceuticals as a *Computational Genomics Research Scientist*."
 
