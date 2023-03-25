@@ -29,7 +29,7 @@ Mutations in the RAS family of proteins promote various cancers, of which mutati
 "
 
 tags: ["KRAS", "tissue-specificity", "cancer", "allele-specific", "computational biology", "bioinformatics"]
-categories: []
+categories: [Computational Biology]
 featured: false
 
 # Custom links (optional).
