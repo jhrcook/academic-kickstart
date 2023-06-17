@@ -73,9 +73,9 @@ I have caught a couple of largemouths, one of which is pictured below.
 
 I went for a weekend camping trip to Wompatuck State Park, a 45 minute train ride south of Boston.
 I spent a Saturday afternoon and entire Sunday fishing the reservoir, catching largemouths and crappie.
-I also caught my first northern pickerel, pictured below.
+I also caught my first chain pickerel, pictured below.
 
-![](assets/2023_wompatuck/northern-pickerel.jpg)
+![](assets/2023_wompatuck/chain-pickerel.jpg)
 
 At Wompatuck, I also saw several water snakes.
 It was fun to watch them swim and look for prey.
@@ -84,3 +84,4 @@ It was fun to watch them swim and look for prey.
 
 
 [^1]: I would have started sooner if I had realized how inexpensive it was to get started. I haven't explicitly priced it out, but I think you could easily get going with good equipment for under $100.
+
