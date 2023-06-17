@@ -327,43 +327,19 @@ tidy_img %>%
 
 ## 3D Plotting
 
-Finally, I could plot the points in 3D to create the shape of “Dakota
-Jones’ crystal” as the Riddle requests.
+Finally, I could plot the points in 3D to create the shape of “Dakota Jones’ crystal” as the Riddle requests.
+The code is followed by a GIF of the output plotly figures.
 
 ``` r
 plot_ly(data = tidy_img, x = ~x, y = ~y, z = ~z, size = 1, 
         mode = "markers", opacity = 1.0, type = "scatter3d")
 ```
 
-<!--html_preserve-->
+![](assets/final-shape-outline.gif)
 
-<iframe src="plot1.html" width="800px" height="500px" scrolling="no" seamless="seamless" frameBorder="0">
-
-</iframe>
-
-<!--/html_preserve-->
-
-``` r
-plot_ly(data = tidy_img, x = ~x, y = ~y, z = ~z, size = 1, 
-        mode = "line", opacity = 0.5, type = "scatter3d")
-```
-
-<!--html_preserve-->
-
-<iframe src="plot2.html" width="800px" height="500px" scrolling="no" seamless="seamless" frameBorder="0">
-
-</iframe>
-
-<!--/html_preserve-->
 
 ``` r
 plot_ly(data = tidy_img, x = ~x, y = ~y, z = ~z, type = "mesh3d")
 ```
 
-<!--html_preserve-->
-
-<iframe src="plot3.html" width="800px" height="500px" scrolling="no" seamless="seamless" frameBorder="0">
-
-</iframe>
-
-<!--/html_preserve-->
+![](assets/final-shape.gif)
