@@ -7,13 +7,16 @@
         "comutation",
         "Deta",
         "dunder",
+        "largemouth",
+        "largemouths",
         "MCMC",
         "Monolithically",
         "organoids",
         "parameterizations",
         "runtimes",
         "Streamlit",
-        "subcommands"
+        "subcommands",
+        "Wompatuck"
     ],
     "python.formatting.provider": "black"
 }
