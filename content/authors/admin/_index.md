@@ -18,7 +18,7 @@ organizations:
   url: "https://www.vrtx.com/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a computational biologist with a particular interest in Bayesian modeling methods.
+bio: 
 
 interests:
 - Bayesian data analysis
